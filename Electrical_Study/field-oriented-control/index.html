@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>Field Oriented Control | Electrical Study App by SARU TECH</title>
+
+<link rel="alternate" type="application/rss+xml" title="Electrical Study App by SARU TECH &raquo; Field Oriented Control Comments Feed" href="http://electricalstudy.sarutech.com/field-oriented-control/index.html" />
+
+<link rel='prev' title='variable-frequency-drive' href='../variable-frequency-drive/' />
+<link rel='next' title='objective-questions-electrical-engineering-34' href='../objective-questions-electrical-engineering-34/' />
+<meta name="generator" content="WordPress 3.5.2" />
+
+<!-- All in One SEO Pack 2.0.2 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/111022768648991545451/" />
+<meta name="description" content="Introduction of Field Oriented Control • Working Principle of Field Oriented Control • Basic Module • Classification • Advantages AC" />
+
+<link rel="canonical" href="field-oriented-control/index.html" />
+<!-- /all in one seo pack -->
+
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/general-header.js'></script>
+<script type='text/javascript' src='../js/elements.js'></script>
+<script type='text/javascript' src='../js/nav.js'></script>
+<link rel='stylesheet' id='style-css' href='../css/style.css' type='text/css' media='all' />
+<link rel="icon" type="image/png" href="../icon.png" />
+<link rel='stylesheet' id='elements-css' href='../css/elements.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elements-css' href='../css/style2.css' type='text/css' media='all' />
+
+
+<!-- END FONTS + STYLESHEETS + JS INCLUDES -->
+
+</head>
+<body class="page page-id-9566 page-template-default custom-background custom-font-enabled single-author">
+
+	<!-- BEGIN SITE LOGO -->
+<div id="header-bar">
+	
+<div class="site-logo-wrapper">
+
+		<!-- BEGIN LOGO -->
+		<div class="site-logo">
+			<a href="../index.html">
+				ELECTRICAL STUDY APP
+			</a>
+		</div>
+		<!-- END LOGO -->
+
+	</div>
+</div>
+<!-- END SITE LOGO -->
+
+<!-- BEGIN MENU BUTTON -->
+<div class="menu-wrapper">
+	<div class="menu-button"></div>
+</div>
+<!-- END MENU BUTTON -->
+
+<!-- BEGIN MENU INCLUDE -->
+<div id="menu"><!-- BEGIN MENU -->
+
+<!-- END MENU --></div>
+<!-- END MENU INCLUDE -->
+
+<!-- BEGIN MENU CLOSE AREA -->
+<div id="menu-open-overlay"></div>
+<!-- END MENU CLOSE AREA -->
+
+<!-- BEGIN IF MENU OPEN, SHOW BLUE BACKGROUND -->
+<div id="menu-open-background">
+	<div class="menu-open-background"></div>
+</div>
+<!-- END IF MENU OPEN, SHOW BLUE BACKGROUND -->
+
+<div id="sitewrap">
+<div id="content">
+<div class="wrapper-outer">
+<div class="content-wrapper">
+
+
+		<article id="post-9566" class="post-9566 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
+		<header class="entry-header">
+												<h1 class="entry-title" id="topic" itemprop="headline">Field Oriented Control</h1>
+		</header>
+
+		<div class="entry-content" itemprop="articleBody">
+			
+
+<div id="top" class="pageIndex">
+<a href="#Introduction-of-Field-Oriented-Control">Introduction of Field Oriented Control</a><br />
+<a href="#Working-Principle-of-Field-Oriented-Control">• <span class="subTopic">Working Principle of Field Oriented Control</a><br />
+<a href="#Basic-Module-for-Field-Oriented-Control">• <span class="subTopic">Basic Module </a><br />
+<a href="#Classification-of-Field-Oriented-Control">• <span class="subTopic">Classification </a><br />
+<a href="#Advantages-of-Field-Oriented-Control">• <span class="subTopic">Advantages </a>
+</div>
+<p>AC <a href="../induction-motor-types-of-induction-motor/index.html"  >Induction motors</a> offer enviable operational characteristics such as robustness, reliability and ease of control. They are extensively used in various applications ranging from industrial motion control systems to home appliances. However, the use of induction motors at its highest efficiency is a challenging task because of their complex mathematical model and non-linear characteristic during saturation. These factors make the control of induction motor difficult and call for use of a high performance control algorithms such as “vector control”.</p>
+<h2 id="Introduction-of-Field-Oriented-Control">Introduction of Field Oriented Control</h2>
+<p>Scalar control such as the “V/Hz” strategy has its limitations in terms of performance. The scalar control method for <a href="../induction-motor-types-of-induction-motor/index.html"  >induction motors</a> generates oscillations on the produced torque. Hence to achieve better dynamic performance, a more superior control scheme is needed for Induction Motor. With the mathematical processing capabilities offered by the microcontrollers, digital signal processors and FGPA, advanced control strategies can be implemented to decouple the torque generation and the magnetization functions in an AC <a href="../induction-motor-types-of-induction-motor/index.html"  >induction motor</a>. This <strong>decoupled torque</strong> and <strong>magnetization flux</strong> is commonly called rotor <strong>Flux Oriented Control(FOC)</strong>.  </p>
+<p>Field Oriented Control describes the way in which the control of torque and speed are directly based on the electromagnetic state of the motor, similar to a <a href="../dc-motor-or-direct-current-motor/index.html"  >DC motor</a>. FOC is the first technology to control the “real” motor control variables of torque and flux. With decoupling between the stator  <a href="../electric-current-and-theory-of-electricity/index.html" title="Electric Current">electric current</a>  components (magnetizing flux and torque), the torque producing component of the stator flux can be controlled independently. Decoupled control, at low speeds, the magnetization state of motor can be maintained at the appropriate level, and the torque can be controlled to regulate the speed.</p>
+<p>“FOC has been solely developed for high-performance motor applications which can operate smoothly over the wide speed range, can produce full torque at zero speed, and is capable of quick acceleration and deceleration”</p>
+</p>
+<h2 id="Working-Principle-of-Field-Oriented-Control">Working Principle of Field Oriented Control</h2>
+<p>The <strong>field oriented control</strong> consists of controlling the stator currents represented by a vector. This control is based on projections that transform a three phase time and speed dependent system into a two coordinate (d and q frame) time invariant system. These transformations and projections lead to a structure similar to that of a DC machine control. FOC machines need two constants as input references: the torque component (aligned with the <strong>q coordinate</strong>) and the flux component (aligned with <strong>d coordinate</strong>).</p>
+<p>The three-phase voltages, currents and fluxes of AC-motors can be analyzed in terms of complex space vectors. If we take i<sub>a</sub>, i<sub>b</sub>, i<sub>c</sub> as instantaneous currents in the stator phases, then the stator  <a href="../electric-current-and-theory-of-electricity/index.html" title="Electric Current">electric current</a>  vector it defined as follow:<br />
+<center><img src="../equations/FOC-1-26-12-13.gif" alt=" "/></center><br />
+where (a,b,c) are the axes of <a href="../three-phase-circuit-star-and-delta-system/index.html" title="Three Phase Star and Delta System">three phase system</a>.<br />
+This  <a href="../electric-current-and-theory-of-electricity/index.html" title="Electric Current">electric current</a>  space vector represents the three phase sinusoidal system. It needs to be transformed into a two time invariant coordinate system. This transformation can be divided into two steps:<br />
+        (a,b,c) → (α, β) (the Clarke transformation), which outputs a two coordinate time variant system.<br />
+	(a, β) → (d,q) (the Park transformation), which outputs a two coordinate time invariant system.</p>
+<p><strong>The (a,b,c) → (α, β) Projection (Clarke transformation)</strong><br />
+Three-phase quantities either voltages or currents, varying in time along the axes a, b, and c, can be mathematically transformed into two-phase voltages or currents, varying in time along the axes α and β by the following transformation matrix:<br />
+<center><img src="../equations/FOC-2-26-12-13 .gif " alt=" "/></center><br />
+Assuming that the axis a and the axis α are along same direction and β is orthogonal to them, we have the following vector diagram:<br />
+<div id="attachment_9660" class="wp-caption aligncenter" style="width: 364px"><img src="../images/foc-27-12-13.gif" alt="Fig. 1 Stator Current Space Vector and Its Component in the Stationary Reference Frame" width="354" height="337" class="size-full wp-image-9660" /><p class="wp-caption-text">Fig. 1 Stator Current Space Vector and Its Component in the Stationary Reference Frame</p></div><br />
+The above projection modifies the <a href="../three-phase-circuit-star-and-delta-system/index.html" title="Three Phase Star and Delta System">three phase system</a> into the (α, β) two dimension orthogonal system as<br />
+stated below:<br />
+<center><img src="../equations/FOC-3-26-12-13.gif" alt=" "/></center><br />
+But these two phase (α, β) currents still depends upon time and speed.<br />
+<strong>The (α, β) → (d.q) projection (Park transformation)</strong><br />
+This is the most important transformation in the FOC. In fact, this projection modifies the two phase fixed orthogonal system (α, β) into d,q rotating reference system. The transformation matrix is given below:<br />
+<center><img src="../equations/FOC-4-26-12-13.gif" alt=" "/></center><br />
+where ‘θ’ is the angle between the rotating and fixed coordinate system.</p>
+<p>If you consider the d axis aligned with the rotor flux, Figure 2 shows the relationship from the two reference frames for the  <a href="../electric-current-and-theory-of-electricity/index.html" title="Electric Current">electric current</a>  vector:<br />
+<div id="attachment_9663" class="wp-caption aligncenter" style="width: 475px"><img src="../images/foc-4-27-12-13.gif" alt=". 2 Stator  <a href="../electric-current-and-theory-of-electricity/index.html" title="Electric Current"><p class="wp-caption-text">electric current</a>  space vector and its component in (α, β) and in the d,q rotating frame" width="465" height="315" class="size-full wp-image-9663" /> . 2 Stator  <a href="../electric-current-and-theory-of-electricity/index.html" title="Electric Current">electric current</a>  space vector and its component in (α, β) and in the d,q rotating frame</p></div><br />
+where “θ” is the rotor flux position. The  torque and flux components of the  <a href="../electric-current-and-theory-of-electricity/index.html" title="Electric Current">electric current</a>  vector are determined by the following equations:<br />
+<center><img src="../equations/FOC-5-26-12-13.gif" alt=" "/></center><br />
+These components depend on the  <a href="../electric-current-and-theory-of-electricity/index.html" title="Electric Current">electric current</a>  vector (α, β) components and on the rotor flux position. If you know the accurate rotor flux position then, by above equation, the d,q component can be easily calculated. At this instant, the torque can be controlled directly because flux component (i<sub>sd</sub>) and torque component (i<sub>sq</sub>) are independent now.</p>
+<h2 id="Basic-Module-for-Field-Oriented-Control">Basic Module for Field Oriented Control</h2>
+<p>Stator phase currents are measured. These measured currents are fed into the Clarke transformation block. The outputs of this projection are entitled i<sub>sα</sub> and i<sub>sβ</sub>. These two components of the  <a href="../electric-current-and-theory-of-electricity/index.html" title="Electric Current">electric current</a>  enter into the Park transformation block that provide the  <a href="../electric-current-and-theory-of-electricity/index.html" title="Electric Current">electric current</a>  in the d,q reference frame. The i<sub>sd</sub> and i<sub>sq</sub> components are contrasted to the references: i<sub>sdref</sub> (the flux reference) and i<sub>sqref</sub> (the torque reference). At this instant, the control structure has an advantage: it can be used to control either synchronous or induction machines by simply changing the flux reference and tracking rotor flux position. In case of PMSM the rotor flux is fixed determined by the magnets so there is no need to create one. Therefore, while controlling a PMSM, i<sub>sdref</sub> should be equal to zero. As <a href="../induction-motor-types-of-induction-motor/index.html"  >induction motors</a> need a rotor flux creation in order to operate, the flux reference must not be equal to zero. This easily eliminates one of the major shortcomings of the “classic” control structures: the portability from asynchronous to synchronous drives. The outputs of the PI controllers are V<sub>sdref</sub> and V<sub>sqref</sub>. They are applied to the inverse Park transformation block. The outputs of this projection are V<sub>sαref</sub> and V<sub>sβref</sub> are fed to the space vector pulse width modulation (SVPWM) algorithm block. The outputs of this block provide signals that drive the inverter. Here both Park and inverse Park transformations need the rotor flux position. Hence rotor flux position is essence of FOC.</p>
+<p>The evaluation of the rotor flux position is different if we consider the synchronous or induction motor:</p>
+<p>1) In case of <a href="../synchronous-motor-working-principle/index.html"  >synchronous motor(s)</a>, the rotor speed is equal to the rotor flux speed. Then rotor flux position is directly determined by position sensor or by integration of rotor speed.</p>
+<p>2) In case of asynchronous motor(s), the rotor speed is not equal to the rotor flux speed because of slip; therefore a particular method is used to evaluate rotor flux position (θ). This method utilizes  <a href="../electric-current-and-theory-of-electricity/index.html" title="Electric Current">electric current</a>  model, which needs two equations of the induction motor model in d,q rotating reference frame.</p>
+<div id="attachment_9658" class="wp-caption aligncenter" style="width: 634px"><img src="../images/indirect-FOC-block-diagram-.jpg" alt="indirect FOC block diagram-" width="624" height="478" class="size-full wp-image-9658" /><p class="wp-caption-text">Fig. 3 Simplified Indirect FOC Block Diagram</p></div>
+<p>                                                        Fig. 3 Simplified Indirect FOC Block Diagram</p>
+<h2 id="Classification-of-Field-Oriented-Control">Classification of Field Oriented Control</h2>
+<p>FOC for the <a href="../induction-motor-drives-starting-braking-speed-control-of-induction-motor/index.html"  >induction motor drive</a> can be broadly classified into two types: Indirect FOC and Direct FOC schemes. In DFOC strategy rotor flux vector is either measured by means of a flux sensor mounted in the air-gap or by using the <a href="../voltage-or-electric-potential-difference/index.html" title="Voltage or Electric Potential Difference">voltage</a> equations starting from the electrical machine parameters. But in case of IFOC rotor flux vector is estimated using the field oriented control equations (current model) requiring a rotor speed measurement. Among both schemes, IFOC is more commonly used because in closed-loop mode it can easily operate throughout the speed range from zero speed to high-speed field-weakening.</p>
+<h2 id="Advantages-of-Field-Oriented-Control">Advantages of Field Oriented Control</h2>
+<p>1) Improved torque response.<br />
+2) Torque control at low frequencies and low speed.<br />
+3) Dynamic speed accuracy.<br />
+4) Reduction in size of motor, cost and power consumption.<br />
+5) Four quadrant operation.<br />
+6) Short-term overload capability.</p>
+
+			
+
+</div>
+		
+</div>
+		<!-- END CONTENT -->
+
+
+<!--
+END EDITING HERE
+-->					
+
+<div id="nextpg" style="font-weight: bold; font-family: sans-serif; position:relative; top:-9px;"></div>				
+<div id="prevpg" style="font-weight: bold; font-family: sans-serif;"></div>
+</div>
+    <br />
+<br />
+    <div style="position:relative; padding:20px; font-family: cursive;" align="center" class="container text-center foot">
+        <p style="color:#1F4DDF; font-size:14px;">Design with <img src="../love.png" /> by <a style="color:#000; font-weight:bold; text-decoration:none;" href="http://sarutech.com"> SARU TECH </a> <br/> www.sarutech.com</p>
+        <p style="color:#1F4DDF; margin-top:10px; font-size:14px;">Content Credited to <a style="color:#1F4DDF; font-weight:bold; text-decoration:none;" href="http://electrical4u.com">electrical4u.com</a> <br/> Online Electrical Engineering Study Site</p><br/><br/>
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br /> 
+</div><div id="footernav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../electrical-engineering-objective-questions-mcq/index.html">MCQ</a></li>
+    <li><a href="../questions/index.html">Theory</a></li>
+    <li><a href="../videos/index.html">Videos</a></li>
+</div>
+
+<!-- BEGIN FOOTER JS INCLUDES -->
+<script type='text/javascript' src='../js/general-footer.js'></script>
+<script type='text/javascript' src='../js/autogrow/jquery.autogrow-textarea.js'></script>
+<script type='text/javascript' src='../js/placeholder-fix.js'></script>
+<script type='text/javascript' src='../js/jquery.scrollTo-min.js'></script>
+<!-- END FOOTER JS INCLUDES -->
+
+</body>
+</html>

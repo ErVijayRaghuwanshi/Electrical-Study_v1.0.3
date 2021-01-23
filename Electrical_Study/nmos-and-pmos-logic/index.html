@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>NMOS and PMOS Logic | Electrical Study App by SARU TECH</title>
+
+<link rel="alternate" type="application/rss+xml" title="Electrical Study App by SARU TECH &raquo; NMOS and PMOS Logic Comments Feed" href="http://electricalstudy.sarutech.com/nmos-and-pmos-logic/index.html" />
+
+<link rel='prev' title='Schmitt Gates' href='../schmitt-gates/' />
+<link rel='next' title='schmitt-gates' href='../schmitt-gates/' />
+<meta name="generator" content="WordPress 3.5.2" />
+
+<!-- All in One SEO Pack 2.0.2 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/111022768648991545451/" />
+<meta name="description" content="NMOS and PMOS Logic are the two competitors of LSI - class digital ICs. Both the NMOS and PMOS Logic are elaborate yet briefly discussed in this article." />
+
+<link rel="canonical" href="nmos-and-pmos-logic/index.html" />
+<!-- /all in one seo pack -->
+
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/general-header.js'></script>
+<script type='text/javascript' src='../js/elements.js'></script>
+<script type='text/javascript' src='../js/nav.js'></script>
+<link rel='stylesheet' id='style-css' href='../css/style.css' type='text/css' media='all' />
+<link rel="icon" type="image/png" href="../icon.png" />
+<link rel='stylesheet' id='elements-css' href='../css/elements.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elements-css' href='../css/style2.css' type='text/css' media='all' />
+
+
+<!-- END FONTS + STYLESHEETS + JS INCLUDES -->
+
+</head>
+<body class="page page-id-6911 page-template-default custom-background custom-font-enabled single-author">
+
+	<!-- BEGIN SITE LOGO -->
+<div id="header-bar">
+	
+<div class="site-logo-wrapper">
+
+		<!-- BEGIN LOGO -->
+		<div class="site-logo">
+			<a href="../index.html">
+				ELECTRICAL STUDY APP
+			</a>
+		</div>
+		<!-- END LOGO -->
+
+	</div>
+</div>
+<!-- END SITE LOGO -->
+
+<!-- BEGIN MENU BUTTON -->
+<div class="menu-wrapper">
+	<div class="menu-button"></div>
+</div>
+<!-- END MENU BUTTON -->
+
+<!-- BEGIN MENU INCLUDE -->
+<div id="menu"><!-- BEGIN MENU -->
+
+<!-- END MENU --></div>
+<!-- END MENU INCLUDE -->
+
+<!-- BEGIN MENU CLOSE AREA -->
+<div id="menu-open-overlay"></div>
+<!-- END MENU CLOSE AREA -->
+
+<!-- BEGIN IF MENU OPEN, SHOW BLUE BACKGROUND -->
+<div id="menu-open-background">
+	<div class="menu-open-background"></div>
+</div>
+<!-- END IF MENU OPEN, SHOW BLUE BACKGROUND -->
+
+<div id="sitewrap">
+<div id="content">
+<div class="wrapper-outer">
+<div class="content-wrapper">
+
+
+		
+							
+	<article id="post-6911" class="post-6911 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
+		<header class="entry-header">
+												<h1 class="entry-title" id="topic" itemprop="headline">NMOS and PMOS Logic</h1>
+		</header>
+
+		<div class="entry-content" itemprop="articleBody">
+			
+Logic families discussed so far are the ones that are commonly used for implementing discrete logic functions such as logic gates, flip flops, counters, multiplexers, demultiplexers etc., in relatively less complex digital ICs belonging to the small-scale integration (SSI) and medium-scale integration (MSI) level of inner circuit complexities. The TTL, the CMOS and the ECL logic families are not suitable for implementing digital ICs that have a large-scale integration (LSI) level of inner circuit complexity and above. The competitors for LSI-class digital ICs are the PMOS, the NMOS and the integrated injection logic (I2L). The first two are briefly discussed in this section.</p>
+<h2>PMOS Logic</h2>
+<p><a href="../nmos-and-pmos-logic/pmos-logic/index.html" rel="attachment wp-att-6913"><img src="../wp-content/uploads/2013/08/PMOS-logic.gif" alt="PMOS logic" width="757" height="455" class="aligncenter size-full wp-image-6913" /></a><br />
+The PMOS logic family uses P-channel MOSFETS. Figure (a) shows an inverter circuit using PMOS logic. MOSFET Q1 acts as an active load for the MOSFET switch Q2. For the circuit shown,<br />
+GND and −VDD respectively represent a logic ‘1’ and a logic ‘0’ for a positive logic system. When the input is grounded (i.e. logic ‘1’), Q2 remains in cut-off and −VDD appears at the output throughthe conducting Q1.When the input is at −VDD or near −VDD, Q2 conducts and the output goes to near-zero potential (i.e. logic ‘1’).Figure (b) shows a PMOS logic based two-input NOR gate. In the logic arrangement of Fig. (b), the output goes to logic ‘1’ state (i.e. ground potential) only when both Q1 and Q2 are conducting. This is possible only when both the inputs are in logic ‘0’ state. For all other possible input combinations, the output is in logic ‘0’ state, because, with either Q1 or Q2 nonconducting, the output is nearly −VDD through the conducting Q3. The circuit of Fig.(b) thus behaves like a two-input NOR gate in positive logic. It may be mentioned here that the MOSFET being used as load<br />
+[Q1 in Fig. (a) and Q3 in Fig. (b)] is designed so as to have an ON-<a href="../electrical-resistance-and-laws-of-resistance/index.html" title="Know about the electrical resistance in detail.">resistance</a> that is much greater than the total ON-<a href="../electrical-resistance-and-laws-of-resistance/index.html" title="Know about the electrical resistance in detail.">resistance</a> of the MOSFETs being used as switches [Q2 in Fig. (a) And<br />
+Q1 and Q2 in Fig.(b)].</p>
+<h2>NMOS Logic</h2>
+<p><a href="../nmos-and-pmos-logic/nmos-logic/index.html" rel="attachment wp-att-6914"><img src="../wp-content/uploads/2013/08/NMOS-logic.gif" alt="NMOS logic" class="aligncenter size-full wp-image-6914" /></a><br />
+The NMOS logic family uses N-channel MOSFETS. N-channel MOS devices require a smaller chip area per transistor compared with P-channel devices, with the result that NMOS logic offers a higher density. Also, owing to the greater mobility of the charge carriers in N-channel devices, the NMOS logic family offers higher speed too. It is for this reason that most of the MOS memory devices and microprocessors employ NMOS logic or some variation of it such as VMOS, DMOS and HMOS. VMOS, DMOS and HMOS are only structural variations of NMOS, aimed at further reducing the propagation delay. Figures (a), (b) and (c) respectively show an inverter, a two-input NOR and a two-input NAND using NMOS logic. The logic circuits are self-explanatory.</p>
+</p>
+			
+
+</div>
+		
+</div>
+		<!-- END CONTENT -->
+
+
+<!--
+END EDITING HERE
+-->					
+
+<div id="nextpg" style="font-weight: bold; font-family: sans-serif; position:relative; top:-9px;"></div>				
+<div id="prevpg" style="font-weight: bold; font-family: sans-serif;"></div>
+</div>
+    <br />
+<br />
+    <div style="position:relative; padding:20px; font-family: cursive;" align="center" class="container text-center foot">
+        <p style="color:#1F4DDF; font-size:14px;">Design with <img src="../love.png" /> by <a style="color:#000; font-weight:bold; text-decoration:none;" href="http://sarutech.com"> SARU TECH </a> <br/> www.sarutech.com</p>
+        <p style="color:#1F4DDF; margin-top:10px; font-size:14px;">Content Credited to <a style="color:#1F4DDF; font-weight:bold; text-decoration:none;" href="http://electrical4u.com">electrical4u.com</a> <br/> Online Electrical Engineering Study Site</p><br/><br/>
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br /> 
+</div><div id="footernav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../electrical-engineering-objective-questions-mcq/index.html">MCQ</a></li>
+    <li><a href="../questions/index.html">Theory</a></li>
+    <li><a href="../videos/index.html">Videos</a></li>
+</div>
+
+<!-- BEGIN FOOTER JS INCLUDES -->
+<script type='text/javascript' src='../js/general-footer.js'></script>
+<script type='text/javascript' src='../js/autogrow/jquery.autogrow-textarea.js'></script>
+<script type='text/javascript' src='../js/placeholder-fix.js'></script>
+<script type='text/javascript' src='../js/jquery.scrollTo-min.js'></script>
+<!-- END FOOTER JS INCLUDES -->
+
+</body>
+</html>

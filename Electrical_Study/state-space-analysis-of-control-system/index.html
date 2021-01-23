@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>State Space Analysis of Control System | Electrical Study App by SARU TECH</title>
+
+<link rel="alternate" type="application/rss+xml" title="Electrical Study App by SARU TECH &raquo; State Space Analysis of Control System Comments Feed" href="http://electricalstudy.sarutech.com/state-space-analysis-of-control-system/index.html" />
+
+<link rel='prev' title='Transient State and Steady State Response of Control System' href='../transient-state-and-steady-state-response-of-control-system/' />
+<link rel='next' title='different-types-non-linearities-in-control-system' href='../different-types-non-linearities-in-control-system/' />
+<meta name="generator" content="WordPress 3.5.2" />
+
+<!-- All in One SEO Pack 2.0.2 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/111022768648991545451/" />
+<meta name="description" content="State Space Equations Representation of State Model using Transfer Function Concept of" />
+
+<link rel="canonical" href="state-space-analysis-of-control-system/index.html" />
+<!-- /all in one seo pack -->
+
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/general-header.js'></script>
+<script type='text/javascript' src='../js/elements.js'></script>
+<script type='text/javascript' src='../js/nav.js'></script>
+<link rel='stylesheet' id='style-css' href='../css/style.css' type='text/css' media='all' />
+<link rel="icon" type="image/png" href="../icon.png" />
+<link rel='stylesheet' id='elements-css' href='../css/elements.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elements-css' href='../css/style2.css' type='text/css' media='all' />
+
+
+<!-- END FONTS + STYLESHEETS + JS INCLUDES -->
+
+</head>
+<body class="page page-id-15575 page-template-default custom-background custom-font-enabled single-author">
+
+	<!-- BEGIN SITE LOGO -->
+<div id="header-bar">
+	
+<div class="site-logo-wrapper">
+
+		<!-- BEGIN LOGO -->
+		<div class="site-logo">
+			<a href="../index.html">
+				ELECTRICAL STUDY APP
+			</a>
+		</div>
+		<!-- END LOGO -->
+
+	</div>
+</div>
+<!-- END SITE LOGO -->
+
+<!-- BEGIN MENU BUTTON -->
+<div class="menu-wrapper">
+	<div class="menu-button"></div>
+</div>
+<!-- END MENU BUTTON -->
+
+<!-- BEGIN MENU INCLUDE -->
+<div id="menu"><!-- BEGIN MENU -->
+
+<!-- END MENU --></div>
+<!-- END MENU INCLUDE -->
+
+<!-- BEGIN MENU CLOSE AREA -->
+<div id="menu-open-overlay"></div>
+<!-- END MENU CLOSE AREA -->
+
+<!-- BEGIN IF MENU OPEN, SHOW BLUE BACKGROUND -->
+<div id="menu-open-background">
+	<div class="menu-open-background"></div>
+</div>
+<!-- END IF MENU OPEN, SHOW BLUE BACKGROUND -->
+
+<div id="sitewrap">
+<div id="content">
+<div class="wrapper-outer">
+<div class="content-wrapper">
+
+
+		<article id="post-15575" class="post-15575 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
+		<header class="entry-header">
+												<h1 class="entry-title" id="topic" itemprop="headline">State Space Analysis of Control System</h1>
+		</header>
+
+		<div class="entry-content" itemprop="articleBody">
+			
+
+<div id="top" class="pageIndex">
+<a href="#State-Space-Equations">State Space Equations</a><br />
+<a href="#Representation-of-State-Model-using-Transfer-Function">Representation of State Model using Transfer Function</a><br />
+<a href="#Concept-of-Eigen-Values-and-Eigen-Vectors">Concept of Eigen Values and Eigen Vectors</a><br />
+<a href="#State-Transition-Matrix-and-Zero-State-Response">State Transition Matrix and Zero State Response</a>
+</div>
+<p>Before I introduce you about the concept of <strong>state space analysis of control system</strong>, it is very important to discuss here the differences between the conventional theory of control system and modern theory of control system. </p>
+<ol>
+<li>The conventional control theory is completely based on the frequency domain approach while the modern control system approach is based on time domain approach.</li>
+<li>In the conventional theory of control system we have linear and time invariant single input single output (SISO) systems only but with the help of theory of modern control system we can easily do the analysis of even non linear and time variant multiple inputs multiple outputs (MIMO) systems also.</li>
+<li>In the modern theory of control system the stability analysis and time response analysis can be done by both graphical and analytically method very easily.</li>
+</ol>
+<p>Now <strong>state space analysis of control system</strong> is based on the modern theory which is applicable to all types of systems like single input single output systems, multiple inputs and multiple outputs systems, linear and non linear systems, time varying and time invariant systems. Let us consider few basic terms related to state space analysis of modern theory of control systems.</p>
+<ol>
+<li><b>State in State Space Analysis : </b>It refers to smallest set of variables whose knowledge at t=t<sub>0</sub> together with the knowledge of input for t &ge; t<sub>0</sub> gives the complete knowledge of the behavior of the system at any time t &ge; t<sub>0</sub>.</li>
+<li><b>State Variables in State Space analysis :</b> It refers to the smallest set of variables which help us to determine the state of the dynamic system. State variables are defined by x<sub>1</sub>(t), x<sub>2</sub>(t)........X<sub>n</sub>(t).</li>
+<li><b>State Vector : </b>Suppose there is a requirement of n state variables in order to describe the complete behavior of the given system, then these  n state variables are considered to be n components of a vector x(t). Such a vector is known as state vector. </li>
+<li><b>State Space :</b> It refers to the n dimensional space which has x<sub>1</sub> axis, x<sub>2</sub> axis .........x<sub>n</sub> axis.</li>
+</ol>
+<h3 id="State-Space-Equations">State Space Equations</h3>
+<p>Let us derive state space equations for the system which is linear and time invariant.<br />
+Let us consider multiple inputs and multiple outputs system which has r inputs and m outputs.<br />
+Where r=u<sub>1</sub>, u<sub>2</sub>, u<sub>3</sub> ........... u<sub>r</sub>.<br />
+And m = y<sub>1</sub>, y<sub>2</sub> ........... y<sub>m</sub>.<br />
+Now we are taking n state variables to describe the given system hence n = x<sub>1</sub>, x<sub>2</sub>, ........... x<sub>n</sub>. </p>
+</p>
+<p>Also we define input and output vectors as,</p>
+<p>Transpose of input vectors,<br />
+<center><img src="../equations/controlsystem/ssa-13-06-14-01.gif" alt=""></center><br />
+Where T is transpose of the matrix.<br />
+Transpose of output vectors,<br />
+<center><img src="../equations/controlsystem/ssa-13-06-14-02.gif" alt=""></center></p>
+<p>Where T is transpose of the matrix.<br />
+Transpose of state vectors,<br />
+<center><img src="../equations/controlsystem/ssa-13-06-14-03.gif" alt=""></center><br />
+Where T is transpose of the matrix.</p>
+<p>These variables are related by a set of equations which are written below and are known as state space equations<br />
+<center><img src="../equations/controlsystem/ssa-13-06-14-04.gif" alt=""></center></p>
+<h3 id="Representation-of-State-Model-using-Transfer-Function">Representation of State Model using Transfer Function</h3>
+<p><b>Decomposition :</b> It is defined as the process of obtaining the state model from the given transfer function. Now we can decompose the transfer function using three different ways:</p>
+<ol>
+<li>Direct decomposition,</li>
+<li>Cascade or series decomposition,</li>
+<li> Parallel decomposition.</li>
+</ol>
+<p>In all the above decomposition methods we first convert the given transfer function into the differential equations also called the dynamic equations. After converting into differential equations we will take inverse Laplace transform of the above equation then corresponding to the type of decomposition we can create model. We can represent any type of transfer function in state model. We have various types of model like electrical model, mechanical model etc.<br />
+Expression of Transfer Matrix in terms of A, B, C and D. We define transfer matrix as the Laplace transform of output to the Laplace transform of input.</p>
+<p>On writing the state equations again and taking the Laplace transform of both the state equation (assuming initial conditions equal to zero) we have<br />
+<center><img src="../equations/controlsystem/ssa-13-06-14-05.gif" alt=""></center><br />
+We can write the equation as<br />
+<center><img src="../equations/controlsystem/ssa-13-06-14-06.gif" alt=""></center><br />
+Where I is an identity matrix.</p>
+<p>Now substituting the value of X(s) in the equation Y(s) and putting D=0 (means is a null matrix) we have<br />
+<center><img src="../equations/controlsystem/ssa-13-06-14-07.gif" alt=""></center><br />
+Inverse of matrix can substitute by adj of matrix divided by the determinant of the matrix, now on rewriting the expression we have of<br />
+<center><img src="../equations/controlsystem/ssa-13-06-14-08.gif" alt=""></center><br />
+|sI-A| is also known as characteristic equation when equated to zero.</p>
+<h3 id="Concept-of-Eigen-Values-and-Eigen-Vectors">Concept of Eigen Values and Eigen Vectors</h3>
+<p>The roots of characteristic equation that we have described above are known as eigen values or eigen values of matrix A.<br />
+Now there are some properties related to eigen values and these properties are written below-</p>
+<ol>
+<li>Any square matrix A and its transpose At have the same eigen values.</li>
+<li>Sum of eigen values of any matrix A is equal to the trace of the matrix A.</li>
+<li>Product of the eigen values of any matrix A is equal to the determinant of the matrix A.</li>
+<li>If we multiply a scalar quantity to matrix A then the eigen values are also get multiplied by the same value of scalar.</li>
+<li>If we inverse the given matrix A then its eigen values are also get inverses.</li>
+<li>If all the elements of the matrix are real then the eigen values corresponding to that matrix are either real or exists in complex conjugate pair.</li>
+</ol>
+<p>Now there exists one eigen vector corresponding to one Eigen value, if it satisfy the following condition  ( ek &times; I - A )Pk = 0. Where k = 1, 2, 3, ........n.</p>
+<h3 id="State-Transition-Matrix-and-Zero-State-Response">State Transition Matrix and Zero State Response</h3>
+<p>We are here interested in deriving the expressions for the state transition matrix and zero state response. Again taking the state equations that we have derived above and taking their Laplace transformation we have,<br />
+<center><img src="../equations/controlsystem/ssa-13-06-14-09.gif" alt=""></center><br />
+Now on rewriting the above equation we have<br />
+ <center><img src="../equations/controlsystem/ssa-13-06-14-10.gif" alt=""></center><br />
+Let [sI-A]<sup>-1</sup> = &theta;(s) and taking the inverse Laplace of the above equation we have<br />
+<center><img src="../equations/controlsystem/ssa-13-06-14-11.gif" alt=""></center><br />
+The expression &theta;(t) is known as state transition matrix.</p>
+<p>L<sup>-1</sup>.&theta;(t)BU(s) = zero state response.</p>
+<p>Now let us discuss some of the properties of the state transition matrix.</p>
+<ol>
+<li>If we substitute t = 0 in the above equation then we will get 1.Mathematically we can write &theta;(0) =1.</li>
+<li>If we substitute t = -t in the &theta;(t) then we will get inverse of &theta;(t). Mathematically we can write   &theta;(-t) = [&theta;(t)]<sup>-1</sup>.</li>
+<li>We also another important property [&theta;(t)]<sup>n</sup> = &theta;(nt).</li>
+</ol>
+
+			
+
+</div>
+		
+</div>
+		<!-- END CONTENT -->
+
+
+<!--
+END EDITING HERE
+-->					
+
+<div id="nextpg" style="font-weight: bold; font-family: sans-serif; position:relative; top:-9px;"></div>				
+<div id="prevpg" style="font-weight: bold; font-family: sans-serif;"></div>
+</div>
+    <br />
+<br />
+    <div style="position:relative; padding:20px; font-family: cursive;" align="center" class="container text-center foot">
+        <p style="color:#1F4DDF; font-size:14px;">Design with <img src="../love.png" /> by <a style="color:#000; font-weight:bold; text-decoration:none;" href="http://sarutech.com"> SARU TECH </a> <br/> www.sarutech.com</p>
+        <p style="color:#1F4DDF; margin-top:10px; font-size:14px;">Content Credited to <a style="color:#1F4DDF; font-weight:bold; text-decoration:none;" href="http://electrical4u.com">electrical4u.com</a> <br/> Online Electrical Engineering Study Site</p><br/><br/>
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br /> 
+</div><div id="footernav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../electrical-engineering-objective-questions-mcq/index.html">MCQ</a></li>
+    <li><a href="../questions/index.html">Theory</a></li>
+    <li><a href="../videos/index.html">Videos</a></li>
+</div>
+
+<!-- BEGIN FOOTER JS INCLUDES -->
+<script type='text/javascript' src='../js/general-footer.js'></script>
+<script type='text/javascript' src='../js/autogrow/jquery.autogrow-textarea.js'></script>
+<script type='text/javascript' src='../js/placeholder-fix.js'></script>
+<script type='text/javascript' src='../js/jquery.scrollTo-min.js'></script>
+<!-- END FOOTER JS INCLUDES -->
+
+</body>
+</html>

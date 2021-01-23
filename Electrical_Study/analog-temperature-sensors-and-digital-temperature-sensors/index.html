@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>Analog Temperature sensors and Digital Temperature sensors | Electrical Study App by SARU TECH</title>
+
+<link rel="alternate" type="application/rss+xml" title="Electrical Study App by SARU TECH &raquo; Analog Temperature sensors and Digital Temperature sensors Comments Feed" href="http://electricalstudy.sarutech.com/analog-temperature-sensors-and-digital-temperature-sensors/index.html" />
+
+<link rel='prev' title='Bode Plot' href='../bode-plot/' />
+<link rel='next' title='Armature Reaction in Alternator or Synchronous Generator' href='../armature-reaction-in-synchronous-machine-alternator/' />
+<meta name="generator" content="WordPress 3.5.2" />
+
+<!-- All in One SEO Pack 2.0.2 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/111022768648991545451/" />
+<meta name="description" content="This article is written on Analog Temperature sensors and Digital Temperature sensors. Also discussed here the basics of TMP100 Digital Temperature sensor." />
+
+<link rel="canonical" href="analog-temperature-sensors-and-digital-temperature-sensors/index.html" />
+<!-- /all in one seo pack -->
+
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/general-header.js'></script>
+<script type='text/javascript' src='../js/elements.js'></script>
+<script type='text/javascript' src='../js/nav.js'></script>
+<link rel='stylesheet' id='style-css' href='../css/style.css' type='text/css' media='all' />
+<link rel="icon" type="image/png" href="../icon.png" />
+<link rel='stylesheet' id='elements-css' href='../css/elements.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elements-css' href='../css/style2.css' type='text/css' media='all' />
+
+
+<!-- END FONTS + STYLESHEETS + JS INCLUDES -->
+
+</head>
+<body class="page page-id-6607 page-template-default custom-background custom-font-enabled single-author">
+
+	<!-- BEGIN SITE LOGO -->
+<div id="header-bar">
+	
+<div class="site-logo-wrapper">
+
+		<!-- BEGIN LOGO -->
+		<div class="site-logo">
+			<a href="../index.html">
+				ELECTRICAL STUDY APP
+			</a>
+		</div>
+		<!-- END LOGO -->
+
+	</div>
+</div>
+<!-- END SITE LOGO -->
+
+<!-- BEGIN MENU BUTTON -->
+<div class="menu-wrapper">
+	<div class="menu-button"></div>
+</div>
+<!-- END MENU BUTTON -->
+
+<!-- BEGIN MENU INCLUDE -->
+<div id="menu"><!-- BEGIN MENU -->
+
+<!-- END MENU --></div>
+<!-- END MENU INCLUDE -->
+
+<!-- BEGIN MENU CLOSE AREA -->
+<div id="menu-open-overlay"></div>
+<!-- END MENU CLOSE AREA -->
+
+<!-- BEGIN IF MENU OPEN, SHOW BLUE BACKGROUND -->
+<div id="menu-open-background">
+	<div class="menu-open-background"></div>
+</div>
+<!-- END IF MENU OPEN, SHOW BLUE BACKGROUND -->
+
+<div id="sitewrap">
+<div id="content">
+<div class="wrapper-outer">
+<div class="content-wrapper">
+
+
+		<article id="post-6607" class="post-6607 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
+		<header class="entry-header">
+												<h1 class="entry-title" id="topic" itemprop="headline">Analog Temperature sensors and Digital Temperature sensors</h1>
+		</header>
+
+		<div class="entry-content" itemprop="articleBody">
+			
+
+<div id="top" class="pageIndex">
+<a href="#Digital_Temperature_Sensor">Digital Temperature Sensor</a><br />
+<a href="#TMP100">TMP100</a><br />
+<a href="#How_to_use_TMP100?">How to use TMP100?</a><br />
+<a href="#Analog_Temperature_Sensor">Analog Temperature Sensor</a>
+</div>
+<h2 id="Digital_Temperature_Sensor">Digital Temperature Sensor</h2>
+<p>This is a type of solid state temperature sensors that gives output in digital format. The rise of temperature <a href="../basics-of-microcontrollers/index.html" >microcontroller</a> based systems and the development of various communication protocols have led to the ultimate design of these types of temperature <a href="../sensor-types-of-sensor/index.html" >sensors</a>.</p>
+<p>A normal <strong>analog temperature sensor</strong> gives the output in the form of time changing <a href="../voltage-or-electric-potential-difference/index.html" >voltage</a> which varies depending on the surrounding temperature. In the <strong>digital temperature sensors</strong>, the output is not a varying analog voltage. But the signal is sent to the <a href="../basics-of-microcontrollers/index.html" >microcontroller</a> via a communication protocol that is available in both the controller and <a href="../sensor-types-of-sensor/index.html" >sensor</a>. I2C (Inter IC Communication) and SPI (Serial Peripheral Interface) are two such protocols most widely used in the digital temperature sensors.</p>
+<p>The two most widely used digital sensors are the TMP100 from Texas Instruments and DS18B20 from Maxim Integrated. Let us discuss each of them in brief here.<br />
+<a href="#top"><img src="../equations/top.png" alt=" " class="alignright"/></a></p>
+<h3 id="TMP100">TMP100</h3>
+<p>The temperature range of <strong>TMP100</strong> extends from - 55 to 125 degree Celsius. It operates on the I2C protocol and up to 8 devices can be connected on the bus. <strong>TMP100</strong> offers a resolution of 0.0625 degree Celsius. The resolution is user selectable and can be 9 to 12 bits. The <a href="../voltage-or-electric-potential-difference/index.html" title="Voltage or Electric Potential Difference">voltage</a> supply range is from 2.7V to 5.5V.<br />
+<div id="attachment_6608" class="wp-caption aligncenter" style="width: 717px"><a href="../analog-temperature-sensors-and-digital-temperature-sensors/tmp100/index.html" rel="attachment wp-att-6608"><img src="../wp-content/uploads/2013/08/TMP100.gif" alt="TMP100" width="707" height="232" class="size-full wp-image-6608" /></a><p class="wp-caption-text">TMP100</p></div><br />
+The diagram above shows the typical connection of the sensor to an I2C compatible microcontroller and the pin out.<br />
+<a href="#top"><img src="../equations/top.png" alt=" " class="alignright"/></a></p>
+<h4 id="How_to_use_TMP100?">How to use TMP100?</h4>
+<p>Consider that we are using only one sensor <a href="../integrated-circuits-types-of-ic/index.html" >IC</a> on the Bus. So we ground both the Address pins ADD0 and ADD1. If more than one sensor IC is to be used than a different configuration of ADD0 and ADD1 may be required. This will give a slave address of 1001000 to the sensor. So, whenever the master<a href="../basics-of-microcontrollers/index.html" > microcontroller</a> wants to communicate with the sensor, we have to use this address. In order to initiate the conversion process, we have to write to appropriate data into the internal pointer register of the sensor. This can be done by first writing the address of the sensor on the bus and then sending the data.</p>
+</p>
+<p>The two LSB bits into the pointer register is used to set from which register the next read or write operation has to be performed. There are 4 registers in a TMP100 viz. Temperature register, Configuration register, TLow and Thigh registers.</p>
+<p>Temperature Register - It stores the 12 bit value of the most recent conversion. It is in the form of two 8 bit registers and two successive read operations are performed to get the complete data.</p>
+<p>Configuration Register - It is used to set the resolution (9 to 12 bits) and also to program the device in single conversion mode.</p>
+<p>TLow and Thigh-These two registers are used to implement a very interesting function. We can program the configuration registers and these two registers in such a way that when the temperature exceeds a set value in the Thigh register, an alert signal goes high until the temperature becomes lower than the TLow register value. However, this feature is available only in TMP101.<br />
+<a href="#top"><img src="../equations/top.png" alt=" " class="alignright"/></a></p>
+<h2 id="Analog_Temperature_Sensor">Analog Temperature Sensor</h2>
+<p>These measure the ambient temperature and give an output <a href="../voltage-or-electric-potential-difference/index.html" >voltage</a> that is proportional to the input voltage. As the ambient temperature increases the <a href="../voltage-or-electric-potential-difference/index.html" title="Voltage or Electric Potential Difference">voltage</a> output of the <a href="../integrated-circuits-types-of-ic/index.html" >IC</a> also increases. Like digital temperature sensors, analog ones are also compact in size and come in variety of temperature ranges right from -55 degrees to around 150 degree Celsius. Also, they are available in a <a href="../voltage-or-electric-potential-difference/index.html" title="Voltage or Electric Potential Difference">voltage</a> supply range from 1.8V to 5.3V.</p>
+<p>Many <a href="../theory-of-semiconductor/index.html" >semiconductor</a> manufacturers make analog temperature sensors and each has its own temperature and supply <a href="../voltage-or-electric-potential-difference/index.html" title="Voltage or Electric Potential Difference">voltage</a> range. The LM35 series of sensor from Texas Instruments is a widely used and most popular analog temperature IC which is implemented in a large number of projects. Let us discuss it here.<br />
+<div id="attachment_6609" class="wp-caption aligncenter" style="width: 970px"><a href="../analog-temperature-sensors-and-digital-temperature-sensors/lm35/index.html" rel="attachment wp-att-6609"><img src="../wp-content/uploads/2013/08/LM35.jpg" alt="LM35" width="960" height="435" class="size-full wp-image-6609" /></a><p class="wp-caption-text">LM35</p></div><br />
+The above figures show the available packages and typical connections of a LM35 IC.The LM35 series of sensors is available in temperature range from below 0 degrees as well.The zero offset circuit is available internally, so the output <a href="../voltage-or-electric-potential-difference/index.html" title="Voltage or Electric Potential Difference">voltage</a> will be 0V at 0 degrees.The rise in temperature is at the rate of 10mV/⁰C.So, when we use the Full range of the sensor, we require a negative supply as well.For this reason a <a href="../electrical-resistance-and-laws-of-resistance/index.html" title="Know about the electrical resistance in detail.">resistance</a> is required to be inserted between Vout and negative supply. The values of this <a href="../electrical-resistance-and-laws-of-resistance/index.html" title="Know about the electrical resistance in detail.">resistance</a> are equal to V<sub>s</sub>/50uA. When we want to use it in the range above 0 degrees, the <a href="../electrical-resistance-and-laws-of-resistance/index.html" title="Know about the electrical resistance in detail.">resistance</a> and negative supply are not required.</p>
+<p>The analog output is given to the microcontroller which uses its internal ADC to convert the <a href="../voltage-or-electric-potential-difference/index.html" title="Voltage or Electric Potential Difference">voltage</a> to a digital value.The ADC reference <a href="../voltage-or-electric-potential-difference/index.html" title="Voltage or Electric Potential Difference">voltage</a> is important here.If we use the sensor in basic range from 0⁰ to 100⁰C, then the maximum <a href="../voltage-or-electric-potential-difference/index.html" >voltage</a> will be 100*10mV = 1V. So a ADC reference of say 1.5 volts can be used.<br />
+Analog V/S Digital Sensors</p>
+<p>The decision whether to use a analog or a digital sensor in an application depends entirely on the requirements of the design and the level of accuracy that is wanted.</p>
+<p>A digital sensor require that a specialized communication protocol is present in the controller.This may make the project a little expensive, but the resolution of the sensor can now be programmed by the user. Also digital sensors have facilities like range bound alert signalling and the set point can be stored in a non volatile memory. Also the programming becomes a little lengthy and complex.When a large number of sensors are interfaced to a single system, digital sensors come in handy.</p>
+<p>An analog sensor on the other hand is easy on pocket and also the accuracy and resolution provided by it is sufficient for a not so critical application. Also a controller with an ADC is only required.The programming also becomes easy.</p>
+<p><a href="#top"><img src="../equations/top.png" alt=" " class="alignright"/></a></p>
+</div>
+		
+</div>
+		<!-- END CONTENT -->
+
+
+<!--
+END EDITING HERE
+-->					
+
+<div id="nextpg" style="font-weight: bold; font-family: sans-serif; position:relative; top:-9px;"></div>				
+<div id="prevpg" style="font-weight: bold; font-family: sans-serif;"></div>
+</div>
+    <br />
+<br />
+    <div style="position:relative; padding:20px; font-family: cursive;" align="center" class="container text-center foot">
+        <p style="color:#1F4DDF; font-size:14px;">Design with <img src="../love.png" /> by <a style="color:#000; font-weight:bold; text-decoration:none;" href="http://sarutech.com"> SARU TECH </a> <br/> www.sarutech.com</p>
+        <p style="color:#1F4DDF; margin-top:10px; font-size:14px;">Content Credited to <a style="color:#1F4DDF; font-weight:bold; text-decoration:none;" href="http://electrical4u.com">electrical4u.com</a> <br/> Online Electrical Engineering Study Site</p><br/><br/>
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br /> 
+</div><div id="footernav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../electrical-engineering-objective-questions-mcq/index.html">MCQ</a></li>
+    <li><a href="../questions/index.html">Theory</a></li>
+    <li><a href="../videos/index.html">Videos</a></li>
+</div>
+
+<!-- BEGIN FOOTER JS INCLUDES -->
+<script type='text/javascript' src='../js/general-footer.js'></script>
+<script type='text/javascript' src='../js/autogrow/jquery.autogrow-textarea.js'></script>
+<script type='text/javascript' src='../js/placeholder-fix.js'></script>
+<script type='text/javascript' src='../js/jquery.scrollTo-min.js'></script>
+<!-- END FOOTER JS INCLUDES -->
+
+</body>
+</html>

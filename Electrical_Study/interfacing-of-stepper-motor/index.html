@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>Interfacing of Stepper Motor | Electrical Study App by SARU TECH</title>
+
+<link rel="alternate" type="application/rss+xml" title="Electrical Study App by SARU TECH &raquo; Interfacing of Stepper Motor Comments Feed" href="http://electricalstudy.sarutech.com/interfacing-of-stepper-motor/index.html" />
+
+<link rel='prev' title='servo-motor-applications-in-robotics-solar-tracking-system-etc' href='../servo-motor-applications-in-robotics-solar-tracking-system-etc/' />
+<link rel='next' title='bipolar-stepper-motor' href='../bipolar-stepper-motor/' />
+<meta name="generator" content="WordPress 3.5.2" />
+
+<!-- All in One SEO Pack 2.0.2 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/111022768648991545451/" />
+<meta name="description" content="Learn everything about Interfacing of Stepper Motor and get detailed and defined elaboration of topics that are related to Interfacing of Stepper Motor." />
+
+<link rel="canonical" href="interfacing-of-stepper-motor/index.html" />
+<!-- /all in one seo pack -->
+
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/general-header.js'></script>
+<script type='text/javascript' src='../js/elements.js'></script>
+<script type='text/javascript' src='../js/nav.js'></script>
+<link rel='stylesheet' id='style-css' href='../css/style.css' type='text/css' media='all' />
+<link rel="icon" type="image/png" href="../icon.png" />
+<link rel='stylesheet' id='elements-css' href='../css/elements.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elements-css' href='../css/style2.css' type='text/css' media='all' />
+
+
+<!-- END FONTS + STYLESHEETS + JS INCLUDES -->
+
+</head>
+<body class="page page-id-6216 page-template-default custom-background custom-font-enabled single-author">
+
+	<!-- BEGIN SITE LOGO -->
+<div id="header-bar">
+	
+<div class="site-logo-wrapper">
+
+		<!-- BEGIN LOGO -->
+		<div class="site-logo">
+			<a href="../index.html">
+				ELECTRICAL STUDY APP
+			</a>
+		</div>
+		<!-- END LOGO -->
+
+	</div>
+</div>
+<!-- END SITE LOGO -->
+
+<!-- BEGIN MENU BUTTON -->
+<div class="menu-wrapper">
+	<div class="menu-button"></div>
+</div>
+<!-- END MENU BUTTON -->
+
+<!-- BEGIN MENU INCLUDE -->
+<div id="menu"><!-- BEGIN MENU -->
+
+<!-- END MENU --></div>
+<!-- END MENU INCLUDE -->
+
+<!-- BEGIN MENU CLOSE AREA -->
+<div id="menu-open-overlay"></div>
+<!-- END MENU CLOSE AREA -->
+
+<!-- BEGIN IF MENU OPEN, SHOW BLUE BACKGROUND -->
+<div id="menu-open-background">
+	<div class="menu-open-background"></div>
+</div>
+<!-- END IF MENU OPEN, SHOW BLUE BACKGROUND -->
+
+<div id="sitewrap">
+<div id="content">
+<div class="wrapper-outer">
+<div class="content-wrapper">
+
+
+		<article id="post-6216" class="post-6216 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
+		<header class="entry-header">
+												<h1 class="entry-title" id="topic" itemprop="headline">Interfacing of Stepper Motor</h1>
+		</header>
+
+		<div class="entry-content" itemprop="articleBody">
+			
+
+<div id="top" class="pageIndex">
+<a href="#Working_of_Stepper_Motor">Working of Stepper Motor</a><br />
+<a href="#Stepping_Sequence">Stepping Sequence</a><br />
+<a href="#Interfacing_Diagram">Interfacing Diagram</a><br />
+<a href="#Step_Angle">Step Angle</a><br />
+<a href="#Half_Stepping">Half Stepping</a><br />
+<a href="#C_Code_for_8051_Micro-controller">C Code for 8051 Micro-controller</a><br />
+<a href="#Stepper_Motor_v/s_Servo_Motor">Stepper Motor v/s Servo Motor</a>
+</div>
+<p>A stepper motor is a type of <a href="../dc-motor-or-direct-current-motor/index.html"  >DC motor</a> that rotates in steps. When electrical signal is applied to it, the motor rotates in steps and the speed of rotation depends on the rate at which the electrical signals are applied and the direction of rotation is dependent on the pattern of pulses that is followed.</p>
+<p>A stepper motor is made up of a rotor, which is normally a permanent magnet and it is, as the name suggests the rotating component of the motor. A stator is another part which is in the form of winding. In the diagram below, the center is the rotor which is surrounded by the stator winding. This is called as four phase winding.</p>
+<div id="attachment_6217" class="wp-caption alignleft" style="width: 327px"><a href="../interfacing-of-stepper-motor/stepper-motor/index.html" rel="attachment wp-att-6217"><img src="../wp-content/uploads/2013/07/stepper-motor.gif" alt="stepper motor" width="317" height="262" class="size-full wp-image-6217" /></a><p class="wp-caption-text">Stepper Motor</p></div>
+<h3 id="Working_of_Stepper_Motor">Working of Stepper Motor</h3>
+<p>The centre tap on the stator winding allows the  <a href="../electric-current-and-theory-of-electricity/index.html" title="Electric Current">electric current</a> in the coil to change direction when the winding are grounded. The magnetic property of the stator changes and it will selectively attract and repel the rotor, thereby resulting in a stepping motion for the motor.</p>
+<h4 id="Stepping_Sequence">Stepping Sequence</h4>
+<p>In order to get correct motion of the motor, a stepping sequence has to be followed. This stepping sequence gives the <a href="../voltage-or-electric-potential-difference/index.html" title="Voltage or Electric Potential Difference">voltage</a> that must be applied to the stator phase. Normally a 4 step sequence is followed.</p>
+<p>When the sequence is followed from step 1 to 4, we get a clock wise rotation and when it is followed from step 4 to 1, we get a counter clockwise rotation.</p>
+<table class="Border">
+<tr>
+<th>Step No</th>
+<th>A</th>
+<th><span style="text-decoration:overline;">A</span></th>
+<th>B</th>
+<th><span style="text-decoration:overline;">B</span></th>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</table>
+<h2 id="Interfacing_Diagram">Interfacing Diagram</h2>
+<p>The diagram below shows the <strong>interfacing of stepper motor</strong> to a micro-controller. This is general diagram and can be applied to any micro-controller family like PIC micro-controller, AVR or 8051 micro-controller.<br />
+<a href="../interfacing-of-stepper-motor/interfacing-of-stepper-motor-2/index.html" rel="attachment wp-att-6227"><img src="../wp-content/uploads/2013/07/interfacing-of-stepper-motor.gif" alt="Interfacing of stepper motor" width="691" height="417" class="aligncenter size-full wp-image-6227" /></a></p>
+</p>
+<p>Since, the micro-controller cannot provide enough  <a href="../electric-current-and-theory-of-electricity/index.html" title="Electric Current">electric current</a> to run the motor, a driver like a ULN2003 is used to drive the motor. Similarly, individual transistors or any other driver IC can also be used to drive the motor. See to it that if required, the external pull up <a href="../types-of-resistor-carbon-composition-and-wire-wound-resistor/index.html" title="Types of resistor">resistor</a>s is connected to pins depending on the micro-controller you use. The motor must never be directly connected to the controller pins. The motor Voltage depends on the size of the motor.</p>
+<p>A typical 4 phase uni-polar stepper motor has 5 terminals. 4 phase terminals and one common terminal of the center tap that is connected to ground.</p>
+<p>The programming algorithm for continuous rotation in clockwise mode is given below-</p>
+<p>1)	Initialize the port pins used for the motor as outputs<br />
+2)	Write a common delay program of say 500 ms<br />
+3)	Output first sequence-0 x 09 on the pins<br />
+4)	Call delay function<br />
+5)	Output second sequence-0 x 0 c on the pins<br />
+6)	Call delay function<br />
+7)	Output third sequence-0 x 06 on the pins<br />
+8)	Call delay function<br />
+9)	Output fourth sequence-0 x 03 on the pins<br />
+10)	Call delay function<br />
+11)	Go to step 3</p>
+<h4 id="Step_Angle">Step Angle</h4>
+<p>The number of steps required to complete one full rotation depends on the step angle of the stepper motor. The step angle can vary from 0.72 degrees to 15 degrees per step. Depending on that 500 to 24 steps may be required to complete one rotation. In position control applications the selection on motor should be based on the minimum degree of rotation that is required per step.</p>
+<h4 id="Half_Stepping">Half Stepping</h4>
+<p>Stepper motors can be used at half the actual step angle. This is called half stepping. Suppose a motor is rated for 15 degrees per step, then it can be programmed in such a way that it rotates at 7.5 degrees per step by applying a special half stepping sequence to it.</p>
+<table class="Border">
+<tr>
+<th>Step No</th>
+<th>A</th>
+<th><span style="text-decoration:overline;">A</span></th>
+<th>B</th>
+<th><span style="text-decoration:overline;">B</span></th>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</table>
+<h2 id="C_Code_for_8051_Micro-controller">C Code for 8051 Micro-controller</h2>
+<p>#include&lt;reg51.h&gt;<br />
+#define out P1                               //motor connected on Port 1 lower<br />
+#define step 50                              //one revolution for 1.8 degree motor<br />
+unsigned char i;<br />
+void delay (unsigned char k);<br />
+&nbsp;<br />
+void main()<br />
+{<br />
+for( i = 0; i&lt;step; i++ )<br />
+{<br />
+out=0x09;<br />
+delay();<br />
+out=0x0c;<br />
+delay();<br />
+out=0x06;<br />
+delay();<br />
+out=0x03();<br />
+delay();<br />
+}<br />
+&nbsp;<br />
+void delay(unsigned char k)<br />
+{<br />
+unsigned int j;<br />
+for(;k&gt;0;k--)<br />
+{<br />
+for(j = 0; j&lt;40000; j++);<br />
+}</p>
+<h2 id="Stepper_Motor_v/s_Servo_Motor">Stepper Motor v/s Servo Motor</h2>
+<p>Both the stepper motor and <a href="../servo-motor-servo-mechanism-theory-and-working-principle/index.html"  >servo motor</a> are used primarily in position control applications. But there lies a difference in their working and construction. The stepper motor has a large number of poles or teeth on their rotor and these teeth act as magnetic north and south poles which gets attracted or repelled to the electrically magnetized coil of the stator. This helps in the stepping motion that a stepper generates.</p>
+<p>On the other hand, in a <a href="../servo-motor-servo-mechanism-theory-and-working-principle/index.html"  >servo motor</a> the position is controlled by the specialized circuit and the feedback mechanism, which generates an error signal to move the motor shaft.</p>
+
+
+			
+
+</div>
+		
+</div>
+		<!-- END CONTENT -->
+
+
+<!--
+END EDITING HERE
+-->					
+
+<div id="nextpg" style="font-weight: bold; font-family: sans-serif; position:relative; top:-9px;"></div>				
+<div id="prevpg" style="font-weight: bold; font-family: sans-serif;"></div>
+</div>
+    <br />
+<br />
+    <div style="position:relative; padding:20px; font-family: cursive;" align="center" class="container text-center foot">
+        <p style="color:#1F4DDF; font-size:14px;">Design with <img src="../love.png" /> by <a style="color:#000; font-weight:bold; text-decoration:none;" href="http://sarutech.com"> SARU TECH </a> <br/> www.sarutech.com</p>
+        <p style="color:#1F4DDF; margin-top:10px; font-size:14px;">Content Credited to <a style="color:#1F4DDF; font-weight:bold; text-decoration:none;" href="http://electrical4u.com">electrical4u.com</a> <br/> Online Electrical Engineering Study Site</p><br/><br/>
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br /> 
+</div><div id="footernav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../electrical-engineering-objective-questions-mcq/index.html">MCQ</a></li>
+    <li><a href="../questions/index.html">Theory</a></li>
+    <li><a href="../videos/index.html">Videos</a></li>
+</div>
+
+<!-- BEGIN FOOTER JS INCLUDES -->
+<script type='text/javascript' src='../js/general-footer.js'></script>
+<script type='text/javascript' src='../js/autogrow/jquery.autogrow-textarea.js'></script>
+<script type='text/javascript' src='../js/placeholder-fix.js'></script>
+<script type='text/javascript' src='../js/jquery.scrollTo-min.js'></script>
+<!-- END FOOTER JS INCLUDES -->
+
+</body>
+</html>

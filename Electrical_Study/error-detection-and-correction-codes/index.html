@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>Error Detection and Correction Codes | Electrical Study App by SARU TECH</title>
+
+<link rel="alternate" type="application/rss+xml" title="Electrical Study App by SARU TECH &raquo; Error Detection and Correction Codes Comments Feed" href="http://electricalstudy.sarutech.com/error-detection-and-correction-codes/index.html" />
+
+<link rel='prev' title='Excess 3 Code Addition &amp; Subtraction' href='../excess-3-code-addition-subtraction/' />
+<link rel='next' title='inhibit-gate' href='../inhibit-gate/' />
+<meta name="generator" content="WordPress 3.5.2" />
+
+<!-- All in One SEO Pack 2.0.2 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/111022768648991545451/" />
+<meta name="description" content="The optimum content of this page provides constructive information about Error Detection and Correction Codes." />
+
+<link rel="canonical" href="error-detection-and-correction-codes/index.html" />
+<!-- /all in one seo pack -->
+
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/general-header.js'></script>
+<script type='text/javascript' src='../js/elements.js'></script>
+<script type='text/javascript' src='../js/nav.js'></script>
+<link rel='stylesheet' id='style-css' href='../css/style.css' type='text/css' media='all' />
+<link rel="icon" type="image/png" href="../icon.png" />
+<link rel='stylesheet' id='elements-css' href='../css/elements.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elements-css' href='../css/style2.css' type='text/css' media='all' />
+
+
+<!-- END FONTS + STYLESHEETS + JS INCLUDES -->
+
+</head>
+<body class="page page-id-6818 page-template-default custom-background custom-font-enabled single-author">
+
+	<!-- BEGIN SITE LOGO -->
+<div id="header-bar">
+	
+<div class="site-logo-wrapper">
+
+		<!-- BEGIN LOGO -->
+		<div class="site-logo">
+			<a href="../index.html">
+				ELECTRICAL STUDY APP
+			</a>
+		</div>
+		<!-- END LOGO -->
+
+	</div>
+</div>
+<!-- END SITE LOGO -->
+
+<!-- BEGIN MENU BUTTON -->
+<div class="menu-wrapper">
+	<div class="menu-button"></div>
+</div>
+<!-- END MENU BUTTON -->
+
+<!-- BEGIN MENU INCLUDE -->
+<div id="menu"><!-- BEGIN MENU -->
+
+<!-- END MENU --></div>
+<!-- END MENU INCLUDE -->
+
+<!-- BEGIN MENU CLOSE AREA -->
+<div id="menu-open-overlay"></div>
+<!-- END MENU CLOSE AREA -->
+
+<!-- BEGIN IF MENU OPEN, SHOW BLUE BACKGROUND -->
+<div id="menu-open-background">
+	<div class="menu-open-background"></div>
+</div>
+<!-- END IF MENU OPEN, SHOW BLUE BACKGROUND -->
+
+<div id="sitewrap">
+<div id="content">
+<div class="wrapper-outer">
+<div class="content-wrapper">
+
+
+		<article id="post-6818" class="post-6818 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
+		<header class="entry-header">
+												<h1 class="entry-title" id="topic" itemprop="headline">Error Detection and Correction Codes</h1>
+		</header>
+
+		<div class="entry-content" itemprop="articleBody">
+			
+During discussion of various systems be it analog or digital we have found the term Error almost everywhere. Where there are inputs and a corresponding outputs error is ominous. Similarly in case of digital systems in various cases be it a digital computer or a digital communication set up, error occurrence is a common phenomenon. And for that the first step is to detect the error and after that errors are corrected. The most common cause for errors are that the noise creep into the bit stream during the course of transmission from transmitter to the receiver. And if these errors are not detected and corrected the result could be disastrous as the digital systems are very much sensitive to errors and will malfunction due to the slightest of errors in transmitted codes. There are various methods of <strong>error detection</strong> and correction such as addition of extra bits which are also called check bits, sometimes they are also called redundant bits as they don’t have any information in them. In this article we will discuss about the various codes which are used for <strong>error detection</strong> and correction code in digital system. </p>
+<h2>Parity Code</h2>
+<p>Parity bit is added to the transmitted strings of bits during transmission from transmitters to detect any error in the data when they are received at the receiver end. Basically a parity code is nothing but an extra bit added to the string of data. Now there are two types of parity these are even parity and odd parity. Now we get an even parity when the total numbers of 1's in the string of the data is even after adding that extra bit. Similarly we get an odd parity when after adding that extra bit into the data string the total number of 1's in the data is odd. We can understand it with an example, suppose we have an eight bit ASCII code – 01000001. Now if the added bit is 0 then the number will become 001000001. Here the total number of 1s in the number is even so we get an even parity. Again if we add 1 to the number the number will become 101000001. Here the number of 1s is 3 which is odd so, we have got an odd parity. Normally even parity is used and it has almost become a convention. Now parity checks are capable of detecting a single bit error but it fails if there  are two changes in the data and it is the biggest drawback of this system.  That’s why there are several other codes to detect and correct more than one bit errors. </p>
+<h2>Repetition Code</h2>
+<p>In repetition code a single bit data is considered as a bit string of predetermined value and sent to the receiver, this is capable of detecting more than one data bit error. This can be illustrated with an example suppose the original number is 101. Now during transmission all the numbers are repeated say 3 times, so the final transmitted number is 111000111. So when the number is received 1 bit error and two bit errors can be easily identified like it will be 011, 110 or 101. So it is a better way to detect and correct data but it gets highly inefficient as the number of repeated bits increase. </p>
+<h2>Cyclic Redundancy Check Code</h2>
+<p>Cyclic redundancy check (CRC) codes provide a reasonably high level of protection at low redundancy<br />
+Level. The cycle code for a given data word is generated as follows. At first we have to add certain number zeroes (the numbers are determined by the desired number of bit checks. This new data bit sequence is then divided by a special binary word whose length equals n + 1, n being the number of check bits to be added. The remainder obtained as a result of modulo-2 division is then added to the dividend bit sequence to get the cyclic code. The code word generated after the operation is completely divisible by the divisor which was used in the generation of the code. Thus, when we divide the received code with the same divisor, an error-free reception should lead to an all ‘0’ remainder. A nonzero remainder is indicative of the presence of errors. The probability of error detection depends upon the number of check bits, n, used to construct the cyclic code. It is 100 % for single-bit and two-bit errors. It is also 100 % when an odd number of bits are in error and the error bursts have a length less than n + 1. The probability of detection reduces to 1 – (1/2)<sup>n−1</sup> for an error burst length equal to n + 1, and to 1 – (1/2)<sup>n</sup> for an error burst length greater than n + 1.</p>
+</p>
+
+			
+
+</div>
+		
+</div>
+		<!-- END CONTENT -->
+
+
+<!--
+END EDITING HERE
+-->					
+
+<div id="nextpg" style="font-weight: bold; font-family: sans-serif; position:relative; top:-9px;"></div>				
+<div id="prevpg" style="font-weight: bold; font-family: sans-serif;"></div>
+</div>
+    <br />
+<br />
+    <div style="position:relative; padding:20px; font-family: cursive;" align="center" class="container text-center foot">
+        <p style="color:#1F4DDF; font-size:14px;">Design with <img src="../love.png" /> by <a style="color:#000; font-weight:bold; text-decoration:none;" href="http://sarutech.com"> SARU TECH </a> <br/> www.sarutech.com</p>
+        <p style="color:#1F4DDF; margin-top:10px; font-size:14px;">Content Credited to <a style="color:#1F4DDF; font-weight:bold; text-decoration:none;" href="http://electrical4u.com">electrical4u.com</a> <br/> Online Electrical Engineering Study Site</p><br/><br/>
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br /> 
+</div><div id="footernav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../electrical-engineering-objective-questions-mcq/index.html">MCQ</a></li>
+    <li><a href="../questions/index.html">Theory</a></li>
+    <li><a href="../videos/index.html">Videos</a></li>
+</div>
+
+<!-- BEGIN FOOTER JS INCLUDES -->
+<script type='text/javascript' src='../js/general-footer.js'></script>
+<script type='text/javascript' src='../js/autogrow/jquery.autogrow-textarea.js'></script>
+<script type='text/javascript' src='../js/placeholder-fix.js'></script>
+<script type='text/javascript' src='../js/jquery.scrollTo-min.js'></script>
+<!-- END FOOTER JS INCLUDES -->
+
+</body>
+</html>

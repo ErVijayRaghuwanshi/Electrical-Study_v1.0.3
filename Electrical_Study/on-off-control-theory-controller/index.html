@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title> On Off Control Theory | Controller | Electrical Study App by SARU TECH</title>
+
+<link rel="alternate" type="application/rss+xml" title="Electrical Study App by SARU TECH &raquo; On Off Control Theory | Controller Comments Feed" href="http://electricalstudy.sarutech.com/on-off-control-theory-controller/index.html" />
+
+<link rel='prev' title='Regulated Power Supply' href='../regulated-power-supply/' />
+<link rel='next' title='control-system-closed-loop-open-loop-control-system' href='../control-system-closed-loop-open-loop-control-system/' />
+<meta name="generator" content="WordPress 3.5.2" />
+
+<!-- All in One SEO Pack 2.0.2 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/111022768648991545451/" />
+<meta name="description" content="Sometimes, the control element has only two position either it is fully closed or fully open. This control element does not operate at any intermediate" />
+
+<link rel="canonical" href="on-off-control-theory-controller/index.html" />
+<!-- /all in one seo pack -->
+
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/general-header.js'></script>
+<script type='text/javascript' src='../js/elements.js'></script>
+<script type='text/javascript' src='../js/nav.js'></script>
+<link rel='stylesheet' id='style-css' href='../css/style.css' type='text/css' media='all' />
+<link rel="icon" type="image/png" href="../icon.png" />
+<link rel='stylesheet' id='elements-css' href='../css/elements.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elements-css' href='../css/style2.css' type='text/css' media='all' />
+
+
+<!-- END FONTS + STYLESHEETS + JS INCLUDES -->
+
+</head>
+<body class="page page-id-10301 page-template-default custom-background custom-font-enabled single-author">
+
+	<!-- BEGIN SITE LOGO -->
+<div id="header-bar">
+	
+<div class="site-logo-wrapper">
+
+		<!-- BEGIN LOGO -->
+		<div class="site-logo">
+			<a href="../index.html">
+				ELECTRICAL STUDY APP
+			</a>
+		</div>
+		<!-- END LOGO -->
+
+	</div>
+</div>
+<!-- END SITE LOGO -->
+
+<!-- BEGIN MENU BUTTON -->
+<div class="menu-wrapper">
+	<div class="menu-button"></div>
+</div>
+<!-- END MENU BUTTON -->
+
+<!-- BEGIN MENU INCLUDE -->
+<div id="menu"><!-- BEGIN MENU -->
+
+<!-- END MENU --></div>
+<!-- END MENU INCLUDE -->
+
+<!-- BEGIN MENU CLOSE AREA -->
+<div id="menu-open-overlay"></div>
+<!-- END MENU CLOSE AREA -->
+
+<!-- BEGIN IF MENU OPEN, SHOW BLUE BACKGROUND -->
+<div id="menu-open-background">
+	<div class="menu-open-background"></div>
+</div>
+<!-- END IF MENU OPEN, SHOW BLUE BACKGROUND -->
+
+<div id="sitewrap">
+<div id="content">
+<div class="wrapper-outer">
+<div class="content-wrapper">
+
+
+		<article id="post-10301" class="post-10301 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
+		<header class="entry-header">
+												<h1 class="entry-title" id="topic" itemprop="headline">On Off Control Theory | Controller</h1>
+		</header>
+
+		<div class="entry-content" itemprop="articleBody">
+			
+<br />
+Sometimes, the control element has only two position either it is fully closed or fully open. This control element does not operate at any intermediate position, i.e. partly open or partly closed position. The control system made for controlling such elements, is known as <strong>on off control theory</strong>. In this control system, when process variable changes and crosses certain preset level, the output valve of the system is suddenly fully opened and gives 100% output.</p>
+<p>Generally in on off control system, the output causes change in process variable. Hence due to effect of output, the process variable again starts changing but in reverse direction. During this change, when process variable crosses certain predetermined level, the output valve of the system is immediately closed and output is suddenly reduced to 0%. </p>
+<p>As there is no output, the process variable again starts changing in its normal direction. When it crosses the preset level, the output valve of the system is again fully open to give 100% output. This cycle of closing and opening of output valve continues till the said on-off control system is in operation.</p>
+<p>A very common example of <strong>on-off control theory</strong> is fan controlling scheme of transformer cooling system.</p>
+<p>When transformer runs with such a load, the temperature of the <a href="../electrical-power-transformer-definition-and-types-of-transformer/index.html"  >electrical power transformer</a> rises beyond the preset value at which the cooling fans start rotating with their full capacity.</p>
+<p>As the cooling fans run, the forced air (output of the cooling system) decreases the temperature of the transformer.</p>
+<p>When the temperature (process variable) comes down below a preset value, the control switch of fans trip and fans stop supplying forced air to the transformer. After that, as there is no cooling effect of fans, the temperature of the transformer again starts rising due to load.</p>
+<p>Again when during rising, the temperature crosses the preset value, the fans again start rotating to cool down the transformer.</p>
+<p>Theoretically, we assume that there is no lag in the control equipment. That means, there is no time day for on and off operation of control equipment. With this assumption if we draw series of operations of an ideal on off control system, we will get the graph given below.<br />
+<img src="../images/on-off-control-system-6-2-14.png" alt="on off control system" width="530" height="236" class="aligncenter size-full wp-image-11523" /><br />
+But in practical on off control, there is always a non zero time delay for closing and opening action of <strong>controller</strong> elements.</p>
+<p>This time delay is known as dead time. Because of this time delay the actual response curve differs from the above shown ideal response curve.</p>
+<p>Let us try to draw actual response curve of an on off control system.<br />
+<img src="../images/on-off-control-system-7-2-14.png" alt="on off control system" width="692" height="308" class="aligncenter size-full wp-image-11524" /><br />
+Say at time T <sub> O </sub> the temperature of the transformer starts rising. The measuring instrument of the temperature does not response instantly, as it requires some time delay for heating up and expansion of mercury in temperature sensor bulb say from instant T<sub>1</sub> the pointer of the temperature indicator starts rising. This rising is exponential in nature. Let us at point A, the <strong>controller</strong> system starts actuating for switching on cooling fans and finally after period of T<sub>2</sub> the fans starts delivering force air with its full capacity. Then the temperature of the transformer starts decreasing in exponential manner.</p>
+</p>
+<p>At point B, the controller system starts actuating for switching off the cooling fans and finally after a period of T<sub>3</sub> the fans stop delivering force air. Then the temperature of the transformer again starts rising in same exponential manner.</p>
+<p><span class="Green">N.B.: Here during this operation we have assumed that, loading condition of the <a href="../electric-power-single-and-three-phase/index.html" title="Single and Three Phase Electric Power ">electrical power</a> transformer, ambient temperature and all other conditions of surrounding are fixed and constant.</span></p>
+
+			
+
+</div>
+		
+</div>
+		<!-- END CONTENT -->
+
+
+<!--
+END EDITING HERE
+-->					
+
+<div id="nextpg" style="font-weight: bold; font-family: sans-serif; position:relative; top:-9px;"></div>				
+<div id="prevpg" style="font-weight: bold; font-family: sans-serif;"></div>
+</div>
+    <br />
+<br />
+    <div style="position:relative; padding:20px; font-family: cursive;" align="center" class="container text-center foot">
+        <p style="color:#1F4DDF; font-size:14px;">Design with <img src="../love.png" /> by <a style="color:#000; font-weight:bold; text-decoration:none;" href="http://sarutech.com"> SARU TECH </a> <br/> www.sarutech.com</p>
+        <p style="color:#1F4DDF; margin-top:10px; font-size:14px;">Content Credited to <a style="color:#1F4DDF; font-weight:bold; text-decoration:none;" href="http://electrical4u.com">electrical4u.com</a> <br/> Online Electrical Engineering Study Site</p><br/><br/>
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br /> 
+</div><div id="footernav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../electrical-engineering-objective-questions-mcq/index.html">MCQ</a></li>
+    <li><a href="../questions/index.html">Theory</a></li>
+    <li><a href="../videos/index.html">Videos</a></li>
+</div>
+
+<!-- BEGIN FOOTER JS INCLUDES -->
+<script type='text/javascript' src='../js/general-footer.js'></script>
+<script type='text/javascript' src='../js/autogrow/jquery.autogrow-textarea.js'></script>
+<script type='text/javascript' src='../js/placeholder-fix.js'></script>
+<script type='text/javascript' src='../js/jquery.scrollTo-min.js'></script>
+<!-- END FOOTER JS INCLUDES -->
+
+</body>
+</html>

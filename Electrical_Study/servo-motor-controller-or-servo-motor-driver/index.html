@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>Servo Motor Controller or Servo Motor Driver | Electrical Study App by SARU TECH</title>
+
+<link rel="alternate" type="application/rss+xml" title="Electrical Study App by SARU TECH &raquo; Servo Motor Controller or Servo Motor Driver Comments Feed" href="http://electricalstudy.sarutech.com/servo-motor-controller-or-servo-motor-driver/index.html" />
+
+<link rel='prev' title='dc-servo-motors-theory-and-working-principle' href='../dc-servo-motors-theory-and-working-principle/' />
+<link rel='next' title='servo-motor-applications-in-robotics-solar-tracking-system-etc' href='../servo-motor-applications-in-robotics-solar-tracking-system-etc/' />
+<meta name="generator" content="WordPress 3.5.2" />
+
+<!-- All in One SEO Pack 2.0.2 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/111022768648991545451/" />
+<meta name="description" content="Servo Motor Controller is also called Servo Motor Driver,circuit that is used to control the position of a servo motor. The page speaks about Servo Motor Driver" />
+
+<link rel="canonical" href="servo-motor-controller-or-servo-motor-driver/index.html" />
+<!-- /all in one seo pack -->
+
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/general-header.js'></script>
+<script type='text/javascript' src='../js/elements.js'></script>
+<script type='text/javascript' src='../js/nav.js'></script>
+<link rel='stylesheet' id='style-css' href='../css/style.css' type='text/css' media='all' />
+<link rel="icon" type="image/png" href="../icon.png" />
+<link rel='stylesheet' id='elements-css' href='../css/elements.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elements-css' href='../css/style2.css' type='text/css' media='all' />
+
+
+<!-- END FONTS + STYLESHEETS + JS INCLUDES -->
+
+</head>
+<body class="page page-id-6315 page-template-default custom-background custom-font-enabled single-author">
+
+	<!-- BEGIN SITE LOGO -->
+<div id="header-bar">
+	
+<div class="site-logo-wrapper">
+
+		<!-- BEGIN LOGO -->
+		<div class="site-logo">
+			<a href="../index.html">
+				ELECTRICAL STUDY APP
+			</a>
+		</div>
+		<!-- END LOGO -->
+
+	</div>
+</div>
+<!-- END SITE LOGO -->
+
+<!-- BEGIN MENU BUTTON -->
+<div class="menu-wrapper">
+	<div class="menu-button"></div>
+</div>
+<!-- END MENU BUTTON -->
+
+<!-- BEGIN MENU INCLUDE -->
+<div id="menu"><!-- BEGIN MENU -->
+
+<!-- END MENU --></div>
+<!-- END MENU INCLUDE -->
+
+<!-- BEGIN MENU CLOSE AREA -->
+<div id="menu-open-overlay"></div>
+<!-- END MENU CLOSE AREA -->
+
+<!-- BEGIN IF MENU OPEN, SHOW BLUE BACKGROUND -->
+<div id="menu-open-background">
+	<div class="menu-open-background"></div>
+</div>
+<!-- END IF MENU OPEN, SHOW BLUE BACKGROUND -->
+
+<div id="sitewrap">
+<div id="content">
+<div class="wrapper-outer">
+<div class="content-wrapper">
+
+
+		<article id="post-6315" class="post-6315 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
+		<header class="entry-header">
+												<h1 class="entry-title" id="topic" itemprop="headline">Servo Motor Controller or Servo Motor Driver</h1>
+		</header>
+
+		<div class="entry-content" itemprop="articleBody">
+			
+
+<div id="top" class="pageIndex">
+<a href="#Micro-controller">Micro-controller</a><br />
+<a href="#Power-Supply">Power Supply</a><br />
+<a href="#Controlling-Servo-Motor">Controlling Servo Motor</a><br />
+<a href="#Program-Algorithm">Program Algorithm</a>
+</div>
+<p>A <strong>servo motor controller</strong> is a circuit that is used to control the position of a <a href="../servo-motor-servo-mechanism-theory-and-working-principle/index.html"  >servo motor</a>. It is also called as a <strong>servo motor driver</strong>. A <strong>servo motor controller</strong> consists of a controller, the <a href="../servo-motor-servo-mechanism-theory-and-working-principle/index.html"  >servo motor</a> and the power supply unit.</p>
+<p><strong>Servo motor driver</strong> may be used to control a single servo or even a group of <a href="../servo-motor-servo-mechanism-theory-and-working-principle/index.html"  >servo motors</a>. In many projects where servo motor controlling is the mainstay of the task to be accomplished, the controller must drive more than one servo. An example of this is an RC airplane, which uses many servos.</p>
+<p>Essential components<br />
+1)	A micro-controller<br />
+2)	A power supply unit</p>
+<p>Miscellaneous components<br />
+1)	A <a href="../potentiometer-working-principle-of-potentiometer/index.html" title="Working Principle of Potentiometer">potentiometer</a><br />
+2)	Connectors, wires etc.</p>
+<h3 id="Micro-controller">Micro-controller</h3>
+<p>A <a href="../servo-motor-servo-mechanism-theory-and-working-principle/index.html"  >servo motor</a> is driven by applying the <a href="../voltage-or-electric-potential-difference/index.html" title="Voltage or Electric Potential Difference">voltage</a> signal to it regular intervals. The servo is sensitive to timing variations. A pulse of specific width has to be applied at specific intervals of time. Typically, the duration of pulse varies from 0ms to 2.2ms and the repetition rate is 50Hz to 60Hz. For precise position control, the controller that is chosen must have timers that have the required resolution. Also, if more than one motor has to be controlled simultaneously, the processor clock must be fast enough. For a single motor control, an 8051 can be used like a AT89s51 or a P89v51RD2. But for more than one motor, we must use a PIC, like a PIC18F or a ATMEGA, so that it’s internal PWM can be utilized. However, the selection of micro-controller depends totally on the designer and the project requirements.</p>
+<h3 id="Power-Supply">Power Supply</h3>
+<p>The design of the power supply unit servo motor controller depends on the number of <a href="../servo-motor-servo-mechanism-theory-and-working-principle/index.html"  >servo motors</a> that are interfaced to the board. Servo motors operate from 4.8V to a 6V supply voltage. The typical value is 5v. Applying voltages greater than the supply <a href="../voltage-or-electric-potential-difference/index.html" title="Voltage or Electric Potential Difference">voltage</a> is not advisable as it may render the motor permanently useless. The electric current</a> draw of the motor is variable and depends on the torque that it generates. Also it will draw less  <a href="../electric-current-and-theory-of-electricity/index.html" title="Electric Current">electric current</a>  when in idle mode and more  <a href="../electric-current-and-theory-of-electricity/index.html" title="Electric Current">electric current</a>  when it is running. A servo motors maximum  <a href="../electric-current-and-theory-of-electricity/index.html" title="Electric Current">electric current</a>  draw is given as its stall current. This is the maximum  <a href="../electric-current-and-theory-of-electricity/index.html" title="Electric Current">electric current</a>  it will draw when running with the maximum torque before it stops due to overload. This  <a href="../electric-current-and-theory-of-electricity/index.html" title="Electric Current">electric current</a>  value can be as high as 1 A for some motors.</p>
+</p>
+<p>For a single motor control a <a href="../voltage-or-electric-potential-difference/index.html" title="Voltage or Electric Potential Difference">voltage</a> regulator like a LM317 can be used along with a suitable heat sink. But when multiple motors need to be interfaced, a high quality supply with higher  <a href="../electric-current-and-theory-of-electricity/index.html" title="Electric Current">electric current</a>  rating must be used. A SMPS (Switched mode power supply) can be a good option.</p>
+<p>Block Diagram below showing interconnections in a Servo Motor Driver</p>
+<p><a href="../servo-motor-controller/servo-motor-controller/index.html" rel="attachment wp-att-6316"><img src="../wp-content/uploads/2013/07/servo-motor-controller.jpg" alt="Servo Motor Controller" width="715" height="445" class="aligncenter size-full wp-image-6316" /></a>		       	</p>
+<h2 id="Controlling-Servo-Motor">Controlling Servo Motor</h2>
+<p>The servo motor has three terminals.</p>
+<p>1)	Position signal(PWM Pulses)<br />
+2)	V<sub>cc</sub> (From Power Supply)<br />
+3)	Ground</p>
+<div id="attachment_6329" class="wp-caption aligncenter" style="width: 695px"><a href="../servo-motor-controller-or-servo-motor-driver/servo-motor-connector/index.html" rel="attachment wp-att-6329"><img src="../wp-content/uploads/2013/07/servo-motor-connector.jpg" alt="servo motor connector" width="685" height="185" class="size-full wp-image-6329" /></a><p class="wp-caption-text">Servo Motor Connectors</p></div>
+<p>The servo motor angular position is controlled by applying PWM pulses of specific width. The duration of pulse varies from about 0.5 ms for 0 degree rotation to 2.2 ms for 180 degree rotation. The pulses need to be given at frequencies of about 50Hz to 60Hz.</p>
+<p>In order to generate the PWM (Pulse Width Modulation) waveform, as shown in figure below, one can use either the internal PWM module of the micro-controller or the timers can be used. Using the PWM block is more flexible as most micro-controller families design the blocks to suit the needs of application like Servo motor. For different widths of PWM pulses, we need to program the internal registers accordingly. </p>
+<p>Now, we also need to tell the microcontroller how much it has to rotate. For this purpose, we can use a simple <a href="../potentiometer-working-principle-of-potentiometer/index.html" title="Working Principle of Potentiometer">potentiometer</a>  and use an ADC to get the rotation angle or for more complex applications an accelerometer can be used.</p>
+<p><a href="../servo-motor-controller/pwm-pulses-for-servo-motor/index.html" rel="attachment wp-att-6319"><img src="../wp-content/uploads/2013/07/PWM-pulses-for-servo-motor.jpg" alt="PWM pulses for Servo Motor" width="470" height="405" class="aligncenter size-full wp-image-6319" /></a></p>
+<h4 id="Program-Algorithm">Program Algorithm</h4>
+<p>Let us design the Program to control a single servo and the position input is given via the <a href="../potentiometer-working-principle-of-potentiometer/index.html" title="Working Principle of Potentiometer">potentiometer</a>  connected to a pin of controller.</p>
+<p>1)	Initialize the port pins for input/output.</p>
+<p>2)	Read the ADC for desired servo position.</p>
+<p>3)	Program the PWM registers for the desired value.</p>
+<p>As soon as you trigger the PWM module, the selected PWM channel pin goes high (logic 1) and after the required width is reached, it will again go low (logic 0). So after triggering the PWM, you must start a timer with a delay of about 19 ms and wait until the timer overflows</p>
+<p>4)	Go to step 2</p>
+<p>There are various modes of PWM available which you can use depending on the microcontroller you choose. Some degree of optimization should be done in the code to control the servo.</p>
+<p>If you plan to use more than one servo than you will require as many PWM channels. Each servo can be given the PWM signal sequentially. But you must take care that the pulse repetition rate for each servo is maintained. Otherwise the servo will run out of synchronization.</p>
+<p>Note<span class="Green"><br />
+If you plan on making your own board for the servo motor controller, give proper thickness for tracks carrying the  <a href="../electric-current-and-theory-of-electricity/index.html" title="Electric Current">electric current</a>  to the servo. Proper ERC and DRC rule check must be followed. The PWM signals for a continuous rotation servo are not same as that of a 180 degree servo. The servo datasheet should be consulted for such motors.</span></p>
+<p><span class="Green">A servo motor is critical to <a href="../voltage-or-electric-potential-difference/index.html" title="Voltage or Electric Potential Difference">voltage</a> fluctuations and too high <a href="../voltage-or-electric-potential-difference/index.html" title="Voltage or Electric Potential Difference">voltage</a> may damage the internal feedback control circuit. So the power supply must be thoroughly designed to the servo specifications and checked before deployment. Heat sink must be used if necessary.</span>    </p>
+			
+
+</div>
+		
+</div>
+		<!-- END CONTENT -->
+
+
+<!--
+END EDITING HERE
+-->					
+
+<div id="nextpg" style="font-weight: bold; font-family: sans-serif; position:relative; top:-9px;"></div>				
+<div id="prevpg" style="font-weight: bold; font-family: sans-serif;"></div>
+</div>
+    <br />
+<br />
+    <div style="position:relative; padding:20px; font-family: cursive;" align="center" class="container text-center foot">
+        <p style="color:#1F4DDF; font-size:14px;">Design with <img src="../love.png" /> by <a style="color:#000; font-weight:bold; text-decoration:none;" href="http://sarutech.com"> SARU TECH </a> <br/> www.sarutech.com</p>
+        <p style="color:#1F4DDF; margin-top:10px; font-size:14px;">Content Credited to <a style="color:#1F4DDF; font-weight:bold; text-decoration:none;" href="http://electrical4u.com">electrical4u.com</a> <br/> Online Electrical Engineering Study Site</p><br/><br/>
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br /> 
+</div><div id="footernav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../electrical-engineering-objective-questions-mcq/index.html">MCQ</a></li>
+    <li><a href="../questions/index.html">Theory</a></li>
+    <li><a href="../videos/index.html">Videos</a></li>
+</div>
+
+<!-- BEGIN FOOTER JS INCLUDES -->
+<script type='text/javascript' src='../js/general-footer.js'></script>
+<script type='text/javascript' src='../js/autogrow/jquery.autogrow-textarea.js'></script>
+<script type='text/javascript' src='../js/placeholder-fix.js'></script>
+<script type='text/javascript' src='../js/jquery.scrollTo-min.js'></script>
+<!-- END FOOTER JS INCLUDES -->
+
+</body>
+</html>

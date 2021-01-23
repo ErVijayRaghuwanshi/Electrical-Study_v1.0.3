@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>Nyquist Plot | Electrical Study App by SARU TECH</title>
+
+<link rel="alternate" type="application/rss+xml" title="Electrical Study App by SARU TECH &raquo; Nyquist Plot Comments Feed" href="http://electricalstudy.sarutech.com/nyquist-plot/index.html" />
+
+<link rel='prev' title='Transfer Function' href='../transfer-function/' />
+<link rel='next' title='DC Servo Motors | Theory of DC Servo Motor' href='../dc-servo-motors-theory-and-working-principle/' />
+<meta name="generator" content="WordPress 3.5.2" />
+
+<!-- All in One SEO Pack 2.0.2 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/111022768648991545451/" />
+<meta name="description" content="Relative stability of a system can be determined by using frequency response methods like Nyquist Plot and Bode plot. The page provides details on Nyquist Plot" />
+
+<link rel="canonical" href="nyquist-plot/index.html" />
+<!-- /all in one seo pack -->
+
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/general-header.js'></script>
+<script type='text/javascript' src='../js/elements.js'></script>
+<script type='text/javascript' src='../js/nav.js'></script>
+<link rel='stylesheet' id='style-css' href='../css/style.css' type='text/css' media='all' />
+<link rel="icon" type="image/png" href="../icon.png" />
+<link rel='stylesheet' id='elements-css' href='../css/elements.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elements-css' href='../css/style2.css' type='text/css' media='all' />
+
+
+<!-- END FONTS + STYLESHEETS + JS INCLUDES -->
+
+</head>
+<body class="page page-id-7212 page-template-default custom-background custom-font-enabled single-author">
+
+	<!-- BEGIN SITE LOGO -->
+<div id="header-bar">
+	
+<div class="site-logo-wrapper">
+
+		<!-- BEGIN LOGO -->
+		<div class="site-logo">
+			<a href="../index.html">
+				ELECTRICAL STUDY APP
+			</a>
+		</div>
+		<!-- END LOGO -->
+
+	</div>
+</div>
+<!-- END SITE LOGO -->
+
+<!-- BEGIN MENU BUTTON -->
+<div class="menu-wrapper">
+	<div class="menu-button"></div>
+</div>
+<!-- END MENU BUTTON -->
+
+<!-- BEGIN MENU INCLUDE -->
+<div id="menu"><!-- BEGIN MENU -->
+
+<!-- END MENU --></div>
+<!-- END MENU INCLUDE -->
+
+<!-- BEGIN MENU CLOSE AREA -->
+<div id="menu-open-overlay"></div>
+<!-- END MENU CLOSE AREA -->
+
+<!-- BEGIN IF MENU OPEN, SHOW BLUE BACKGROUND -->
+<div id="menu-open-background">
+	<div class="menu-open-background"></div>
+</div>
+<!-- END IF MENU OPEN, SHOW BLUE BACKGROUND -->
+
+<div id="sitewrap">
+<div id="content">
+<div class="wrapper-outer">
+<div class="content-wrapper">
+
+
+		<article id="post-7212" class="post-7212 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
+		<header class="entry-header">
+												<h1 class="entry-title" id="topic" itemprop="headline">Nyquist Plot</h1>
+		</header>
+
+		<div class="entry-content" itemprop="articleBody">
+			
+<p>The stability analysis of a feedback control system is based on identifying the location of the roots of the characteristic equation on s-plane. The system is stable if the roots lie on left hand side of s-plane. Relative stability of a system can be determined by using frequency response methods like <strong>Nyquist plot</strong> and Bode plot. Nyquist criterion is used to identify the presence of roots of a characteristic equation in a specified region of s-plane. To understand <strong>Nyquist plot</strong> we need to know about some of the terminologies . </p>
+<p>Contour : Closed path in a complex plane is called contour</p>
+<h2>Nyquist  path or Nyquist contour</h2>
+<p>The <strong>Nyquist contour</strong> is a closed contour in the s-plane which completely encloses the entire right hand half of s-plane. In order to enclose the complete RHS of s-plane a large semicircle path is drawn with diameter along j&omega; axis and centre at origin. The radius of the semicircle is treated as infinity.</p>
+<h2>Nyquist Encirclement</h2>
+<p>A point is said to be encircled by a contour if it is found inside the contour.</p>
+<h2>Nyquist  Mapping</h2>
+<p>The process by which a point in s-plane transformed into a point in F(s) plane is called mapping and F(s) is called mapping function.</p>
+<h3>Steps of drawing the Nyquist path</h3>
+<p>•	Step 1 - Check for the poles of G(s) H(s) of j&omega; axis including that at origin.</p>
+<p>•	Step 2 – Select the proper <strong>Nyquist contour</strong> – a) Include the entire right half of s-plane by drawing a semicircle of radius R with R tends to infinity.</p>
+<p>•	Step 3 – Identify the various segments on the contour with reference to <strong>Nyquist path</strong></p>
+<p>•	Step 4 – Perform the mapping segment by segment substituting the equation for respective segment in the mapping function. Basically we have to sketch the polar plots of the respective segment.</p>
+<p>•	Step 5 - Mapping of the segments are usually mirror images of mapping of respective path of +ve imaginary axis.</p>
+<p>•	Step 6 - The semicircular path which covers the right half of s plane generally maps into a point in G(s) H(s) plane.</p>
+<p>•	Step 7- Interconnect all the mapping of different segments to yield the required <strong>Nyquist diagram</strong>.</p>
+<p>•	Step 8 – Note the number of clockwise encirclement about (-1, 0) and decide stability by N = Z – P</p>
+<p><img src='1.png' id="latexG%28s%29%20H%28s%29%5C%3B%20%20%3D%5C%3B%5Cfrac%7B%20N%28s%29%7D%7BD%28s%29%7D&amp;bg=DDDDDD&#038;fg=000000&#038;s=1" title='G(s) H(s)\;  =\;\frac{ N(s)}{D(s)}' style='vertical-align:1%' class='tex' alt='G(s) H(s)\;  =\;\frac{ N(s)}{D(s)}' /><br />
+is the Open loop transfer function (O.L.T.F)<br />
+<img src='2.png' id="latex%5Cfrac%7BG%28s%29%20%7D%7B%201%5C%3B%2B%5C%3B%20G%28s%29%20H%28s%29%7D&amp;bg=DDDDDD&#038;fg=000000&#038;s=1" title='\frac{G(s) }{ 1\;+\; G(s) H(s)}' style='vertical-align:1%' class='tex' alt='\frac{G(s) }{ 1\;+\; G(s) H(s)}' /><br />
+is the Closed loop transfer function (C.L.T.F)</p>
+<p>N(s) = 0 is the open loop zero and D(s) is the open loop pole </p>
+</p>
+<p>From stability point of view no closed loop poles should lie in the RH side  of s-plane . Characteristics equation 1 + G(s) H(s) = 0 denotes closed loop poles .</p>
+<p><img src='3.png' id="latexLet%2C%5C%3B%20q%28s%29%5C%3B%20%3D%5C%3B%201%5C%3B%20%2B%5C%3B%20G%28s%29H%28s%29%5C%3B%20%3D%5C%3B%5Cfrac%7B%20N_1%28s%29%7D%7BD_1%28s%29%7D&amp;bg=DDDDDD&#038;fg=000000&#038;s=1" title='Let,\; q(s)\; =\; 1\; +\; G(s)H(s)\; =\;\frac{ N_1(s)}{D_1(s)}' style='vertical-align:1%' class='tex' alt='Let,\; q(s)\; =\; 1\; +\; G(s)H(s)\; =\;\frac{ N_1(s)}{D_1(s)}' /><br />
+Now as 1+ G(s) H(s) = 0  hence q(s) should also be zero.<br />
+<img src='4.png' id="latexIf%2C%5C%3B%20%20q%28s%29%5C%3B%20%3D%20%5C%3B0%2C%5C%3B%5Cfrac%7B%20N_1%28s%29%7D%7BD_1%28s%29%7D%5C%3B%20%3D%5C%3B%200%5C%3B%20i.e.%5C%3B%20%20N_1%28s%29%5C%3B%20%3D%5C%3B%200&amp;bg=DDDDDD&#038;fg=000000&#038;s=1" title='If,\;  q(s)\; = \;0,\;\frac{ N_1(s)}{D_1(s)}\; =\; 0\; i.e.\;  N_1(s)\; =\; 0' style='vertical-align:1%' class='tex' alt='If,\;  q(s)\; = \;0,\;\frac{ N_1(s)}{D_1(s)}\; =\; 0\; i.e.\;  N_1(s)\; =\; 0' /><br />
+Therefore , from the stability point of view zeroes of q(s) should not lie in RHP of s-plane.<br />
+To define the stability entire RHP (Right Hand Plane) is considered. We assume a semicircle which encloses all points in the RHP by considering the radius of the semicircle R tends to infinity. [R &rarr; &infin;].<br />
+The first step to understand the application of <strong>Nyquist criterion</strong> in relation to determination of stability of control systems is mapping from s-plane to G(s) H(s) - plane.  s  is considered as independent complex variable and corresponding value of G(s) H(s) being the dependent variable plotted in another complex plane called G(s) H(s) - plane. Thus for every point in s-plane there exists a corresponding point in  G(s) H(s) - plane. During the process of mapping the independent variable s is varied along a specified path in s - plane and the corresponding points in G(s)H(s) plane are joined. This completes the process of mapping from s-plane to G(s)H(s) - plane. </p>
+<p><strong>Nyquist stability criterion</strong> says that  N = Z - P  where  N is the total no. of encirclement about the origin, P is the total no. of poles and Z is the total no. of zeroes .</p>
+<p>Case 1:- N = 0 (no encirclement), so  Z = P = 0  &#038;  Z = P<br />
+If  N = 0, P must be zero therefore system is stable.</p>
+<p>Case 2:-  N > 0 (clockwise encirclement), so P = 0 ,  Z &ne;0 &#038;  Z > P<br />
+For both cases system is unstable.</p>
+<p>Case 3 :-  N < 0 (counterclockwise encirclement), so  Z = 0, P &ne;0  &#038;  P > Z<br />
+System is stable.</p>
+
+			
+
+</div>
+		
+</div>
+		<!-- END CONTENT -->
+
+
+<!--
+END EDITING HERE
+-->					
+
+<div id="nextpg" style="font-weight: bold; font-family: sans-serif; position:relative; top:-9px;"></div>				
+<div id="prevpg" style="font-weight: bold; font-family: sans-serif;"></div>
+</div>
+    <br />
+<br />
+    <div style="position:relative; padding:20px; font-family: cursive;" align="center" class="container text-center foot">
+        <p style="color:#1F4DDF; font-size:14px;">Design with <img src="../love.png" /> by <a style="color:#000; font-weight:bold; text-decoration:none;" href="http://sarutech.com"> SARU TECH </a> <br/> www.sarutech.com</p>
+        <p style="color:#1F4DDF; margin-top:10px; font-size:14px;">Content Credited to <a style="color:#1F4DDF; font-weight:bold; text-decoration:none;" href="http://electrical4u.com">electrical4u.com</a> <br/> Online Electrical Engineering Study Site</p><br/><br/>
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br /> 
+</div><div id="footernav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../electrical-engineering-objective-questions-mcq/index.html">MCQ</a></li>
+    <li><a href="../questions/index.html">Theory</a></li>
+    <li><a href="../videos/index.html">Videos</a></li>
+</div>
+
+<!-- BEGIN FOOTER JS INCLUDES -->
+<script type='text/javascript' src='../js/general-footer.js'></script>
+<script type='text/javascript' src='../js/autogrow/jquery.autogrow-textarea.js'></script>
+<script type='text/javascript' src='../js/placeholder-fix.js'></script>
+<script type='text/javascript' src='../js/jquery.scrollTo-min.js'></script>
+<!-- END FOOTER JS INCLUDES -->
+
+</body>
+</html>

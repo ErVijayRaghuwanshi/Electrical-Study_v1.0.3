@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>Non Linearities Describing Function Method in Control System | Saturation Backlash Dead Zone | Electrical Study App by SARU TECH</title>
+
+<link rel="alternate" type="application/rss+xml" title="Electrical Study App by SARU TECH &raquo; Non Linearities Describing Function Method in Control System | Saturation Backlash Dead Zone Comments Feed" href="http://electricalstudy.sarutech.com/different-types-non-linearities-in-control-system/index.html" />
+
+<link rel='prev' title='Rating of SCR or Thyristor' href='../rating-of-scr-or-thyristor/' />
+<link rel='next' title='digital-data-control-system' href='../digital-data-control-system/' />
+<meta name="generator" content="WordPress 3.5.2" />
+
+<!-- All in One SEO Pack 2.0.2 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/111022768648991545451/" />
+<meta name="description" content="Common Non Linearities Describing Function Method of Non Linear Control System Describing Function for Saturation Non Linearity &bull; Ideal Relay &bull;" />
+
+<link rel="canonical" href="different-types-non-linearities-in-control-system/index.html" />
+<!-- /all in one seo pack -->
+
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/general-header.js'></script>
+<script type='text/javascript' src='../js/elements.js'></script>
+<script type='text/javascript' src='../js/nav.js'></script>
+<link rel='stylesheet' id='style-css' href='../css/style.css' type='text/css' media='all' />
+<link rel="icon" type="image/png" href="../icon.png" />
+<link rel='stylesheet' id='elements-css' href='../css/elements.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elements-css' href='../css/style2.css' type='text/css' media='all' />
+
+
+<!-- END FONTS + STYLESHEETS + JS INCLUDES -->
+
+</head>
+<body class="page page-id-15668 page-template-default custom-background custom-font-enabled single-author">
+
+	<!-- BEGIN SITE LOGO -->
+<div id="header-bar">
+	
+<div class="site-logo-wrapper">
+
+		<!-- BEGIN LOGO -->
+		<div class="site-logo">
+			<a href="../index.html">
+				ELECTRICAL STUDY APP
+			</a>
+		</div>
+		<!-- END LOGO -->
+
+	</div>
+</div>
+<!-- END SITE LOGO -->
+
+<!-- BEGIN MENU BUTTON -->
+<div class="menu-wrapper">
+	<div class="menu-button"></div>
+</div>
+<!-- END MENU BUTTON -->
+
+<!-- BEGIN MENU INCLUDE -->
+<div id="menu"><!-- BEGIN MENU -->
+
+<!-- END MENU --></div>
+<!-- END MENU INCLUDE -->
+
+<!-- BEGIN MENU CLOSE AREA -->
+<div id="menu-open-overlay"></div>
+<!-- END MENU CLOSE AREA -->
+
+<!-- BEGIN IF MENU OPEN, SHOW BLUE BACKGROUND -->
+<div id="menu-open-background">
+	<div class="menu-open-background"></div>
+</div>
+<!-- END IF MENU OPEN, SHOW BLUE BACKGROUND -->
+
+<div id="sitewrap">
+<div id="content">
+<div class="wrapper-outer">
+<div class="content-wrapper">
+
+
+		<article id="post-15668" class="post-15668 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
+		<header class="entry-header">
+												<h1 class="entry-title" id="topic" itemprop="headline">Non Linearities Describing Function Method in Control System | Saturation Backlash Dead Zone</h1>
+		</header>
+
+		<div class="entry-content" itemprop="articleBody">
+			
+
+<div id="top" class="pageIndex">
+<a href="#Common-Non-Linearities">Common Non Linearities</a><br />
+<a href="#Describing-Function-Method-of-Non-Linear-Control-System">Describing Function Method of Non Linear Control System</a><br />
+<a href="#Describing-Function-for-Saturation-Non-Linearity">Describing Function for Saturation Non Linearity</a><br />
+<a href="#Describing-Function-for-Ideal-Relay"> &bull; Ideal Relay</a><br />
+<a href="#Describing-Function-for-Real-Relay-(Relay-with-Dead-Zone)">&bull;  Real Relay (Relay with Dead Zone)</a><br />
+<a href="#Describing-Function-for-Backlash-Non-Linearity">&bull;  Backlash Non Linearity</a>
+</div>
+<p>Let us recall the basic definition of linear system. Linear systems are those where principle of superposition ( if the two inputs are applied simultaneously, then output will be the sum of two outputs) is applicable but in case of highly non linear system we cannot apply principle of superposition. Analysis of different non linear system is very difficult because of non linear behavior. Also we cannot use pole zero method in order to analyse non linear systems because pole zero method is strictly restricted to linear systems. Instead of these disadvantages, there are some advantages of having non linear systems and they are written below:</p>
+<ol>
+<li>Non linear systems can perform better than the linear systems.</li>
+<li>Non linear systems are less costly than the linear systems.</li>
+<li>They are usually small and compact in size as compared to linear system.</li>
+</ol>
+<p>In practice, all physical systems have some kind of non linearity. Sometimes it may even be desirable to introduce a non linearity deliberately in order to improve the performance of a system and making its operation safer. At it result, the system is more economical than linear system. One of the simplest examples of a system with an intentionally introduced non linearity is a relay controlled or ON/OFF system. For instance, in a typical home heating system, a furnace is turned ON when the temperature falls below a certain specified value and OFF when the temperature exceeds another given value.</p>
+<p>Here we are going to discuss two different types of analysis or method for analyzing the non linear systems. The two methods are written below and briefly discussed with the help of example.</p>
+<ol>
+<li><strong>Describing function method in control system</strong></li>
+<li>Phase plane method in control system</li>
+</ol>
+<h3 id="Common-Non-Linearities">Common Non Linearities</h3>
+<p>In most control systems we can not avoid the presence of certain types of <strong>non linearities in control system</strong>. These can be classified as static or dynamic. A system for which there is a nonlinear relationship between input and output, that does not involve a differential equation is called a static non linearity. On the other hand, the input and output may be related through a non linear differential equation. Such a system is called a dynamic non linearity.<br />
+Now we are going to discuss various types of <strong>non linearities in control system</strong>:</p>
+<ol>
+<li><strong>Saturation non linerities</strong></li>
+<li>Friction non linerities</li>
+<li><strong>Dead zone non linerities</strong></li>
+<li>Relay (ON/OFF controller) non linerities</li>
+<li><strong>Backlash non linerities</strong></li>
+</ol>
+<h4><span class="Green">Saturation Non Linearities</span></h4>
+<p>We have seen this type of non linearity many times. For example we have seen saturation in the magnetizing curve of DC motor. In order to understand this type of non linearity let us discuss saturation curve or magnetizing curve which is given below:<br />
+<div id="attachment_15678" class="wp-caption aligncenter" style="width: 548px"><img src="../images/saturation-non-linearity1.gif" alt="saturation non linearity" width="538" height="270" class="size-full wp-image-15678" /><p class="wp-caption-text">Saturation Non Linearity</p></div><br />
+From the above curve we can see that the output showing linear behavior in the beginning but after that there is a saturation in the curve which one kind of non linearity in the system. We have also shown approximated curve.</p>
+</p>
+<p>Same type of <strong>saturation non linearity</strong> also we can see in an amplifier for which the output is proportional to the input only for a limited range of values of input. When the input exceeds this range, the output tends to become non linearity. </p>
+<h4><span class="Green">Non Linear Friction</span></h4>
+<p> Anything which opposes the relative motion of the body is called friction. It is a kind of non linearity present in the system. The common example in an electric motor in which we find coulomb friction drag due to the rubbing contact between the brushes and the commutator.<br />
+<div id="attachment_15820" class="wp-caption aligncenter" style="width: 598px"><img src="../images/Nonlinear-Friction.gif" alt="non linear friction" width="588" height="248" class="size-full wp-image-15820" /><p class="wp-caption-text">Non Linear Friction</p></div><br />
+Friction may be of three types and they are written below:</p>
+<ol style="list-style-type: upper-roman;">
+<li><span class="Green">Static friction:</span> In simple words, the static friction acts on the body when the body is at rest.</li>
+<li><span class="Green">Dynamic friction :</span> Dynamic friction acts on the body when there is a relative motion between the surface and the body.</li>
+<li><span class="Green">Limiting friction:</span> It is defined as the maximum value of limiting friction that acts on the body when it is at rest.
+<p>Dynamic friction can also be classified as (a) Sliding friction (b) Rolling friction. Sliding friction acts when two bodies slides over each other while rolling acts when the bodies rolls over another body.</p>
+<p>In mechanical system we have two types of friction namely (a) Viscous friction (b) Static friction.</li>
+</ol>
+<h4><span class="Green">Dead Zone Non Linearities</span></h4>
+<p> This type of non linearity is shown by various electrical devices like motors, dc servomotors, actuators etc. <strong>Dead zone non linearities</strong> refer to a condition in which output becomes zero when the input crosses certain limiting value.<br />
+<div id="attachment_15819" class="wp-caption aligncenter" style="width: 401px"><img src="../images/Dead-Zone-Non-Linearity.gif" alt="dead zone non linearity" width="391" height="267" class="size-full wp-image-15819" /><p class="wp-caption-text">Dead Zone Non Linearity</p></div></p>
+<h4><span class="Green">Relays ( ON/OFF Controller ) Non Linearities</span></h4>
+<p>Electromechanical relays are frequently used in control systems where the control strategy requires control signal with only two or three states. This is also called as ON / OFF controller or two state controller. <div id="attachment_15821" class="wp-caption aligncenter" style="width: 561px"><img src="../images/Relay.gif" alt="non linearity of relay" width="551" height="372" class="size-full wp-image-15821" /><p class="wp-caption-text">Relay Non Linearity (a) ON/OFF (b) ON/OFF with Hysteresis (c) ON/OFF with Dead Zone</p></div>Fig (a) shows the ideal characteristics of a bidirectional relay. In practice relay will not respond instantaneously. For input currents between the two switching instants, the relay may be in one position or other depending upon the previous history of the input. This characteristic is called ON / OFF with hysteresis that shows in  Fig (b). A relay also has a definite amount of dead zone in practice that show in Fig (c). The dead zone is caused by the fact that the relay field winding requires a finite amount of current to move the armature.</p>
+<h4> <span class="Green">Backlash Non Linearities</span></h4>
+<p>Another important non linearity commonly occurring in physical system is hysteresis in mechanical transmission such as gear trains and linkages. This non linearity is somewhat different from magnetic hysteresis and is commonly reffered to as <strong>backlash non linearities</strong>. Backlash in fact is the play between the teeth of the drive gear and those of the driven gear. Consider a gear box as shown in below figure (a) having backlash as illustrated in fig (b).<br />
+<div id="attachment_15832" class="wp-caption aligncenter" style="width: 596px"><img src="../images/Backlash.gif" alt="backlash non linearity" width="586" height="367" class="size-full wp-image-15832" /><p class="wp-caption-text">Backlash Non Linearity</p></div><br />
+Fig (b) shows the teeth A of the driven gear located midway between the teeth B<sub>1</sub>, B<sub>2</sub> of the driven gear. Fig (c) gives the relationship between input and output motions. As the teeth A is driven clockwise from this position, no output motion takes place until the tooth A makes contact with the tooth B<sub>1</sub> of the driven gear after travelling a distance x/2. This output motion corresponds to the segment mn of fig (c). After the contact is made the driven gear rotates counter clockwise through the same angle as the drive gear, if the gear ratio is assumed to be unity. This is illustrated by the line segment no. As the input motion is reversed, the contact between the teeth A and B<sub>1</sub> is lost and the driven gear immediately becomes stationary based on the assumption that the load is friction controlled with negligible inertia.</p>
+<p>The output motion therefore causes till tooth A has travelled a distance x in the reverse direction as shown in fig (c) by the segment op. After the tooth A establishes contact with the tooth B<sub>2</sub>, the driven gear now mores in clockwise direction as shown by segment pq. As the input motion is reversed the direction gear is again at standstill for the segment qr and then follows the drive gear along rn.</p>
+<h2 id="Describing-Function-Method-of-Non-Linear-Control-System">Describing Function Method of Non Linear Control System</h2>
+<p>The <strong>describing function method in control system</strong> was invented by Nikolay Mitrofanovich Kryloy and Nikolay Bogoliubov in year of 1930 and later it developed by Ralph Kochenburger.</p>
+<p><strong>Describing function method</strong> is used for finding out the stability of a non linear system. Of all the analytical methods developed over the years for non linear control systems, this method is generally agreed upon as being the most practically useful. This method is basically an approximate extension of frequency response methods including Nyquist stability criterion to non linear system.</p>
+<p>The <strong>describing function method</strong> of a non linear system is defined to be the complex ratio of amplitudes and phase angle between fundamental harmonic components of output to input sinusoid. We can also called sinusoidal describing function. Mathematically,<br />
+<center><img src="../equations/controlsystem/df-18-06-14-01.gif" alt=""></center><br />
+Where, N = describing function,</p>
+<p>X = amplitude of input sinusoid,</p>
+<p>Y = amplitude of fundamental harmonic component of output,</p>
+<p>&phi;<sub>1</sub> = phase shift of the fundamental harmonic component of output.</p>
+<p>Let us discuss the basic concept of describing function of non linear control system. </p>
+<p>Let us consider the below block diagram of a non linear system, where G<sub>1</sub>(s) and G<sub>2</sub>(s) represent the linear element and N represent the non linear element.<br />
+<div id="attachment_15834" class="wp-caption aligncenter" style="width: 529px"><img src="../images/Non-linear-system.gif" alt="block diagram of non linear system" width="519" height="200" class="size-full wp-image-15834" /><p class="wp-caption-text">A Non Linear System</p></div><br />
+Let us assume that input x to the non linear element is sinusoidal, i.e,<br />
+<center><img src="../equations/controlsystem/df-18-06-14-02.gif" alt=""></center><br />
+For this input, the output y of the non linear element will be a non sinusoidal periodic function that may be expressed in terms of Fourier series as<br />
+<center><img src="../equations/controlsystem/df-18-06-14-03.gif" alt=""></center><br />
+Most of non linearities are odd symmetrical or odd half wave symmetrical; the mean value Y<sub>0</sub> for all such case is zero and therefore output will be,<br />
+<center><img src="../equations/controlsystem/df-18-06-14-04.gif" alt=""></center><br />
+As G<sub>1</sub>(s) G<sub>2</sub>(s) has low pass characteristics , it can be assumed to a good degree of approximation that all higher harmonics of y are filtered out in the process, and the input x to the nonlinear element N is mainly contributed by fundamental component of y i.e. first harmonics . So in the describing function analysis, we assume that only the fundamental harmonic component of the output. Since the higher harmonics in the output of a non linear system are often of smaller amplitude than the amplitude of fundamental harmonic component. Most control systems are low pass filters, with the result that the higher harmonics are very much attenuated compared with the fundamental harmonic component.<br />
+Hence  y<sub>1</sub> need only be considered.<br />
+ <center><img src="../equations/controlsystem/df-18-06-14-05.gif" alt=""></center><br />
+We can write y<sub>1</sub>(t) in the form ,<br />
+<center><img src="../equations/controlsystem/df-18-06-14-06.gif" alt=""></center><br />
+Where by using phasor,<br />
+<center><img src="../equations/controlsystem/df-18-06-14-07.gif" alt=""></center><br />
+The coefficient A<sub>1</sub> and B<sub>1</sub> of the Fourier series are given by-<br />
+<center><img src="../equations/controlsystem/df-18-06-14-08.gif" alt=""></center><br />
+From definition of describing function we have,<br />
+<center><img src="../equations/controlsystem/df-18-06-14-09.gif" alt=""></center><br />
+Let us find out describing function for these non linearities.</p>
+<h3 id="Describing-Function-for-Saturation-Non-Linearity">Describing Function for Saturation Non Linearity</h3>
+<p>We have the characteristic curve for saturation as shown in the given figure.<br />
+<div id="attachment_15835" class="wp-caption aligncenter" style="width: 572px"><img src="../images/describing-function-of-satu.gif" alt="characteristic curve for saturation non linearity" width="562" height="392" class="size-full wp-image-15835" /><p class="wp-caption-text">Characteristic Curve for Saturation Non Linearity</p></div><br />
+Let us take input function as<br />
+<center><img src="../equations/controlsystem/df-18-06-14-10.gif" alt=""></center><br />
+Now from the curve we can define the output as :<br />
+<center><img src="../equations/controlsystem/df-18-06-14-11.gif" alt=""></center><br />
+Let us first calculate Fourier series constant A<sub>1</sub>.<br />
+<center><img src="../equations/controlsystem/df-18-06-14-12.gif" alt=""></center><br />
+On substituting the value of the output in the above equation and integrating the function from 0 to 2&pi; we have the value of the constant A</sub>1</sub> as zero.</p>
+<p>Similarly we can calculate the value of Fourier constant B<sub>1</sub> for the given output and the value of B<sub>1</sub> can be calculated as,<br />
+<center><img src="../equations/controlsystem/df-18-06-14-13.gif" alt=""></center><br />
+ <center><img src="../equations/controlsystem/df-18-06-14-14.gif" alt=""></center><br />
+The phase angle for the describing function can be calculated as<br />
+  <center><img src="../equations/controlsystem/df-18-06-14-15.gif" alt=""></center><br />
+Thus the describing function for saturation is<br />
+ <center><img src="../equations/controlsystem/df-18-06-14-16.gif" alt=""></center></p>
+<h3 id="Describing-Function-for-Ideal-Relay">Describing Function for Ideal Relay </h3>
+<p> We have the characteristic curve for ideal relay as shown in the given figure.<br />
+ <div id="attachment_15837" class="wp-caption aligncenter" style="width: 695px"><img src="../images/Ideal-Relay.gif" alt="characteristics curve for ideal relay non linearity" width="685" height="331" class="size-full wp-image-15837" /><p class="wp-caption-text">Characteristic Curve for Ideal Relay Non Linearity</p></div><br />
+Let us take input function as<br />
+<center><img src="../equations/controlsystem/df-18-06-14-10.gif" alt=""></center><br />
+Now from the curve we can define the output as<br />
+<center><img src="../equations/controlsystem/df-18-06-14-17.gif" alt=""></center><br />
+The output periodic function has odd symmetry :<br />
+<center><img src="../equations/controlsystem/df-18-06-14-18.gif" alt=""></center><br />
+Let us first calculate Fourier series constant A<sub>1</sub>.<br />
+<center><img src="../equations/controlsystem/df-18-06-14-12.gif" alt=""></center><br />
+On substituting the value of the output in the above equation and integrating the function from 0 to 2&pi; we have the value of the constant A<sub>1</sub> as zero.</p>
+<p>Similarly we can calculate the value of Fourier constant B<sub>1</sub> for the given output and the value of B<sub>1</sub> can be calculated as<br />
+<center><img src="../equations/controlsystem/df-18-06-14-19.gif" alt=""></center><br />
+On substituting the value of the output in the above equation y(t) = Y we have the value of the constant B<sub>1</sub> <center><img src="../equations/controlsystem/df-18-06-14-20.gif" alt=""></center><br />
+And the phase angle for the describing function can be calculated as<br />
+ <center><img src="../equations/controlsystem/df-18-06-14-15.gif" alt=""></center><br />
+Thus the describing function for an ideal relay is<br />
+<center><img src="../equations/controlsystem/df-18-06-14-21.gif" alt=""></center></p>
+<h3 id="Describing-Function-for-Real-Relay-(Relay-with-Dead-Zone)"> Describing Function for Real Relay (Relay with Dead Zone)</h3>
+<p>We have the characteristic curve for real realy as shown in the given figure. If X is less than dead zone &Delta;, then the relay produces no output; the first harmonic component of Fourier series is of course zero and describing function is also zero. If X > &#038;Delta, the relay produces the output.<br />
+<div id="attachment_15840" class="wp-caption aligncenter" style="width: 598px"><img src="../images/Real-Relay-Characteristic.gif" alt="characteristics curve for real relay non linearities" width="588" height="392" class="size-full wp-image-15840" /><p class="wp-caption-text">Characteristic Curve for Real Relay Non Linearities</p></div><br />
+Let us take input function as<br />
+<center><img src="../equations/controlsystem/df-18-06-14-10.gif" alt=""></center><br />
+Now from the curve we can define the output as<br />
+<center><img src="../equations/controlsystem/df-18-06-14-22.gif" alt=""></center><br />
+<img src="../equations/controlsystem/df-18-06-14-23.gif" alt=""><br />
+The output periodic function has odd symmetry :<br />
+<center><img src="../equations/controlsystem/df-18-06-14-18.gif" alt=""></center><br />
+Let us first calculate Fourier series constant A<sub>1</sub>.<br />
+<center><img src="../equations/controlsystem/df-18-06-14-12.gif" alt=""></center><br />
+On substituting the value of the output in the above equation and integrating the function from 0 to 2&pi; we have the value of the constant A<sub>1</sub> as zero.</p>
+<p>Similarly we can calculate the value of Fourier constant B for the given output and the value of B can be calculated as<br />
+<center><img src="../equations/controlsystem/df-18-06-14-24.gif" alt=""></center><br />
+Due to the symmetry of y, the coefficient B<sub>1</sub> can be calculated as follows,<br />
+<center><img src="../equations/controlsystem/df-18-06-14-25.gif" alt=""></center><br />
+Therefore, the describing function is<br />
+<center><img src="../equations/controlsystem/df-18-06-14-26.gif" alt=""></center></p>
+<h3 id="Describing-Function-for-Backlash-Non-Linearity">Describing Function for Backlash Non Linearity</h3>
+<p>We have the characteristic curve for backlash as shown in the given figure. Let us take input function as<br />
+<center><img src="../equations/controlsystem/df-18-06-14-10.gif" alt=""></center><br />
+<div id="attachment_15852" class="wp-caption aligncenter" style="width: 518px"><img src="../images/backlash-characteristic.gif" alt="characteristic curve of backlash non linearity" width="508" height="358" class="size-full wp-image-15852" /><p class="wp-caption-text">Characteristic Curve of Backlash Non Linearity</p></div><br />
+Now from the curve we can define the output as<br />
+<center><img src="../equations/controlsystem/df-18-06-14-27.gif" alt=""></center><br />
+Let us first calculate Fourier series constant A<sub>1</sub>.<br />
+<center><img src="../equations/controlsystem/df-18-06-14-12.gif" alt=""></center><br />
+On substituting the value of the output in the above equation and integrating the function from zero to 2&pi; we have the value of the constant A<sub>1</sub> as<br />
+<center><img src="../equations/controlsystem/df-18-06-14-28.gif" alt=""></center><br />
+Similarly we can calculate the value of Fourier constant B for the given output and the value of B<sub>1</sub> can be calculated as<br />
+<center><img src="../equations/controlsystem/df-18-06-14-29.gif" alt=""></center><br />
+On substituting the value of the output in the above equation and integrating the function from zero to pi we have the value of the constant B<sub>1</sub> as<br />
+<center><img src="../equations/controlsystem/df-18-06-14-30.gif" alt=""></center><br />
+We can easily calculate the describing function of backlash from below equation<br />
+<center><img src="../equations/controlsystem/df-18-06-14-31.gif" alt=""></center></p>
+
+
+			
+
+</div>
+		
+</div>
+		<!-- END CONTENT -->
+
+
+<!--
+END EDITING HERE
+-->					
+
+<div id="nextpg" style="font-weight: bold; font-family: sans-serif; position:relative; top:-9px;"></div>				
+<div id="prevpg" style="font-weight: bold; font-family: sans-serif;"></div>
+</div>
+    <br />
+<br />
+    <div style="position:relative; padding:20px; font-family: cursive;" align="center" class="container text-center foot">
+        <p style="color:#1F4DDF; font-size:14px;">Design with <img src="../love.png" /> by <a style="color:#000; font-weight:bold; text-decoration:none;" href="http://sarutech.com"> SARU TECH </a> <br/> www.sarutech.com</p>
+        <p style="color:#1F4DDF; margin-top:10px; font-size:14px;">Content Credited to <a style="color:#1F4DDF; font-weight:bold; text-decoration:none;" href="http://electrical4u.com">electrical4u.com</a> <br/> Online Electrical Engineering Study Site</p><br/><br/>
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br /> 
+</div><div id="footernav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../electrical-engineering-objective-questions-mcq/index.html">MCQ</a></li>
+    <li><a href="../questions/index.html">Theory</a></li>
+    <li><a href="../videos/index.html">Videos</a></li>
+</div>
+
+<!-- BEGIN FOOTER JS INCLUDES -->
+<script type='text/javascript' src='../js/general-footer.js'></script>
+<script type='text/javascript' src='../js/autogrow/jquery.autogrow-textarea.js'></script>
+<script type='text/javascript' src='../js/placeholder-fix.js'></script>
+<script type='text/javascript' src='../js/jquery.scrollTo-min.js'></script>
+<!-- END FOOTER JS INCLUDES -->
+
+</body>
+</html>

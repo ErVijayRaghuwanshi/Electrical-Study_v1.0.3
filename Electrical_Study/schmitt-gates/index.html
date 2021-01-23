@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>Schmitt Gates | Electrical Study App by SARU TECH</title>
+
+<link rel="alternate" type="application/rss+xml" title="Electrical Study App by SARU TECH &raquo; Schmitt Gates Comments Feed" href="http://electricalstudy.sarutech.com/schmitt-gates/index.html" />
+
+<link rel='prev' title='Seven Segment Display' href='../seven-segment-display/' />
+<link rel='next' title='seven-segment-display' href='../seven-segment-display/' />
+<meta name="generator" content="WordPress 3.5.2" />
+
+<!-- All in One SEO Pack 2.0.2 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/111022768648991545451/" />
+<meta name="description" content="Schmitt Gates is one of the logic gates that get vastly discussed. The article defines Schmitt Gates using appropriate image to make it easy to understand." />
+
+<link rel="canonical" href="schmitt-gates/index.html" />
+<!-- /all in one seo pack -->
+
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/general-header.js'></script>
+<script type='text/javascript' src='../js/elements.js'></script>
+<script type='text/javascript' src='../js/nav.js'></script>
+<link rel='stylesheet' id='style-css' href='../css/style.css' type='text/css' media='all' />
+<link rel="icon" type="image/png" href="../icon.png" />
+<link rel='stylesheet' id='elements-css' href='../css/elements.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elements-css' href='../css/style2.css' type='text/css' media='all' />
+
+
+<!-- END FONTS + STYLESHEETS + JS INCLUDES -->
+
+</head>
+<body class="page page-id-6902 page-template-default custom-background custom-font-enabled single-author">
+
+	<!-- BEGIN SITE LOGO -->
+<div id="header-bar">
+	
+<div class="site-logo-wrapper">
+
+		<!-- BEGIN LOGO -->
+		<div class="site-logo">
+			<a href="../index.html">
+				ELECTRICAL STUDY APP
+			</a>
+		</div>
+		<!-- END LOGO -->
+
+	</div>
+</div>
+<!-- END SITE LOGO -->
+
+<!-- BEGIN MENU BUTTON -->
+<div class="menu-wrapper">
+	<div class="menu-button"></div>
+</div>
+<!-- END MENU BUTTON -->
+
+<!-- BEGIN MENU INCLUDE -->
+<div id="menu"><!-- BEGIN MENU -->
+
+<!-- END MENU --></div>
+<!-- END MENU INCLUDE -->
+
+<!-- BEGIN MENU CLOSE AREA -->
+<div id="menu-open-overlay"></div>
+<!-- END MENU CLOSE AREA -->
+
+<!-- BEGIN IF MENU OPEN, SHOW BLUE BACKGROUND -->
+<div id="menu-open-background">
+	<div class="menu-open-background"></div>
+</div>
+<!-- END IF MENU OPEN, SHOW BLUE BACKGROUND -->
+
+<div id="sitewrap">
+<div id="content">
+<div class="wrapper-outer">
+<div class="content-wrapper">
+
+
+		<article id="post-6902" class="post-6902 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
+		<header class="entry-header">
+												<h1 class="entry-title" id="topic" itemprop="headline">Schmitt Gates</h1>
+		</header>
+
+		<div class="entry-content" itemprop="articleBody">
+			
+We have discussed various types of logic gates, finally we are going to discuss about another type of gate that is <strong>Schmitt Gates</strong>. The logic gates about which we have discussed till now have a single input threshold <a href="../voltage-or-electric-potential-difference/index.html" title="Voltage or Electric Potential Difference">voltage</a> level. For low to high and high to low output transitions this threshold is the same and it lies somewhere between the highest low <a href="../voltage-or-electric-potential-difference/index.html" title="Voltage or Electric Potential Difference">voltage</a> level and the lowest high <a href="../voltage-or-electric-potential-difference/index.html" title="Voltage or Electric Potential Difference">voltage</a> level. And for this these logic gates might produce an erratic output which when fed with an input which is varying slowly. </p>
+<p>Suppose we are giving an ideal input signal to an inverter circuit and the response of that circuit is shown in the graph below.<br />
+<div id="attachment_6903" class="wp-caption alignleft" style="width: 365px"><a href="../schmitt-gates/schmitt-gate-1/index.html" rel="attachment wp-att-6903"><img src="../wp-content/uploads/2013/08/schmitt-gate-1.gif" alt="response of conventional inverters to slowly varying inputs" width="355" height="310" class="size-full wp-image-6903" /></a><p class="wp-caption-text">response of conventional inverters to slowly varying inputs</p></div><br />
+And when a practical signal is fed to the inverter the response we get is shown in the figure below.<br />
+<a href="../schmitt-gates/schmitt-gate-2/index.html" rel="attachment wp-att-6904"><img src="../wp-content/uploads/2013/08/schmitt-gate-2.gif" alt="schmitt-gate-2" width="604" height="301" class="aligncenter size-full wp-image-6904" /></a><br />
+We can see from the diagram above that there is a small amount of noise is superimposed on the output signal. To overcome this problem a possible solution has been found which is if we differentiate the <a href="../voltage-or-electric-potential-difference/index.html" title="Voltage or Electric Potential Difference">voltage</a> levels one for low to high and other for high to low transition then this problem can be overcome. And this should be done by introducing some positive feedback in the internal gate circuitary, which we also know as the hysteresis phenomenon.</p>
+<p>There are some logic gates which are naturally have hysteresis i.e. they have this property as built in, we don’t have to change the manufacturing procedure for them. This is mainly seen in NAND gates and inverters. These are known as Schmitt gates and they are capable of interpreting input <a href="../voltage-or-electric-potential-difference/index.html" title="Voltage or Electric Potential Difference">voltage</a> according to two threshold <a href="../voltage-or-electric-potential-difference/index.html" title="Voltage or Electric Potential Difference">voltage</a> which is for low to high and the other one is for high to low output transition. The (a) and (b) figures below shows the circuit symbols of Schmitt NAND and Schmitt inverter.</p>
+</p>
+<p><a href="../schmitt-gates/schmitt-gate-3/index.html" rel="attachment wp-att-6905"><img src="../wp-content/uploads/2013/08/schmitt-gate-3.gif" alt="schmitt-gate-3" width="232" height="305" class="aligncenter size-full wp-image-6905" /></a><br />
+The difference between Schmitt gates and conventional gates are that the former have the ‘hysteresis’ nature which is identical to the B-H loop for a ferromagnetic material.<br />
+<a href="../schmitt-gates/schmitt-gate-4/index.html" rel="attachment wp-att-6906"><img src="../wp-content/uploads/2013/08/schmitt-gate-4.gif" alt="schmitt-gate-4" width="524" height="327" class="aligncenter size-full wp-image-6906" /></a><br />
+The figure above shows the typical characteristics of transfer of such a device.  The difference which we can see between the two threshold levels is the hysteresis. The next figure shows the characteristics of a Schmitt inverter to a slowly varying noisy input signal. <a href="../schmitt-gates/schmitt-gate-5/index.html" rel="attachment wp-att-6907"><img src="../wp-content/uploads/2013/08/schmitt-gate-5.gif" alt="schmitt-gate-5" width="574" height="304" class="aligncenter size-full wp-image-6907" /></a></p>
+
+
+			
+
+</div>
+		
+</div>
+		<!-- END CONTENT -->
+
+
+<!--
+END EDITING HERE
+-->					
+
+<div id="nextpg" style="font-weight: bold; font-family: sans-serif; position:relative; top:-9px;"></div>				
+<div id="prevpg" style="font-weight: bold; font-family: sans-serif;"></div>
+</div>
+    <br />
+<br />
+    <div style="position:relative; padding:20px; font-family: cursive;" align="center" class="container text-center foot">
+        <p style="color:#1F4DDF; font-size:14px;">Design with <img src="../love.png" /> by <a style="color:#000; font-weight:bold; text-decoration:none;" href="http://sarutech.com"> SARU TECH </a> <br/> www.sarutech.com</p>
+        <p style="color:#1F4DDF; margin-top:10px; font-size:14px;">Content Credited to <a style="color:#1F4DDF; font-weight:bold; text-decoration:none;" href="http://electrical4u.com">electrical4u.com</a> <br/> Online Electrical Engineering Study Site</p><br/><br/>
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br /> 
+</div><div id="footernav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../electrical-engineering-objective-questions-mcq/index.html">MCQ</a></li>
+    <li><a href="../questions/index.html">Theory</a></li>
+    <li><a href="../videos/index.html">Videos</a></li>
+</div>
+
+<!-- BEGIN FOOTER JS INCLUDES -->
+<script type='text/javascript' src='../js/general-footer.js'></script>
+<script type='text/javascript' src='../js/autogrow/jquery.autogrow-textarea.js'></script>
+<script type='text/javascript' src='../js/placeholder-fix.js'></script>
+<script type='text/javascript' src='../js/jquery.scrollTo-min.js'></script>
+<!-- END FOOTER JS INCLUDES -->
+
+</body>
+</html>

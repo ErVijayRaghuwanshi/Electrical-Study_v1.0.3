@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>INHIBIT Gate | Electrical Study App by SARU TECH</title>
+
+<link rel="alternate" type="application/rss+xml" title="Electrical Study App by SARU TECH &raquo; INHIBIT Gate Comments Feed" href="http://electricalstudy.sarutech.com/inhibit-gate/index.html" />
+
+<link rel='prev' title='Logic Families Significance and Types' href='../logic-families-significant-and-types/' />
+<link rel='next' title='logic-families-significant-and-types' href='../logic-families-significant-and-types/' />
+<meta name="generator" content="WordPress 3.5.2" />
+
+<!-- All in One SEO Pack 2.0.2 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/111022768648991545451/" />
+<meta name="description" content="INHIBIT Gate is a special kind of gate apart from the three basic gates called AND, OR and NOT. Let us learn about INHIBIT Gate by reading this article." />
+
+<link rel="canonical" href="inhibit-gate/index.html" />
+<!-- /all in one seo pack -->
+
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/general-header.js'></script>
+<script type='text/javascript' src='../js/elements.js'></script>
+<script type='text/javascript' src='../js/nav.js'></script>
+<link rel='stylesheet' id='style-css' href='../css/style.css' type='text/css' media='all' />
+<link rel="icon" type="image/png" href="../icon.png" />
+<link rel='stylesheet' id='elements-css' href='../css/elements.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elements-css' href='../css/style2.css' type='text/css' media='all' />
+
+
+<!-- END FONTS + STYLESHEETS + JS INCLUDES -->
+
+</head>
+<body class="page page-id-6924 page-template-default custom-background custom-font-enabled single-author">
+
+	<!-- BEGIN SITE LOGO -->
+<div id="header-bar">
+	
+<div class="site-logo-wrapper">
+
+		<!-- BEGIN LOGO -->
+		<div class="site-logo">
+			<a href="../index.html">
+				ELECTRICAL STUDY APP
+			</a>
+		</div>
+		<!-- END LOGO -->
+
+	</div>
+</div>
+<!-- END SITE LOGO -->
+
+<!-- BEGIN MENU BUTTON -->
+<div class="menu-wrapper">
+	<div class="menu-button"></div>
+</div>
+<!-- END MENU BUTTON -->
+
+<!-- BEGIN MENU INCLUDE -->
+<div id="menu"><!-- BEGIN MENU -->
+
+<!-- END MENU --></div>
+<!-- END MENU INCLUDE -->
+
+<!-- BEGIN MENU CLOSE AREA -->
+<div id="menu-open-overlay"></div>
+<!-- END MENU CLOSE AREA -->
+
+<!-- BEGIN IF MENU OPEN, SHOW BLUE BACKGROUND -->
+<div id="menu-open-background">
+	<div class="menu-open-background"></div>
+</div>
+<!-- END IF MENU OPEN, SHOW BLUE BACKGROUND -->
+
+<div id="sitewrap">
+<div id="content">
+<div class="wrapper-outer">
+<div class="content-wrapper">
+
+
+		<article id="post-6924" class="post-6924 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
+		<header class="entry-header">
+												<h1 class="entry-title" id="topic" itemprop="headline">INHIBIT Gate</h1>
+		</header>
+
+		<div class="entry-content" itemprop="articleBody">
+			
+We have already discussed a lot about the logical gates of digital electronics system. We know about the three basic gates i.e. AND, OR and NOT gates and the other gates like NAND, NOR, EX-OR, EX-NOR etc. Now when we know about the basics of logic circuit we will discuss about a special type of gate i.e. INHIBIT gate. Many times there arise many situations when the logical signals are needed to be either enabled or inhibited which depends upon certain other control inputs. This is where the need of this type of logic gate arises. Here the term INHIBIT means the gate which has it produces a certain or fixed output whatever be the inputs or even the inputs are changed. We can explain this with an illustration, suppose there is a four input NOR gate which a one has fixed input logic level‘1’. Then we will get the fixed output ‘0’ irrespective of whatever may be the other inputs. As one input is permanently ‘1’ the output will be always ‘0’. So we can say that fixing this one input permanently inhibits the function of the gate. This gate will work like a normal NOR gate only when that input is changed to ‘0’ level. The above illustration explains the INHIBIT function. </p>
+<p>This function is also available in integrated circuit form for an AND gate. It is basically an AND gate which has one of its inputs negated by an inverter. The input which is negated acts to inhibit the gate. Or we can say the gate will behave like an AND gate only when the negated input is set at a logic level ‘0’. Now we will see this through the circuit symbol and truth table for a four input INHIBIT gate.<br />
+<div id="attachment_6925" class="wp-caption aligncenter" style="width: 611px"><a href="../inhibit-gate/inhibit-gate/index.html" rel="attachment wp-att-6925"><img src="../wp-content/uploads/2013/08/INHIBIT-gate.gif" alt="INHIBIT Gate" width="601" height="176" class="size-full wp-image-6925" /></a><p class="wp-caption-text">INHIBIT Gate</p></div><br />
+Now in the above diagram if all the inputs of the gate is permanently tied to logic level ‘1’ then the logic ‘0’ at the INHIBIT input will produce a logic ‘1’ at the output and a logic ‘1’ at the inhibit input will result in a logic ‘0’ output. Now we will look at the truth table of the above drawn gate. </p>
+<table class="Border">
+<tr>
+<th>	A	</th>
+<th>	B	</th>
+<th>	C	</th>
+<th>	D	</th>
+<th>	Y	</th>
+</tr>
+<tr>
+<td>	0	</td>
+<td>	0	</td>
+<td>	0	</td>
+<td>	0	</td>
+<td>	0	</td>
+</tr>
+<tr>
+<td>	0	</td>
+<td>	0	</td>
+<td>	0	</td>
+<td>	1	</td>
+<td>	0	</td>
+</tr>
+<tr>
+<td>	0	</td>
+<td>	0	</td>
+<td>	1	</td>
+<td>	0	</td>
+<td>	0	</td>
+</tr>
+<tr>
+<td>	0	</td>
+<td>	0	</td>
+<td>	1	</td>
+<td>	1	</td>
+<td>	0	</td>
+</tr>
+<tr>
+<td>	0	</td>
+<td>	1	</td>
+<td>	0	</td>
+<td>	0	</td>
+<td>	0	</td>
+</tr>
+<tr>
+<td>	0	</td>
+<td>	1	</td>
+<td>	0	</td>
+<td>	1	</td>
+<td>	0	</td>
+</tr>
+<tr>
+<td>	0	</td>
+<td>	1	</td>
+<td>	1	</td>
+<td>	0	</td>
+<td>	0	</td>
+</tr>
+<tr>
+<td>	0	</td>
+<td>	1	</td>
+<td>	1	</td>
+<td>	1	</td>
+<td>	0	</td>
+</tr>
+<tr>
+<td>	1	</td>
+<td>	0	</td>
+<td>	0	</td>
+<td>	0	</td>
+<td>	0	</td>
+</tr>
+<tr>
+<td>	1	</td>
+<td>	0	</td>
+<td>	0	</td>
+<td>	1	</td>
+<td>	0	</td>
+</tr>
+<tr>
+<td>	1	</td>
+<td>	0	</td>
+<td>	1	</td>
+<td>	0	</td>
+<td>	0	</td>
+</tr>
+<tr>
+<td>	1	</td>
+<td>	0	</td>
+<td>	1	</td>
+<td>	1	</td>
+<td>	0	</td>
+</tr>
+<tr>
+<td>	1	</td>
+<td>	1	</td>
+<td>	0	</td>
+<td>	0	</td>
+<td>	0	</td>
+</tr>
+<tr>
+<td>	1	</td>
+<td>	1	</td>
+<td>	0	</td>
+<td>	1	</td>
+<td>	0	</td>
+</tr>
+<tr>
+<td>	1	</td>
+<td>	1	</td>
+<td>	1	</td>
+<td>	0	</td>
+<td>	1	</td>
+</tr>
+<tr>
+<td>	1	</td>
+<td>	1	</td>
+<td>	1	</td>
+<td>	1	</td>
+<td>	0	</td>
+</tr>
+</table>
+</p>
+
+			
+
+</div>
+		
+</div>
+		<!-- END CONTENT -->
+
+
+<!--
+END EDITING HERE
+-->					
+
+<div id="nextpg" style="font-weight: bold; font-family: sans-serif; position:relative; top:-9px;"></div>				
+<div id="prevpg" style="font-weight: bold; font-family: sans-serif;"></div>
+</div>
+    <br />
+<br />
+    <div style="position:relative; padding:20px; font-family: cursive;" align="center" class="container text-center foot">
+        <p style="color:#1F4DDF; font-size:14px;">Design with <img src="../love.png" /> by <a style="color:#000; font-weight:bold; text-decoration:none;" href="http://sarutech.com"> SARU TECH </a> <br/> www.sarutech.com</p>
+        <p style="color:#1F4DDF; margin-top:10px; font-size:14px;">Content Credited to <a style="color:#1F4DDF; font-weight:bold; text-decoration:none;" href="http://electrical4u.com">electrical4u.com</a> <br/> Online Electrical Engineering Study Site</p><br/><br/>
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br /> 
+</div><div id="footernav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../electrical-engineering-objective-questions-mcq/index.html">MCQ</a></li>
+    <li><a href="../questions/index.html">Theory</a></li>
+    <li><a href="../videos/index.html">Videos</a></li>
+</div>
+
+<!-- BEGIN FOOTER JS INCLUDES -->
+<script type='text/javascript' src='../js/general-footer.js'></script>
+<script type='text/javascript' src='../js/autogrow/jquery.autogrow-textarea.js'></script>
+<script type='text/javascript' src='../js/placeholder-fix.js'></script>
+<script type='text/javascript' src='../js/jquery.scrollTo-min.js'></script>
+<!-- END FOOTER JS INCLUDES -->
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>PID Control | Electrical Study App by SARU TECH</title>
+<link rel='prev' title='Closed Loop Control System' href='../closed-loop-control-system/' />
+<link rel='next' title='Theory of Wind Turbine' href='../theory-of-wind-turbine/' />
+<meta name="generator" content="WordPress 3.5.2" />
+
+<!-- All in One SEO Pack 2.0.2 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/111022768648991545451/" />
+<meta name="description" content="PID Control is proportional plus derivative plus integral control. In control system, PID Control gets used as feedback mechanism and its three term control." />
+
+<link rel="canonical" href="pid-control/index.html" />
+<!-- /all in one seo pack -->
+
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/general-header.js'></script>
+<script type='text/javascript' src='../js/elements.js'></script>
+<script type='text/javascript' src='../js/nav.js'></script>
+<link rel='stylesheet' id='style-css' href='../css/style.css' type='text/css' media='all' />
+<link rel="icon" type="image/png" href="../icon.png" />
+<link rel='stylesheet' id='elements-css' href='../css/elements.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elements-css' href='../css/style2.css' type='text/css' media='all' />
+
+
+<!-- END FONTS + STYLESHEETS + JS INCLUDES -->
+
+</head>
+<body class="page page-id-7682 page-template-default custom-background custom-font-enabled single-author">
+
+	<!-- BEGIN SITE LOGO -->
+<div id="header-bar">
+	
+<div class="site-logo-wrapper">
+
+		<!-- BEGIN LOGO -->
+		<div class="site-logo">
+			<a href="../index.html">
+				ELECTRICAL STUDY APP
+			</a>
+		</div>
+		<!-- END LOGO -->
+
+	</div>
+</div>
+<!-- END SITE LOGO -->
+
+<!-- BEGIN MENU BUTTON -->
+<div class="menu-wrapper">
+	<div class="menu-button"></div>
+</div>
+<!-- END MENU BUTTON -->
+
+<!-- BEGIN MENU INCLUDE -->
+<div id="menu"><!-- BEGIN MENU -->
+
+<!-- END MENU --></div>
+<!-- END MENU INCLUDE -->
+
+<!-- BEGIN MENU CLOSE AREA -->
+<div id="menu-open-overlay"></div>
+<!-- END MENU CLOSE AREA -->
+
+<!-- BEGIN IF MENU OPEN, SHOW BLUE BACKGROUND -->
+<div id="menu-open-background">
+	<div class="menu-open-background"></div>
+</div>
+<!-- END IF MENU OPEN, SHOW BLUE BACKGROUND -->
+
+<div id="sitewrap">
+<div id="content">
+<div class="wrapper-outer">
+<div class="content-wrapper">
+
+
+		<article id="post-7682" class="post-7682 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
+		<header class="entry-header">
+												<h1 class="entry-title" id="topic" itemprop="headline">PID Control</h1>
+		</header>
+
+		<div class="entry-content" itemprop="articleBody">
+			
+<p>PID control stands for proportional plus derivative plus integral control. PID control is a feedback mechanism which is used in control system. This type of control is also termed as three term control. By controlling the three parameters - proportional, integral and derivative we can achieve different control actions for specific work. PID is considered to be the best controller in the control system family. Nicholas Minorsky published the theoretical analysis paper on PID controller. For PID control the actuating signal consists of proportional error signal added with derivative and integral of the error signal. Therefore, the actuating signal for PID control is -</p>
+<p><img src='1.png' id="latexe_a%28t%29%5C%3B%20%3D%20%5C%3Be%28t%29%5C%3B%20%2B%5C%3B%20T_d%5Cfrac%7Bde%28t%29%7D%7Bdt%7D%5C%3B%20%2B%20%5C%3BK_i%5Cint%20e%28t%29%20dt&amp;bg=DDDDDD&#038;fg=000000&#038;s=1" title='e_a(t)\; = \;e(t)\; +\; T_d\frac{de(t)}{dt}\; + \;K_i\int e(t) dt' style='vertical-align:1%' class='tex' alt='e_a(t)\; = \;e(t)\; +\; T_d\frac{de(t)}{dt}\; + \;K_i\int e(t) dt' /></p>
+<p>The Laplace transform of the actuating signal incorporating PID control is</p>
+<p><img src='2.png' id="latexE_a%28s%29%5C%3B%20%3D%20%5C%3BE%28s%29%5C%3B%20%2B%5C%3Bs%20T_dE%28s%29%5C%3B%20%2B%5C%3B%5Cfrac%7BK_i%7D%7Bs%7D%20E%28s%29&amp;bg=DDDDDD&#038;fg=000000&#038;s=1" title='E_a(s)\; = \;E(s)\; +\;s T_dE(s)\; +\;\frac{K_i}{s} E(s)' style='vertical-align:1%' class='tex' alt='E_a(s)\; = \;E(s)\; +\;s T_dE(s)\; +\;\frac{K_i}{s} E(s)' /><br />
+or<br />
+<img src='3.png' id="latexE_a%28s%29%5C%3B%20%3D%20%5C%3B%20E%28s%29%20%5Cleft%5B1%5C%3B%20%2B%5C%3B%20s%20T_d%20%5C%3B%2B%5C%3B%20%5Cfrac%7BK_i%7D%7Bs%7D%5Cright%5D&amp;bg=DDDDDD&#038;fg=000000&#038;s=1" title='E_a(s)\; = \; E(s) \left[1\; +\; s T_d \;+\; \frac{K_i}{s}\right]' style='vertical-align:1%' class='tex' alt='E_a(s)\; = \; E(s) \left[1\; +\; s T_d \;+\; \frac{K_i}{s}\right]' /></p>
+<p>There are some control actions which can be achieved by using any of the two parameters of the PID controller. Two parameters can work while keeping the third one to zero. So PID controller becomes sometimes PI (Proportion integral), PD (proportional derivative) or even P or I. The derivative term D is responsible for noise measurement while integral term is meant for reaching the targeted value of the system. In early days PID controller was used as mechanical device. These were pneumatic controllers as they were compressed by air. Mechanical controllers include spring, lever or mass. Many complex electronic systems are provided with PID control loop. In modern days PID controllers are used in PLC (programmable logic controllers) in the industry. The proportional, derivative and integral parameters can be expressed as - K<sub>p</sub>, K<sub>d</sub> and K<sub>i</sub>. All these three parameters have effect on the closed loop control system. It affects rise time, settling time and overshoot and also the steady state error.</p>
+<table class="Border">
+<tr>
+<th>	Control Response	</th>
+<th>	 Rise time	</th>
+<th>	 Settling time 	</th>
+<th>	Overshoot	</th>
+<th>	Steady state error	</th>
+</tr>
+<tr>
+<td>	    K<sub>p</sub>	</td>
+<td>	 decrease	</td>
+<td>	 small change	</td>
+<td>	 increase	</td>
+<td>	  decrease	</td>
+</tr>
+<tr>
+<td>	    K<sub>d</sub>	</td>
+<td>	 small change	</td>
+<td>	 decrease	</td>
+<td>	 decrease	</td>
+<td>	  no change	</td>
+</tr>
+<tr>
+<td>	    K<sub>i</sub>	</td>
+<td>	 decrease	</td>
+<td>	 increase	</td>
+<td>	 increase	</td>
+<td>	  eliminate	</td>
+</tr>
+</table>
+<p>PID control combines advantages of proportional, derivative and integral control actions. Let us discuss these control actions in brief.</p>
+</p>
+<p>Proportional control : here actuating signal for the control action in a control system is proportional to the error signal. The error signal being the difference between the reference input signal and the feedback signal obtained from input.</p>
+<p>Derivative control : the actuating signal consists of proportional error signal added with derivative of the error signal. Therefore, the actuating signal for derivative control action is given by,</p>
+<p><img src='4.png' id="latexe_a%28t%29%5C%3B%20%3D%5C%3B%20e%28t%29%5C%3B%20%2B%5C%3B%20T_d%5Cfrac%7Bde%28t%29%7D%7Bdt%7D%5C%3B%20%20where%2C%5C%3B%20T_d%5C%3B%20is%5C%3B%20a%5C%3B%20constant.&amp;bg=DDDDDD&#038;fg=000000&#038;s=1" title='e_a(t)\; =\; e(t)\; +\; T_d\frac{de(t)}{dt}\;  where,\; T_d\; is\; a\; constant.' style='vertical-align:1%' class='tex' alt='e_a(t)\; =\; e(t)\; +\; T_d\frac{de(t)}{dt}\;  where,\; T_d\; is\; a\; constant.' /></p>
+<p>Integral control : for integral control action the actuating signal consists of proportional error signal added with integral of the error signal. Therefore, the actuating signal for integral control action is given by</p>
+<p><img src='5.png' id="latexe_a%28t%29%5C%3B%20%3D%5C%3B%20e%28t%29%5C%3B%20%2B%5C%3B%20K_i%20%5Cint%20e%28t%29%20dt%20%5C%3B%20where%2C%5C%3B%20K_i%5C%3B%20is%5C%3B%20constant.&amp;bg=DDDDDD&#038;fg=000000&#038;s=1" title='e_a(t)\; =\; e(t)\; +\; K_i \int e(t) dt \; where,\; K_i\; is\; constant.' style='vertical-align:1%' class='tex' alt='e_a(t)\; =\; e(t)\; +\; K_i \int e(t) dt \; where,\; K_i\; is\; constant.' /></p>
+<p>PID controller have some limitations also apart from being one of the best controller in control action system. PID control is applicable to many control actions but it does not perform well in case of optimal control. Main disadvantage is the feedback path. PID is not provided with any model of the process. Other drawbacks are that PID is linear system and derivative part is noise sensitive. Small amount of noise can cause great change in the output.</p>
+
+			
+
+</div>
+		
+</div>
+		<!-- END CONTENT -->
+
+
+<!--
+END EDITING HERE
+-->					
+
+<div id="nextpg" style="font-weight: bold; font-family: sans-serif; position:relative; top:-9px;"></div>				
+<div id="prevpg" style="font-weight: bold; font-family: sans-serif;"></div>
+</div>
+    <br />
+<br />
+    <div style="position:relative; padding:20px; font-family: cursive;" align="center" class="container text-center foot">
+        <p style="color:#1F4DDF; font-size:14px;">Design with <img src="../love.png" /> by <a style="color:#000; font-weight:bold; text-decoration:none;" href="http://sarutech.com"> SARU TECH </a> <br/> www.sarutech.com</p>
+        <p style="color:#1F4DDF; margin-top:10px; font-size:14px;">Content Credited to <a style="color:#1F4DDF; font-weight:bold; text-decoration:none;" href="http://electrical4u.com">electrical4u.com</a> <br/> Online Electrical Engineering Study Site</p><br/><br/>
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br /> 
+</div><div id="footernav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../electrical-engineering-objective-questions-mcq/index.html">MCQ</a></li>
+    <li><a href="../questions/index.html">Theory</a></li>
+    <li><a href="../videos/index.html">Videos</a></li>
+</div>
+
+<!-- BEGIN FOOTER JS INCLUDES -->
+<script type='text/javascript' src='../js/general-footer.js'></script>
+<script type='text/javascript' src='../js/autogrow/jquery.autogrow-textarea.js'></script>
+<script type='text/javascript' src='../js/placeholder-fix.js'></script>
+<script type='text/javascript' src='../js/jquery.scrollTo-min.js'></script>
+<!-- END FOOTER JS INCLUDES -->
+
+</body>
+</html>

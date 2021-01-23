@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>Compensation in Control System  | Lag lead Compensation | Electrical Study App by SARU TECH</title>
+
+<link rel="alternate" type="application/rss+xml" title="Electrical Study App by SARU TECH &raquo; Compensation in Control System  | Lag lead Compensation Comments Feed" href="http://electricalstudy.sarutech.com/compensation-in-control-system-lag-lead-compensation/index.html" />
+
+<link rel='prev' title='Electric Power Generation' href='../electric-power-generation/' />
+<link rel='next' title='state-space-analysis-of-control-system' href='../state-space-analysis-of-control-system/' />
+<meta name="generator" content="WordPress 3.5.2" />
+
+<!-- All in One SEO Pack 2.0.2 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/111022768648991545451/" />
+<meta name="description" content="Necessary of Compensation &bull; Methods Phase Lead Compensation &bull; Effect &bull; Advantages &bull; Disadvantages Phase Lag Compensation &bull;" />
+
+<link rel="canonical" href="compensation-in-control-system-lag-lead-compensation/index.html" />
+<!-- /all in one seo pack -->
+
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/general-header.js'></script>
+<script type='text/javascript' src='../js/elements.js'></script>
+<script type='text/javascript' src='../js/nav.js'></script>
+<link rel='stylesheet' id='style-css' href='../css/style.css' type='text/css' media='all' />
+<link rel="icon" type="image/png" href="../icon.png" />
+<link rel='stylesheet' id='elements-css' href='../css/elements.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elements-css' href='../css/style2.css' type='text/css' media='all' />
+
+
+<!-- END FONTS + STYLESHEETS + JS INCLUDES -->
+
+</head>
+<body class="page page-id-15734 page-template-default custom-background custom-font-enabled single-author">
+
+	<!-- BEGIN SITE LOGO -->
+<div id="header-bar">
+	
+<div class="site-logo-wrapper">
+
+		<!-- BEGIN LOGO -->
+		<div class="site-logo">
+			<a href="../index.html">
+				ELECTRICAL STUDY APP
+			</a>
+		</div>
+		<!-- END LOGO -->
+
+	</div>
+</div>
+<!-- END SITE LOGO -->
+
+<!-- BEGIN MENU BUTTON -->
+<div class="menu-wrapper">
+	<div class="menu-button"></div>
+</div>
+<!-- END MENU BUTTON -->
+
+<!-- BEGIN MENU INCLUDE -->
+<div id="menu"><!-- BEGIN MENU -->
+
+<!-- END MENU --></div>
+<!-- END MENU INCLUDE -->
+
+<!-- BEGIN MENU CLOSE AREA -->
+<div id="menu-open-overlay"></div>
+<!-- END MENU CLOSE AREA -->
+
+<!-- BEGIN IF MENU OPEN, SHOW BLUE BACKGROUND -->
+<div id="menu-open-background">
+	<div class="menu-open-background"></div>
+</div>
+<!-- END IF MENU OPEN, SHOW BLUE BACKGROUND -->
+
+<div id="sitewrap">
+<div id="content">
+<div class="wrapper-outer">
+<div class="content-wrapper">
+
+
+		<article id="post-15734" class="post-15734 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
+		<header class="entry-header">
+												<h1 class="entry-title" id="topic" itemprop="headline">Compensation in Control System  | Lag lead Compensation</h1>
+		</header>
+
+		<div class="entry-content" itemprop="articleBody">
+			
+
+<div id="top" class="pageIndex">
+<a href="#Necessary-of-Compensation">Necessary of Compensation</a><br />
+<a href="#Methods-of-Compensation">&bull; Methods </a><br />
+<a href="#Phase-Lead-Compensation">Phase Lead Compensation</a><br />
+<a href="#Effect-of-Phase-Lead-Compensation">&bull; Effect </a><br />
+<a href="#Advantages-of-Phase-Lead-Compensation">&bull; Advantages </a><br />
+<a href="#Disadvantages-of-Phase-Lead-Compensation">&bull; Disadvantages </a><br />
+<a href="#Phase-Lag-Compensation">Phase Lag Compensation</a><br />
+<a href="#Effect-of-Phase-Lag-Compensation">&bull; Effect </a><br />
+<a href="#Advantages-of-Phase-Lag-Compensation">&bull; Advantages </a><br />
+<a href="#Disadvantages-of-Phase-Lag-Compensation">&bull; Disadvantages </a><br />
+<a href="#Phase-Lag-Lead-Compensation">Phase Lag-Lead Compensation</a><br />
+<a href="#Advantages-of-Phase-Lag-Lead-Compensation">&bull; Advantages </a>
+</div>
+<p>Before I introduce you about various <strong>compensation in control system</strong> in detail, it is very essential to know the uses of compensating networks in the control system. The important uses of the compensating networks are written below.</p>
+<h3 id="Necessary-of-Compensation">Necessary of Compensation</h3>
+<ol>
+<li>In order to obtain the desired performance of the system, we use compensating networks. Compensating networks are applied to the system in the form of feed forward path gain adjustment.</li>
+<li>Compensate a unstable system to make it stable.</li>
+<li>A compensating network is used to minimize overshoot.</li>
+<li>These compensating networks increase the steady state accuracy of the system. An important point to be noted here is that the increase in the steady state accuracy brings instability to the system.</li>
+<li>Compensating networks also introduces poles and zeros in the system thereby causes changes in the transfer function of the system. Due to this, performance specifications of the system change.</li>
+</ol>
+<h3 id="Methods-of-Compensation">Methods of Compensation</h3>
+<ol>
+<li>Connecting compensating circuit between error detector &amp; plants known as <b>series compensation</b>.</li>
+<div id="attachment_15797" class="wp-caption aligncenter" style="width: 598px"><img src="../images/series-compensator-17-06-14.gif" alt="series compensator" width="588" height="204" class="size-full wp-image-15797" /><p class="wp-caption-text">Series Compensator</p></div>
+<li>When a compensator used in a feedback manner called <b>feedback compensation</b>.</li>
+<div id="attachment_15798" class="wp-caption aligncenter" style="width: 598px"><img src="../images/feedback-compensator-17-06-14.gif" alt="feedback compensator" width="588" height="268" class="size-full wp-image-15798" /><p class="wp-caption-text">Feedback Compensator</p></div>
+<li>A combination of series and feedback compensator is called <b>load compensation</b>.</li>
+<p><div id="attachment_15799" class="wp-caption aligncenter" style="width: 571px"><img src="../images/load-compensator-17-06-14.gif" alt="load compensator" width="561" height="260" class="size-full wp-image-15799" /><p class="wp-caption-text">Load Compensator</p></div></ol>
+<p>Now what are compensating networks? A compensating network is one which makes some adjustments in order to make up for deficiencies in the system. Compensating devices are may be in the form of electrical, mechanical, hydraulic etc. Most electrical compensator are RC filter. The simplest network used for compensator are known as lead, lag network.</p>
+</p>
+<h3 id="Phase-Lead-Compensation">Phase Lead Compensation</h3>
+<p>A system which has one pole and one dominating zero (the zero which is closer to the origin than all over zeros is known as dominating zero.) is known as lead network. If we want to add a dominating zero for <strong>compensation in control system</strong> then we have to select <strong>lead compensation</strong> network.</p>
+<p>The basic requirement of the phase lead network is that all poles and zeros of the transfer function of the network must lie on (-)ve real axis interlacing each other with a zero located at the origin of nearest origin.</p>
+<p> Given below is the circuit diagram for the phase <strong>lead compensation</strong> network.<br />
+<div id="attachment_15759" class="wp-caption aligncenter" style="width: 542px"><img src="../images/lead-compensating-network.gif" alt="lead compensation network" width="532" height="288" class="size-full wp-image-15759" /><p class="wp-caption-text">Phase Lead Compensation Network</p></div><br />
+From above circuit we get,<br />
+<center><img src="../equations/controlsystem/com-16-06-14-01.gif" alt=""></center><br />
+Equating above expression of I we get,<br />
+<center><img src="../equations/controlsystem/com-16-06-14-02.gif" alt=""></center><br />
+Now let us determine the transfer function for the given network and the transfer function can be determined by finding the ratio of the output <a href="../voltage-or-electric-potential-difference/index.html" title="Voltage or Electric Potential Difference">voltage</a> to the input voltage.<br />
+So taking Laplace transform of both side of above equations,<br />
+<center><img src="../equations/controlsystem/com-16-06-14-03.gif" alt=""><br />
+<img src="../equations/controlsystem/com-16-06-14-04.gif" alt=""></center><br />
+On substituting the &alpha; = (R<sub>1</sub> +R<sub>2</sub>)/ R<sub>2</sub> &amp; T = {(R<sub>1</sub>R<sub>2</sub>) /(R<sub>1</sub> +R<sub>2</sub>)} in the above equation.<br />
+Where T and &alpha; are respectively the time constant and attenuation constant, we have<br />
+<center><img src="../equations/controlsystem/com-16-06-14-05.gif" alt=""></center><br />
+The above network can be visualized as an amplifier with a gain of 1/&alpha;. Let us draw the pole zero plot for the above transfer function.<br />
+ <div id="attachment_15765" class="wp-caption aligncenter" style="width: 450px"><img src="../images/pole-zero-plot-of-lead-netw.gif" alt="pole zero plot of lead compensating network" width="440" height="313" class="size-full wp-image-15765" /><p class="wp-caption-text">Pole Zero Plot of Lead Compensating Network</p></div><br />
+Clearly we have -1/T (which is a zero of the transfer function) is closer to origin than the -1/(&alpha;T) (which is the pole of the transfer function).Thus we can say in the lead compensator zero is more dominating than the pole and because of this lead network introduces positive phase angle to the system when connected in series.</p>
+<p>Let us substitute s = j&omega; in the above transfer function and also we have &alpha; &lt; 1. On finding the phase angle function for the transfer function we have<br />
+<center><img src="../equations/controlsystem/com-16-06-14-06.gif" alt=""></center><br />
+Now in order to find put the maximum phase lead occurs at a frequency let us differentiate this phase function and equate it to zero. On solving the above equation we get<br />
+<center><img src="../equations/controlsystem/com-16-06-14-07.gif" alt=""></center><br />
+Where, &theta;<sub>m</sub> is the maximum phase lead angle. And the corresponding magnitude of the transfer function at maximum &theta;<sub>m</sub> is 1/a.</p>
+<h3 id="Effect-of-Phase-Lead-Compensation">Effect of Phase Lead Compensation</h3>
+<ol>
+<li>The velocity constant K<sub>v</sub> increases.</li>
+<li>The slope of the magnitude plot reduces at the gain crossover frequency so that relative stability improves &amp; error decrease due to error is directly proportional to the slope.</li>
+<li>Phase margin increases.</li>
+<li>Response become faster.</li>
+</ol>
+<h4 id="Advantages-of-Phase-Lead-Compensation">Advantages of Phase Lead Compensation</h4>
+<p>Let us discuss some of the advantages of the phase lead compensation-</p>
+<ol>
+<li>Due to the presence of phase lead network the speed of the system increases because it shifts gain crossover frequency to a higher value.</li>
+<li>Due to the presence of phase lead compensation maximum overshoot of the system decreases.</li>
+</ol>
+<h4 id="Disadvantages-of-Phase-Lead-Compensation">Disadvantages of Phase Lead Compensation</h4>
+<p>Some of the disadvantages of the phase lead compensation -</p>
+<ol>
+<li>Steady state error is not improved.</li>
+</ol>
+<h3 id="Phase-Lag-Compensation">Phase Lag Compensation</h3>
+<p>A system which has one zero and one dominating pole ( the pole which is closer to origin that all other poles is known as dominating pole) is known as lag network. If we want to add a dominating pole for compensation in control system then, we have to select a <strong>lag compensation</strong> network.</p>
+<p>The basic requirement of the phase lag network is that all poles &amp; zeros of the transfer function of the network must lie in (-)ve real axis interlacing each other with a pole located or on the nearest to the origin.</p>
+<p>Given below is the circuit diagram for the phase <strong>lag compensation</strong> network.<br />
+<div id="attachment_15773" class="wp-caption aligncenter" style="width: 461px"><img src="../images/lag-compensating-network.gif" alt="lag compensating network" width="451" height="226" class="size-full wp-image-15773" /><p class="wp-caption-text">Phase Lag Compensating Network</p></div><br />
+We will have the output at the series combination of the <a href="../types-of-resistor-carbon-composition-and-wire-wound-resistor/index.html" title="Types of resistor">resistor</a> R<sub>2</sub> and the <a href="../what-is-capacitor-and-what-is-dielectric/index.html" title="What is Capacitor and Capacitance? ">capacitor</a> C.<br />
+From the above circuit diagram, we get<br />
+<center><img src="../equations/controlsystem/com-16-06-14-08.gif" alt=""></center><br />
+Now let us determine the transfer function for the given network and the transfer function can be determined by finding the ratio of the output <a href="../voltage-or-electric-potential-difference/index.html" title="Voltage or Electric Potential Difference">voltage</a> to the input voltage.</p>
+<p>Taking Laplace transform of above two equation we get,<br />
+<center><img src="../equations/controlsystem/com-16-06-14-09.gif" alt=""></center><br />
+On substituting the T = R<sub>2</sub>C and &beta; = {(R<sub>2</sub> + R<sub>1</sub> ) / R<sub>1</sub>} in the above equation (where T and &beta; are respectively the time constant and dc gain), we have<br />
+<center><img src="../equations/controlsystem/com-16-06-14-10.gif" alt=""></center><br />
+The above network provides a high frequency gain of 1 / &beta;. Let us draw the pole zero plot for the above transfer function.<br />
+ <div id="attachment_15777" class="wp-caption aligncenter" style="width: 483px"><img src="../images/pole-zero-plot-of-lag-netwo.gif" alt="pole zero plot of lag network" width="473" height="314" class="size-full wp-image-15777" /><p class="wp-caption-text">Pole Zero Plot of Lag Network</p></div><br />
+Clearly we have -1/T (which is a zero of the transfer function) is far to origin than the -1 / (&beta;T)(which is the pole of the transfer function). Thus we can say in the lag compensator pole is more dominating than the zero and because of this lag network introduces negative phase angle to the system when connected in series. </p>
+<p>Let us substitute s = j&omega; in the above transfer function and also we have a &lt; 1. On finding the phase angle function for the transfer function we have<br />
+<center><img src="../equations/controlsystem/com-16-06-14-11.gif" alt=""></center><br />
+Now in order to find put the maximum phase lag occurs at a frequency let us differentiate this phase function and equate it to zero. On solving the above equation we get<br />
+<center><img src="../equations/controlsystem/com-16-06-14-12.gif" alt=""></center><br />
+Where, &theta;<sub>m</sub> is the maximum phase lead angle. Remember &beta; is generally chosen to be greater than 10.</p>
+<h4 id="Effect-of-Phase-Lag-Compensation">Effect of Phase Lag Compensation</h4>
+<ol>
+<li>Gain crossover frequency increases.</li>
+<li>Bandwidth decreases.</li>
+<li>Phase margin will be increase.</li>
+<li>Response will be slower before due to decreasing bandwidth, the rise time and the settling time become larger.</li>
+</ol>
+<h4 id="Advantages-of-Phase-Lag-Compensation">Advantages of Phase Lag Compensation</h4>
+<p>Let us discuss some of the advantages of phase lag compensation -</p>
+<ol>
+<li>Phase lag network allows low frequencies and high frequencies are attenuated.</li>
+<li>Due to the presence of phase lag compensation the steady state accuracy increases.</li>
+</ol>
+<h4 id="Disadvantages-of-Phase-Lag-Compensation">Disadvantages of Phase Lag Compensation</h4>
+<p>Some of the disadvantages of the phase lag compensation -</p>
+<ol>
+<li>Due to the presence of phase lag compensation the speed of the system decreases.</li>
+</ol>
+<h3 id="Phase-Lag-Lead-Compensation">Phase Lag-Lead Compensation</h3>
+<p>With single lag or lead compensation may not satisfied design specifications. For an unstable uncompensated system, lead compensation provides fast response but does not provide enough phase margin whereas lag compensation stabilize the system but does not provide enough bandwidth. So we need multiple compensators in cascade. </p>
+<p> Given below is the circuit diagram for the phase <strong>lag- lead compensation</strong> network.<br />
+<div id="attachment_15781" class="wp-caption aligncenter" style="width: 504px"><img src="../images/lag-lead-compensating-netwo.gif" alt="lag lead compensator" width="494" height="324" class="size-full wp-image-15781" /><p class="wp-caption-text">Lag Lead Compensating Network</p></div><br />
+Now let us determine transfer function for the given network and the transfer function can be determined by finding the ratio of the output <a href="../voltage-or-electric-potential-difference/index.html" title="Voltage or Electric Potential Difference">voltage</a> to the input voltage.<br />
+<center><img src="../equations/controlsystem/com-16-06-14-13.gif" alt=""></center><br />
+On substituting the &alpha;T<sub>1</sub> = R<sub>1</sub>C<sub>1</sub>, R<sub>2</sub>C<sub>2</sub> = &beta;T<sub>2</sub>, R<sub>1</sub>R<sub>2</sub>C<sub>1</sub>C<sub>2</sub> = &alpha;&beta;T<sub>1</sub>T<sub>2</sub> and T<sub>1</sub>T<sub>2</sub> = R<sub>1</sub>R<sub>2</sub>C<sub>1</sub>C<sub>2</sub> in the above equation (where T<sub>1</sub>, T<sub>2</sub>  and &alpha;, &beta; are respectively the time constants and attenuation constants). We have<br />
+<center><img src="../equations/controlsystem/com-16-06-14-14.gif" alt=""></center><br />
+Let us draw the pole zero plot for the above transfer function.<br />
+<div id="attachment_15788" class="wp-caption aligncenter" style="width: 505px"><img src="../images/pole-zero-plot-of-lag-lead-.gif" alt="pole zero plot lag lead network" width="495" height="300" class="size-full wp-image-15788" /><p class="wp-caption-text">Pole Zero Plot Lag Lead Network</p></div><br />
+Clearly we have -1/T (which is a zero of the transfer function) is far to the origin than the -1/(&beta;T)(which is the pole of the transfer function). Thus we can say in the <strong>lag-lead compensation</strong> pole is more dominating than the zero and because of this lag-lead network may introduces positive phase angle to the system when connected in series.</p>
+<h4 id="Advantages-of-Phase-Lag-Lead-Compensation">Advantages of Phase Lag-Lead Compensation </h4>
+<p>Let us discuss some of the advantages of phase lag- lead compensation-</p>
+<ol>
+<li>Due to the presence of phase lag-lead network the speed of the system increases because it shifts gain crossover frequency to a higher value.</li>
+<li>Due to the presence of phase lag-lead network accuracy is improved.</li>
+</ol>
+			
+
+</div>
+		
+</div>
+		<!-- END CONTENT -->
+
+
+<!--
+END EDITING HERE
+-->					
+
+<div id="nextpg" style="font-weight: bold; font-family: sans-serif; position:relative; top:-9px;"></div>				
+<div id="prevpg" style="font-weight: bold; font-family: sans-serif;"></div>
+</div>
+    <br />
+<br />
+    <div style="position:relative; padding:20px; font-family: cursive;" align="center" class="container text-center foot">
+        <p style="color:#1F4DDF; font-size:14px;">Design with <img src="../love.png" /> by <a style="color:#000; font-weight:bold; text-decoration:none;" href="http://sarutech.com"> SARU TECH </a> <br/> www.sarutech.com</p>
+        <p style="color:#1F4DDF; margin-top:10px; font-size:14px;">Content Credited to <a style="color:#1F4DDF; font-weight:bold; text-decoration:none;" href="http://electrical4u.com">electrical4u.com</a> <br/> Online Electrical Engineering Study Site</p><br/><br/>
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br /> 
+</div><div id="footernav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../electrical-engineering-objective-questions-mcq/index.html">MCQ</a></li>
+    <li><a href="../questions/index.html">Theory</a></li>
+    <li><a href="../videos/index.html">Videos</a></li>
+</div>
+
+<!-- BEGIN FOOTER JS INCLUDES -->
+<script type='text/javascript' src='../js/general-footer.js'></script>
+<script type='text/javascript' src='../js/autogrow/jquery.autogrow-textarea.js'></script>
+<script type='text/javascript' src='../js/placeholder-fix.js'></script>
+<script type='text/javascript' src='../js/jquery.scrollTo-min.js'></script>
+<!-- END FOOTER JS INCLUDES -->
+
+</body>
+</html>

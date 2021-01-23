@@ -1,0 +1,25 @@
+#footer-nav li { 
+display:inline; /* gets the list items showing horizontally */ 
+list-style-type:none; /* removes the bullets */ 
+padding:0 5px; /* some space between each item */ 
+margin:-2px !important; /* removes the space left by the bullet point */ 
+margin:0; /* don't need to remove the space for IE */ 
+border-left: 1px solid #ccc; /* instead of the vertical bar */ 
+border-right: 1px solid #aaa; /* a little bit of shadow on the bar */ 
+} 
+
+#footer-nav li.first { 
+border-left:0; /* no bar required before first item */ 
+} 
+
+#footer-nav li.last { 
+border-right:0; /* no bar required after last item */ 
+} 
+
+#footer-nav li a { 
+text-decoration:none; /* removes the underline from links */ 
+} 
+
+#footer-nav li a:hover { 
+text-decoration:underline; /* adds the underline back on mouseover */ 
+}

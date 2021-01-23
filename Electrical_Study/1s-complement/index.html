@@ -1,0 +1,142 @@
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>1&prime;s Complement  | Electrical Study App by SARU TECH</title>
+
+<link rel="alternate" type="application/rss+xml" title="Electrical Study App by SARU TECH &raquo; 1&prime;s Complement Comments Feed" href="http://electricalstudy.sarutech.com/1s-complement/index.html" />
+
+<link rel='prev' title='Cogeneration | Combined Heat and Power' href='../cogeneration-combine-heat-and-power/' />
+<link rel='next' title='2&#8242;s Complement' href='../2s-complement/' />
+<meta name="generator" content="WordPress 3.5.2" />
+
+<!-- All in One SEO Pack 2.0.2 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/111022768648991545451/" />
+<meta name="description" content="Let's have a discussion on 1's complement. This is one of the most basic concept of digital electronics. This is a complete article on 1's complement" />
+
+<link rel="canonical" href="1s-complement/index.html" />
+<!-- /all in one seo pack -->
+
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/general-header.js'></script>
+<script type='text/javascript' src='../js/elements.js'></script>
+<script type='text/javascript' src='../js/nav.js'></script>
+<link rel='stylesheet' id='style-css' href='../css/style.css' type='text/css' media='all' />
+<link rel="icon" type="image/png" href="../icon.png" />
+<link rel='stylesheet' id='elements-css' href='../css/elements.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elements-css' href='../css/style2.css' type='text/css' media='all' />
+<!-- END FONTS + STYLESHEETS + JS INCLUDES -->
+</head>
+<body class="page page-id-6112 page-template-default custom-background custom-font-enabled single-author">
+<!-- BEGIN SITE LOGO -->
+<div id="header-bar">
+	
+<div class="site-logo-wrapper">
+
+		<!-- BEGIN LOGO -->
+		<div class="site-logo">
+			<a href="../index.html">
+				ELECTRICAL STUDY APP
+			</a>
+		</div>
+		<!-- END LOGO -->
+
+	</div>
+</div>
+<!-- END SITE LOGO -->
+
+<!-- BEGIN MENU BUTTON -->
+<div class="menu-wrapper">
+	<div class="menu-button"></div>
+</div>
+<!-- END MENU BUTTON -->
+
+<!-- BEGIN MENU INCLUDE -->
+<div id="menu"><!-- BEGIN MENU -->
+<!-- END MENU --></div>
+<!-- END MENU INCLUDE -->
+
+<!-- BEGIN MENU CLOSE AREA -->
+<div id="menu-open-overlay"></div>
+<!-- END MENU CLOSE AREA -->
+
+<!-- BEGIN IF MENU OPEN, SHOW BLUE BACKGROUND -->
+<div id="menu-open-background">
+	<div class="menu-open-background"></div>
+</div>
+<!-- END IF MENU OPEN, SHOW BLUE BACKGROUND -->
+
+<div id="sitewrap">
+<div id="content">
+<div class="wrapper-outer">
+<div class="content-wrapper">
+
+<article id="post-6112" class="post-6112 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
+		<header class="entry-header">
+												<h1 class="entry-title" id="topic" itemprop="headline">1&prime;s Complement</h1>
+		</header>
+
+		<div class="entry-content" itemprop="articleBody">
+			We are now familiar with the basics of various number systems used in digital electronics. Now let us quickly look through the main number system which is <a href="../binary-number-system-binary-to-decimal-and-decimal-to-binary-conversion/index.html"  >binary number system</a>. In <a href="../binary-number-system-binary-to-decimal-and-decimal-to-binary-conversion/index.html"  >binary number system</a> 0 &#038; 1 can represent all the numbers. Before discussing about <strong>1's complement</strong> let us first  look at some different things.  Let us look through the numbers from 0 to 7<br />
+<a href="../1s-complement/octal-number/index.html" rel="attachment wp-att-6134"><img src="../wp-content/uploads/2013/07/octal-number.gif" alt="octal number" width="181" height="459" class="aligncenter size-full wp-image-6134" /></a><br />
+Now we have given this as an example to illustrate the representation of <a href="../binary-number-system-binary-to-decimal-and-decimal-to-binary-conversion/index.html"  >binary numbers</a>. This is done to represent the positive numbers. But what if we want to represent the negative numbers in <a href="../binary-number-system-binary-to-decimal-and-decimal-to-binary-conversion/index.html"  >binary number system</a>. The concept of negative sign is not there in <a href="../binary-number-system-binary-to-decimal-and-decimal-to-binary-conversion/index.html"  >binary number system</a>. Although there have been disputes about representing negative numbers in binary number system. And for it various methods have been developed. The most popular of them all are <strong>1's complement</strong> and <a href="../2s-complement/index.html"  >2's complement</a>. Though <a href="../2s-complement/index.html"  >2's complement</a> dominates the 1's complement in popularity but this is also used because of somewhat simpler design in hardware due to simpler concept. Now we will look at the method of 1's complement.</p>
+<h3>Number Representation</h3>
+<p>1's complement is a very easy method for representing negative numbers in binary number system. To represent any number which is negative first we have to consider the binary value of its positive magnitude in binary system, then we have to simply convert the 1’s with 0 and the 0s with 1 and we will get the 1's complement of that number which is also the negative value of that number. As we can see that this method is truly a method of complementing. We will have a clear idea if we look at some examples.</p>
+<h4>Example</h4>
+<p>First let us consider the positive numbers from 0 -7<br />
+<a href="../1s-complement/octal-number-1-2/index.html" rel="attachment wp-att-6132"><img src="../wp-content/uploads/2013/07/octal-number-11.gif" alt="octal-number-1" class="aligncenter size-full wp-image-6132" /></a><br />
+Now the 1's complement of these numbers will be like as follows<br />
+<a href="../1s-complement/1s-complement-2/index.html" rel="attachment wp-att-6133"><img src="../wp-content/uploads/2013/07/1s-complement.gif" alt="1 s complement" class="aligncenter size-full wp-image-6133" /></a><br />
+Subtraction using 1's complement<br />
+The method of <a href="../binary-subtraction/index.html"  >binary subtraction</a> becomes very easy with the help of 1's complement. Now let us look at an example to understand subtraction using 1's complement.</p></p>
+<p>Suppose A = (5)<sub>10</sub> = (0 1 0 1)<sub>2</sub></p>
+<p>And B = (3)<sub>10</sub> = (0 0 1 1)<sub>2</sub></p>
+<p>And we want to find out A - B </p>
+<p>For this first we have to calculate 1's complement of B </p>
+<p>1's complement of B = 1 1 0 0</p>
+<p>Now we have to add the result with A<br />
+<img src="../equations/1sc-1.gif" alt = " "/><br />
+Now in the result we can see that there is an overflowing bit which we have to add with the remaining result<br />
+<img src="../equations/1sc-2.gif" alt = " "/><br />
+This is the desired result.<br />
+And when there will not be any overflowing digit the result obtained in the previous stage will be the answer. </p>
+
+</div>
+		<!-- END CONTENT -->
+
+
+<!--
+END EDITING HERE
+-->					
+<div id="nextpg" style="font-weight: bold; font-family: sans-serif; position:relative; top:-9px;"></div>				
+<div id="prevpg" style="font-weight: bold; font-family: sans-serif;"></div>
+</div>
+    <br />
+<br />
+    <div style="position:relative; padding:20px; font-family: cursive;" align="center" class="container text-center foot">
+        <p style="color:#1F4DDF; font-size:14px;">Design with <img src="../love.png" /> by <a style="color:#000; font-weight:bold; text-decoration:none;" href="http://sarutech.com"> SARU TECH </a> <br/> www.sarutech.com</p>
+        <p style="color:#1F4DDF; margin-top:10px; font-size:14px;">Content Credited to <a style="color:#1F4DDF; font-weight:bold; text-decoration:none;" href="http://electrical4u.com">electrical4u.com</a> <br/> Online Electrical Engineering Study Site</p><br/><br/>
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br /> 
+</div><div id="footernav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../electrical-engineering-objective-questions-mcq/index.html">MCQ</a></li>
+    <li><a href="../questions/index.html">Theory</a></li>
+    <li><a href="../videos/index.html">Videos</a></li>
+</div>
+
+<!-- BEGIN FOOTER JS INCLUDES -->
+<script type='text/javascript' src='../js/general-footer.js'></script>
+<script type='text/javascript' src='../js/autogrow/jquery.autogrow-textarea.js'></script>
+<script type='text/javascript' src='../js/placeholder-fix.js'></script>
+<script type='text/javascript' src='../js/jquery.scrollTo-min.js'></script>
+<!-- END FOOTER JS INCLUDES -->
+
+</body>
+</html>

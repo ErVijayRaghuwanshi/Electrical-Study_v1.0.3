@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>Bode Plot | Gain Margin  &amp; Phase Margin | Electrical Study App by SARU TECH</title>
+
+<link rel="alternate" type="application/rss+xml" title="Electrical Study App by SARU TECH &raquo; Bode Plot | Gain Margin  &amp; Phase Margin Comments Feed" href="http://electricalstudy.sarutech.com/bode-plot-gain-margin-phase-margin/index.html" />
+
+<link rel='prev' title='Mathematical Modelling of Control System | Mechanical Electrical' href='../mathematical-modelling-of-various-system/' />
+<link rel='next' title='Types of Controllers |Proportional Integral &amp; Derivative Controllers' href='../types-of-controllers-proportional-integral-derivative-controllers/' />
+<meta name="generator" content="WordPress 3.5.2" />
+
+<!-- All in One SEO Pack 2.0.2 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/111022768648991545451/" />
+<meta name="description" content="Advantages of Bode Plot Bode Plot Stability Conditions of Bode Plots Bode plots were first introduced by H.W. Bode, when he was working at Bell labs in" />
+
+<link rel="canonical" href="bode-plot-gain-margin-phase-margin/index.html" />
+<!-- /all in one seo pack -->
+
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/general-header.js'></script>
+<script type='text/javascript' src='../js/elements.js'></script>
+<script type='text/javascript' src='../js/nav.js'></script>
+<link rel='stylesheet' id='style-css' href='../css/style.css' type='text/css' media='all' />
+<link rel="icon" type="image/png" href="../icon.png" />
+<link rel='stylesheet' id='elements-css' href='../css/elements.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elements-css' href='../css/style2.css' type='text/css' media='all' />
+
+
+<!-- END FONTS + STYLESHEETS + JS INCLUDES -->
+
+</head>
+<body class="page page-id-15454 page-template-default custom-background custom-font-enabled single-author">
+
+	<!-- BEGIN SITE LOGO -->
+<div id="header-bar">
+	
+<div class="site-logo-wrapper">
+
+		<!-- BEGIN LOGO -->
+		<div class="site-logo">
+			<a href="../index.html">
+				ELECTRICAL STUDY APP
+			</a>
+		</div>
+		<!-- END LOGO -->
+
+	</div>
+</div>
+<!-- END SITE LOGO -->
+
+<!-- BEGIN MENU BUTTON -->
+<div class="menu-wrapper">
+	<div class="menu-button"></div>
+</div>
+<!-- END MENU BUTTON -->
+
+<!-- BEGIN MENU INCLUDE -->
+<div id="menu"><!-- BEGIN MENU -->
+
+<!-- END MENU --></div>
+<!-- END MENU INCLUDE -->
+
+<!-- BEGIN MENU CLOSE AREA -->
+<div id="menu-open-overlay"></div>
+<!-- END MENU CLOSE AREA -->
+
+<!-- BEGIN IF MENU OPEN, SHOW BLUE BACKGROUND -->
+<div id="menu-open-background">
+	<div class="menu-open-background"></div>
+</div>
+<!-- END IF MENU OPEN, SHOW BLUE BACKGROUND -->
+
+<div id="sitewrap">
+<div id="content">
+<div class="wrapper-outer">
+<div class="content-wrapper">
+
+
+		<article id="post-15454" class="post-15454 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
+		<header class="entry-header">
+												<h1 class="entry-title" id="topic" itemprop="headline">Bode Plot | Gain Margin  &#038; Phase Margin</h1>
+		</header>
+
+		<div class="entry-content" itemprop="articleBody">
+			
+
+<div id="top" class="pageIndex">
+<a href="#Advantages-of-Bode-Plot">Advantages of Bode Plot</a><br />
+<a href="#Bode-Plot">Bode Plot</a><br />
+<a href="#Stability-Conditions-of-Bode-Plots">Stability Conditions of Bode Plots</a>
+</div>
+<p><strong>Bode plots</strong> were first introduced by H.W. Bode, when he was working at Bell labs in the United States. Now before I describe what are this plots it is very essential here to discuss a few advantages over other stability criteria. Some of the advantages of this plot are written below:</p>
+<h3 id="Advantages-of-Bode-Plot">Advantages of Bode Plot</h3>
+<ol>
+<li>It is based on the asymptotic approximation, which provides a simple method to plot the logarithmic magnitude curve.</li>
+<li>The multiplication of various magnitude appears in the transfer function can be treated as an addition, while division can be treated as subtraction as we are using a logarithmic scale. </li>
+<li>With the help of this plot only we can directly comment on the stability of the system without doing any calculations. </li>
+<li><strong>Bode plots</strong> provides relative stability in terms of <strong>gain margin</strong> and <strong>phase margin</strong>. </li>
+<li>It also covers from low frequency to high frequency range. </li>
+</ol>
+<p>Now there are various terms related to this plot that we will use frequently in this article.</p>
+<ol>
+<li><b>Gain Margin:</b> Greater will the <strong>gain margin</strong> greater will be the stability of the system. It refers to the amount of gain, which can be increased or decreased without making the system unstable. It is usually expressed in dB.</li>
+<li><b>Phase Margin:</b> Greater will the <strong>phase margin</strong> greater will be the stability of the system. It refers to the phase which can be increased or decreased without making the system unstable. It is usually expressed in phase.</li>
+<li><b>Gain Cross Over Frequency:</b> It refers to the frequency at which magnitude curve cuts the zero dB axis in the bode plot.</li>
+<li><b>Phase Cross Over Frequency:</b> It refers to the frequency at which phase curve cuts the negative times the 180 degree axis in this plot.</li>
+<li><b>Corner Frequency:</b> The frequency at which the two asymptotes cuts or meet each other is known as break frequency or corner frequency.</li>
+<li><b>Resonant Frequency:</b> The value of frequency at which the modulus of G (j&omega;) has a peak value is known as resonant frequency.</li>
+<li><b>Factors:</b> Every loop transfer function (i.e. G(s) &times; H(s)) product of various factors like constant term K, Integral factors (j&omega;), first order factors ( 1 + j&omega;T)<sup>(&plusmn; n)</sup> where n is an integer, second order or quadratic factors. </li>
+<li><b>Slope:</b> There is a slope corresponding to each factor and slope for each factor is expressed in the dB per decade.</li>
+<li><b>Angle:</b> There is an angle corresponding to each factor and angle for each factor is expressed in the degrees.</li>
+</ol>
+<h2 id="Bode-Plot">Bode Plot</h2>
+<p>These are also known as logarithmic plot (because we draw these plots on semi-log papers) and are used for determining the relative stabilities of the given system. Now in order to determine the stability of the system using bode plot we draw two curves, one is for magnitude called magnitude curve another for phase called  <strong>Bode phase plot</strong>.</p>
+</p>
+<p>Now there are some results that one should remember in order to plot the Bode curve. These results are written below:</p>
+<li><b>Constant term K:</b> This factor has a slope of zero dB per decade. There is no corner frequency corresponding to this constant term. The phase angle associated with this constant term is also zero.</li>
+<li><b>Integral factor 1/(j&omega;)<sup>n</sup>:</b> This factor has a slope of -20 &times; n (where n is any integer)dB per decade. There is no corner frequency corresponding to this integral factor. The phase angle associated with this integral factor is -90 &times; n here n is also an integer.</li>
+<li><b>First order factor 1/ (1+j&omega;T):</b> This factor has a slope of -20 dB per decade. The corner frequency corresponding to this factor is 1/T radian per second. The phase angle associated with this first factor is  -tan<sup>- 1</sup>(&omega;T).
+<li><b>First order factor (1+j&omega;T):</b> This factor has a slope of 20 dB per decade. The corner frequency corresponding to this factor is 1/T radian per second. The phase angle associated with this first factor is  tan<sup>- 1</sup>(&omega;T) .</li>
+<li><b>Second order or quadratic factor : [{1/(1+(2&zeta;/&omega;)} &times; (j&omega;) + {(1/&omega;<sup>2</sup>)} &times; (j&omega;)<sup>2</sup>)]:</b> This factor has a slope of -40 dB per decade. The corner frequency corresponding to this factor is &omega;<sup>n</sup> radian per second. The phase angle associated with this first factor is - tan<sup>-1</sup>{ (2&zeta;&omega; / &omega;<sub>n</sub>) / (1-(&omega; / &omega;<sub>n</sub>)<sup>2</sup>)} .</li>
+<p>Keeping all these points in mind we are able to draw the plot for any kind of system. Now let us discuss the procedure of making a bode plot:</p>
+<ol>
+<li>Substitute the s = j&omega; in the open loop transfer function G(s) &times; H(s). </li>
+<li>Find the corresponding corner frequencies and tabulate them.</li>
+<li>Now we are required one semi-log graph chooses a frequency range such that the plot should start with the frequency which is lower than the lowest corner frequency. Mark angular frequencies on the x-axis, mark slopes on the left hand side of the y-axis by marking a zero slope in the middle and on the right hand side mark phase angle by taking -180 degrees in the middle.</li>
+<li>Calculate the gain factor and the type or order of the system.</li>
+<li>Now calculate slope corresponding to each factor.</li>
+</ol>
+<p><u>For drawing the <b>Magnitude curve</u> :</b></p>
+<p>(a) Mark the corner frequency on the semi log graph paper.</p>
+<p>(b)Tabulate these factors moving from top to bottom in the given sequence.</p>
+<ol>
+<li>Constant term K.</li>
+<li>Integral factor 1/(j&omega;)<sup>n</sup>.</li>
+<li>First order factor 1/ (1+j&omega;T).</li>
+<li> First order factor (1+j&omega;T).</li>
+<li>Second order or quadratic factor : [{1/(1+(2&zeta;/&omega;)} &times; (j&omega;) + {(1/&omega;<sup>2</sup>)} &times; (j&omega;)<sup>2</sup>)]</li>
+</ol>
+<p>(c) Now sketch the line with the help of corresponding slope of the given factor. Change the slope at every corner frequency by adding the slope of the next factor. You will get magnitude plot.</p>
+<p>(d) Calculate the gain margin.</p>
+<p><u>For drawing the <strong>Bode phase plot</strong></u> :</p>
+<ol>
+<li>Calculate the phase function adding all the phases of factors.</li>
+<li>Substitute various values to above function in order to find out the phase at different points and plot a curve. You will get a phase curve.</li>
+<li>Calculate the phase margin.</li>
+</ol>
+<h3 id="Stability-Conditions-of-Bode-Plots">Stability Conditions of Bode Plots</h3>
+<p>Stability conditions are given below :</p>
+<ol>
+<li><b>For Stable System :</b> Both the margins should be positive. Or phase margin should be greater than the gain margin.</li>
+<li><b>For Marginal Stable System :</b> Both the margins should be zero. Or phase margin should be equal to the gain margin.</li>
+<li><b>For Unstable System :</b> If any of them is negative. Or phase margin should be less than the gain margin.</li>
+</ol>
+
+			
+
+</div>
+		
+</div>
+		<!-- END CONTENT -->
+
+
+<!--
+END EDITING HERE
+-->					
+
+<div id="nextpg" style="font-weight: bold; font-family: sans-serif; position:relative; top:-9px;"></div>				
+<div id="prevpg" style="font-weight: bold; font-family: sans-serif;"></div>
+</div>
+    <br />
+<br />
+    <div style="position:relative; padding:20px; font-family: cursive;" align="center" class="container text-center foot">
+        <p style="color:#1F4DDF; font-size:14px;">Design with <img src="../love.png" /> by <a style="color:#000; font-weight:bold; text-decoration:none;" href="http://sarutech.com"> SARU TECH </a> <br/> www.sarutech.com</p>
+        <p style="color:#1F4DDF; margin-top:10px; font-size:14px;">Content Credited to <a style="color:#1F4DDF; font-weight:bold; text-decoration:none;" href="http://electrical4u.com">electrical4u.com</a> <br/> Online Electrical Engineering Study Site</p><br/><br/>
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br /> 
+</div><div id="footernav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../electrical-engineering-objective-questions-mcq/index.html">MCQ</a></li>
+    <li><a href="../questions/index.html">Theory</a></li>
+    <li><a href="../videos/index.html">Videos</a></li>
+</div>
+
+<!-- BEGIN FOOTER JS INCLUDES -->
+<script type='text/javascript' src='../js/general-footer.js'></script>
+<script type='text/javascript' src='../js/autogrow/jquery.autogrow-textarea.js'></script>
+<script type='text/javascript' src='../js/placeholder-fix.js'></script>
+<script type='text/javascript' src='../js/jquery.scrollTo-min.js'></script>
+<!-- END FOOTER JS INCLUDES -->
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>Bode Plot | Electrical Study App by SARU TECH</title>
+
+<link rel="alternate" type="application/rss+xml" title="Electrical Study App by SARU TECH &raquo; Bode Plot Comments Feed" href="http://electricalstudy.sarutech.com/bode-plot/index.html" />
+
+<link rel='prev' title='Torque Equation of Three Phase Induction Motor' href='../torque-equation-of-three-phase-induction-motor/' />
+<link rel='next' title='types-of-controllers-proportional-integral-derivative-controllers' href='../types-of-controllers-proportional-integral-derivative-controllers/' />
+<meta name="generator" content="WordPress 3.5.2" />
+
+<!-- All in One SEO Pack 2.0.2 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/111022768648991545451/" />
+<meta name="description" content="Know more about Bode Plot from this page. It contains facts and theories about Bode Plot through detailed and clear description." />
+
+<link rel="canonical" href="bode-plot/index.html" />
+<!-- /all in one seo pack -->
+
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/general-header.js'></script>
+<script type='text/javascript' src='../js/elements.js'></script>
+<script type='text/javascript' src='../js/nav.js'></script>
+<link rel='stylesheet' id='style-css' href='../css/style.css' type='text/css' media='all' />
+<link rel="icon" type="image/png" href="../icon.png" />
+<link rel='stylesheet' id='elements-css' href='../css/elements.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elements-css' href='../css/style2.css' type='text/css' media='all' />
+
+
+<!-- END FONTS + STYLESHEETS + JS INCLUDES -->
+
+</head>
+<body class="page page-id-6596 page-template-default custom-background custom-font-enabled single-author">
+
+	<!-- BEGIN SITE LOGO -->
+<div id="header-bar">
+	
+<div class="site-logo-wrapper">
+
+		<!-- BEGIN LOGO -->
+		<div class="site-logo">
+			<a href="../index.html">
+				ELECTRICAL STUDY APP
+			</a>
+		</div>
+		<!-- END LOGO -->
+
+	</div>
+</div>
+<!-- END SITE LOGO -->
+
+<!-- BEGIN MENU BUTTON -->
+<div class="menu-wrapper">
+	<div class="menu-button"></div>
+</div>
+<!-- END MENU BUTTON -->
+
+<!-- BEGIN MENU INCLUDE -->
+<div id="menu"><!-- BEGIN MENU -->
+
+<!-- END MENU --></div>
+<!-- END MENU INCLUDE -->
+
+<!-- BEGIN MENU CLOSE AREA -->
+<div id="menu-open-overlay"></div>
+<!-- END MENU CLOSE AREA -->
+
+<!-- BEGIN IF MENU OPEN, SHOW BLUE BACKGROUND -->
+<div id="menu-open-background">
+	<div class="menu-open-background"></div>
+</div>
+<!-- END IF MENU OPEN, SHOW BLUE BACKGROUND -->
+
+<div id="sitewrap">
+<div id="content">
+<div class="wrapper-outer">
+<div class="content-wrapper">
+
+
+		<article id="post-6596" class="post-6596 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
+		<header class="entry-header">
+												<h1 class="entry-title" id="topic" itemprop="headline">Bode Plot</h1>
+		</header>
+
+		<div class="entry-content" itemprop="articleBody">
+			
+<p>In frequency domain analysis the real part of s - plane is not considered. Therefore, s = &sigma; + j&omega; becomes  s = j&omega;. The O.L.T.F (open loop transfer function) can be determined by using 3 techniques –</p>
+<p>•	<strong>Bode  plot</strong> : Here magnitude and phase angle of G(j&omega;)H(j&omega;) are plotted with respect to &omega; in the log scale.</p>
+<p>•	<strong>Polar  plot</strong> : Here the magnitude and phase angle of G(j&omega;)H(j&omega;) are plotted in the same card where &omega; is varying from 0 to infinity.</p>
+<p>•	Nyquist  plot : Same as polar plot where &omega; varying from -&infin; to +&infin;. </p>
+<p>In this section we will discuss about Bode plot.</p>
+<p>The bode plot method gives a graphical procedure for determining the stability of a control system based on sinusoidal  frequency response. The transfer function of a system for sinusoidal input response can be obtained by substituting  j&omega; in place of Laplace operator s. Therefore, if the open loop transfer function of a system is G(s) H(s), the corresponding sinusoidal open loop transfer function is G(j&omega;)H(j&omega;) which can be expressed in the form of magnitude and phase angle. </p>
+<p>The variation of magnitude of sinusoidal transfer function expressed in decibel db and the corresponding phase angle is expressed in degrees being plotted w.r.t frequency on a logarithmic scale i.e (log<sub>10</sub> &omega;) in rectangular axes. The plot thus obtained is known as Bode plot. </p>
+<p>The logarithmic bode plot has an advantage that it can be approximated by asymptotic straight lines. Relative stability of a closed loop control system can be conveniently obtained by plotting its open-loop transfer function by Bode plot method. The gain margin and phase margin determined directly from Bode plot. For complicated system Bode  lot can also be plotted from experimental results and from there transfer function of the system under test can be  obtained. </p>
+<p>For plotting magnitude versus  log<sub>10</sub>&omega; plot each term of G(j&omega;)H(j&omega;) is considered separately. Contributions  from each term is taken into consideration.</p>
+<p>•	Graphs for the gain term K : magnitude in decibel of the term K is given by, K (db) = 20 log<sub>10</sub> (K) which indicates that the magnitude is independent of log<sub>10</sub>&omega; and as K is considered positive real; the phase angle is always zero whatever may be the value of &omega;.</p>
+<p>•	Graphs for the term 1 / (j&omega;)<sup>N</sup> : magnitude in decibel is given by -20Nlog<sub>10</sub>&omega; and phase angle is given by -90&deg; N.</p>
+<p>•	Graphs for the term (1+ j&omega;T) </p>
+<p>•	Graphs for the term 1 / (1+ j&omega;T) </p>
+<p>The corner frequencies due to first order terms,<br />
+<img src='1.png' id="latex%281%5C%3B%2B%5C%3B%20j%5Comega%20T_1%29%2C%5C%3B%20%281%5C%3B%2B%5C%3B%20j%5Comega%20T_2%29%2C%5C%3B%281%5C%3B%2B%5C%3B%20j%5Comega%20T_3%29%2C%5C%3B%5Ccdot%5Ccdot%5Ccdot%5Ccdot%5Ccdot%5Ccdot%5Ccdot%5Ccdot%20%5Cfrac%7B1%7D%7B1%5C%3B%2B%20j%5Comega%20T_a%7D%2C%5C%3B%5Cfrac%7B1%7D%7B1%5C%3B%2B%20j%5Comega%20T_a%7D%2C%5Cfrac%7B1%7D%7B1%5C%3B%2B%20j%5Comega%20T_c%7D%2C%5Ccdot%5Ccdot%5Ccdot%5Ccdot%5Ccdot%5Ccdot%5Ccdot%5Ccdot%5C%3B%20etc%5C%3B%20is%5C%3B%20given%5C%3B%20by&amp;bg=DDDDDD&#038;fg=000000&#038;s=1" title='(1\;+\; j\omega T_1),\; (1\;+\; j\omega T_2),\;(1\;+\; j\omega T_3),\;\cdot\cdot\cdot\cdot\cdot\cdot\cdot\cdot \frac{1}{1\;+ j\omega T_a},\;\frac{1}{1\;+ j\omega T_a},\frac{1}{1\;+ j\omega T_c},\cdot\cdot\cdot\cdot\cdot\cdot\cdot\cdot\; etc\; is\; given\; by' style='vertical-align:1%' class='tex' alt='(1\;+\; j\omega T_1),\; (1\;+\; j\omega T_2),\;(1\;+\; j\omega T_3),\;\cdot\cdot\cdot\cdot\cdot\cdot\cdot\cdot \frac{1}{1\;+ j\omega T_a},\;\frac{1}{1\;+ j\omega T_a},\frac{1}{1\;+ j\omega T_c},\cdot\cdot\cdot\cdot\cdot\cdot\cdot\cdot\; etc\; is\; given\; by' /> </p>
+</p>
+<p><img src='2.png' id="latex%5Comega%5C%3B%20%3D%5C%3B%5Cfrac%7B1%7D%7BT_1%7D%2C%20%5Cfrac%7B1%7D%7BT_2%7D%2C%20%5Cfrac%7B1%7D%7BT_3%7D%2C%5Ccdot%5Ccdot%5Ccdot%5Ccdot%5Ccdot%5Ccdot%5Ccdot%5Ccdot%20%20%5Cfrac%7B1%7D%7BT_a%7D%2C%5C%3B%5Cfrac%7B1%7D%7BT_b%7D%2C%5C%3B%5Cfrac%7B1%7D%7BT_c%7D%2C%5Ccdot%5Ccdot%5Ccdot%5Ccdot%5Ccdot%5Ccdot%5Ccdot%5Ccdot%20etc.&amp;bg=DDDDDD&#038;fg=000000&#038;s=1" title='\omega\; =\;\frac{1}{T_1}, \frac{1}{T_2}, \frac{1}{T_3},\cdot\cdot\cdot\cdot\cdot\cdot\cdot\cdot  \frac{1}{T_a},\;\frac{1}{T_b},\;\frac{1}{T_c},\cdot\cdot\cdot\cdot\cdot\cdot\cdot\cdot etc.' style='vertical-align:1%' class='tex' alt='\omega\; =\;\frac{1}{T_1}, \frac{1}{T_2}, \frac{1}{T_3},\cdot\cdot\cdot\cdot\cdot\cdot\cdot\cdot  \frac{1}{T_a},\;\frac{1}{T_b},\;\frac{1}{T_c},\cdot\cdot\cdot\cdot\cdot\cdot\cdot\cdot etc.' /></p>
+<p>For the frequencies lower than the lowest corner frequency the contribution towards the gain(magnitude in decibel) of  the transfer function is nil, therefore, the sinusoidal transfer function for frequencies lower than the lowest corner  frequency can be expressed as</p>
+<p><img src='3.png' id="latexG%28j%5Comega%29H%28j%5Comega%29%5C%3B%3D%5C%3B%5Cfrac%7BK%7D%7B%28j%5Comega%29%5EN%7D&amp;bg=DDDDDD&#038;fg=000000&#038;s=1" title='G(j\omega)H(j\omega)\;=\;\frac{K}{(j\omega)^N}' style='vertical-align:1%' class='tex' alt='G(j\omega)H(j\omega)\;=\;\frac{K}{(j\omega)^N}' /></p>
+<p>The magnitude is 20 log<sub>10</sub>K - 20Nlog<sub>10</sub>&omega;. As N denotes the types of the transfer function, therefore, the initial slope of Bode plot is decided by the type of a system.</p>
+<table class = "Border">
+<tr>
+<th>Type of System(N)</th>
+<th>Initial Slope</th>
+<th>Intersection  with 0db       Axis at</th>
+</tr>
+<tr>
+<td>0</td>
+<td>0 db/decade</td>
+<td>Parallel to 0 db axis</td>
+</tr>
+<tr>
+<td>1</td>
+<td>- 20 db/decade</td>
+<td>&omega; = K</td>
+</tr>
+<tr>
+<td>2</td>
+<td> - 40 db/decade</td>
+<td>&omega; = K<sup>1/2</sup></td>
+</tr>
+<tr>
+<td>3</td>
+<td> - 60 db/decade</td>
+<td>&omega; = K<sup>1/3</sup></td>
+</tr>
+<tr>
+<td>...</td>
+<td> ............</td>
+<td>.....................</td>
+</tr>
+<tr>
+<td>...</td>
+<td> ............</td>
+<td>.....................</td>
+</tr>
+<tr>
+<td>...</td>
+<td> ............</td>
+<td>.....................</td>
+</tr>
+<tr>
+<td>N</td>
+<td> - 20N db/decade</td>
+<td>&omega; = K<sup>1/N</sup></td>
+</tr>
+</table>
+<p>Procedure of bode plot :<br />
+•	Identify the corner frequency<br />
+•	Draw the asymptotes magnitude plot<br />
+•	For the type zero system draw a line upto 1st corner frequency (lowest) having 0 db/dec.<br />
+•	For the type 1 system draw a line having a slope of -20db/dec. upto &omega; =K mark<br />
+•	For type 2 system we draw a line having slope of -40db/dec. upto &omega; =&radic;K and so on<br />
+•	Now draw a line upto 2nd corner frequency by adding the slope of next pole or zero to the previous slope and so on.</p>
+<p>*** On logarithmic scale a decade means a ratio of 10. Sometimes the term octave is used to represent a ratio of 2 on log scale. The relation between octave and decade is given as 20N db/dec = 6N db/octave. From the bode plot we determine gain margin, phase margin, gain cross over frequency, phase crossover frequency and stability. The point where the slope intersects 0db line is called the gain crossover frequency. The point where the the phase plot line crosses the - 180 &deg; line is called as phase crossover frequency. If we draw a perpendicular line from phase crossover freq. to 0 db line we get gain margin (GM) while we get phase margin (PM) on drawing a line perpendicular from gain cross over frequency to -180 &deg; line.</p>
+<p>*** If both  GM and PM re both +ve then system is stable ; GM below 0db line is +ve and PM above -180&deg; line is +ve.</p>
+			
+
+</div>
+		
+</div>
+		<!-- END CONTENT -->
+
+
+<!--
+END EDITING HERE
+-->					
+
+<div id="nextpg" style="font-weight: bold; font-family: sans-serif; position:relative; top:-9px;"></div>				
+<div id="prevpg" style="font-weight: bold; font-family: sans-serif;"></div>
+</div>
+    <br />
+<br />
+    <div style="position:relative; padding:20px; font-family: cursive;" align="center" class="container text-center foot">
+        <p style="color:#1F4DDF; font-size:14px;">Design with <img src="../love.png" /> by <a style="color:#000; font-weight:bold; text-decoration:none;" href="http://sarutech.com"> SARU TECH </a> <br/> www.sarutech.com</p>
+        <p style="color:#1F4DDF; margin-top:10px; font-size:14px;">Content Credited to <a style="color:#1F4DDF; font-weight:bold; text-decoration:none;" href="http://electrical4u.com">electrical4u.com</a> <br/> Online Electrical Engineering Study Site</p><br/><br/>
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br /> 
+</div><div id="footernav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../electrical-engineering-objective-questions-mcq/index.html">MCQ</a></li>
+    <li><a href="../questions/index.html">Theory</a></li>
+    <li><a href="../videos/index.html">Videos</a></li>
+</div>
+
+<!-- BEGIN FOOTER JS INCLUDES -->
+<script type='text/javascript' src='../js/general-footer.js'></script>
+<script type='text/javascript' src='../js/autogrow/jquery.autogrow-textarea.js'></script>
+<script type='text/javascript' src='../js/placeholder-fix.js'></script>
+<script type='text/javascript' src='../js/jquery.scrollTo-min.js'></script>
+<!-- END FOOTER JS INCLUDES -->
+
+</body>
+</html>

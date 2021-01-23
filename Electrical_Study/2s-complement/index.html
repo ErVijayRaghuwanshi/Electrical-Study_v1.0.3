@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>2&#8242;s Complement | Electrical Study App by SARU TECH</title>
+
+<link rel="alternate" type="application/rss+xml" title="Electrical Study App by SARU TECH &raquo; 2&#8242;s Complement Comments Feed" href="http://electricalstudy.sarutech.com/2s-complement/index.html" />
+
+<link rel='prev' title='1&prime;s Complement' href='../1s-complement/' />
+<link rel='next' title='hamming-code' href='../hamming-code/' />
+<meta name="generator" content="WordPress 3.5.2" />
+
+<!-- All in One SEO Pack 2.0.2 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/111022768648991545451/" />
+<meta name="description" content="2's complement is very much necessary for digital calculation and for representing negative binary numbers. 2's complement is discussed in this article." />
+
+<link rel="canonical" href="2s-complement/index.html" />
+<!-- /all in one seo pack -->
+
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/general-header.js'></script>
+<script type='text/javascript' src='../js/elements.js'></script>
+<script type='text/javascript' src='../js/nav.js'></script>
+<link rel='stylesheet' id='style-css' href='../css/style.css' type='text/css' media='all' />
+<link rel="icon" type="image/png" href="../icon.png" />
+<link rel='stylesheet' id='elements-css' href='../css/elements.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elements-css' href='../css/style2.css' type='text/css' media='all' />
+
+
+<!-- END FONTS + STYLESHEETS + JS INCLUDES -->
+
+</head>
+<body class="page page-id-6143 page-template-default custom-background custom-font-enabled single-author">
+<!-- BEGIN SITE LOGO -->
+<div id="header-bar">
+	
+<div class="site-logo-wrapper">
+
+		<!-- BEGIN LOGO -->
+		<div class="site-logo">
+			<a href="../index.html">
+				ELECTRICAL STUDY APP
+			</a>
+		</div>
+		<!-- END LOGO -->
+
+	</div>
+</div>
+<!-- END SITE LOGO -->
+
+<!-- BEGIN MENU BUTTON -->
+<div class="menu-wrapper">
+	<div class="menu-button"></div>
+</div>
+<!-- END MENU BUTTON -->
+
+<!-- BEGIN MENU INCLUDE -->
+<div id="menu"><!-- BEGIN MENU -->
+<!-- END MENU --></div>
+<!-- END MENU INCLUDE -->
+
+<!-- BEGIN MENU CLOSE AREA -->
+<div id="menu-open-overlay"></div>
+<!-- END MENU CLOSE AREA -->
+
+<!-- BEGIN IF MENU OPEN, SHOW BLUE BACKGROUND -->
+<div id="menu-open-background">
+	<div class="menu-open-background"></div>
+</div>
+<!-- END IF MENU OPEN, SHOW BLUE BACKGROUND -->
+
+<div id="sitewrap">
+<div id="content">
+<div class="wrapper-outer">
+<div class="content-wrapper">
+<article id="post-6143" class="post-6143 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
+		<header class="entry-header">
+												<h1 class="entry-title" id="topic" itemprop="headline">2&#8242;s Complement</h1>
+		</header>
+
+		<div class="entry-content" itemprop="articleBody">
+			As we have gone through the basics of <a href="../binary-number-system-binary-to-decimal-and-decimal-to-binary-conversion/index.html"  >binary number systems</a>, we now know that any number can be represented by the combination of 0 &#038; 1. We can easily explain any number in <a href="../binary-number-system-binary-to-decimal-and-decimal-to-binary-conversion/index.html"  >binary numbers</a> which are positive in magnitude, but what about the negative numbers. We can say that if we put negative(-) sign before the number it will represent the negative number, but the convention of negative sign before the numbers are not that popular in digital electronics system because they lack the logical representations. Rather there are methods like <a href="../1s-complement/index.html"  >1's complement</a> and <strong>2's complement</strong> which are used very much to represent the negative numbers in <a href="../binary-number-system-binary-to-decimal-and-decimal-to-binary-conversion/index.html"  >binary number system</a>. We have already discussed about the <a href="../1s-complement/index.html"  >1's complement</a> and <strong>2's complement</strong> will be discussed in this article. It can be said that this is an extension of <a href="../1s-complement/index.html"  >1's complement</a> as it can be gained after operating a <a href="../1s-complement/index.html"  >binary number</a> by 1's complement. We will come to the method at a later stage.</p>
+<h3>Representation</h3>
+<p>As we have already discussed 2's complement represents any negative binary number. The concept comes from subtracting the number from 2<sup>N</sup>, where N is the number of bits of that number. So if we want to represent a negative binary number we have to first consider its positive magnitude, then subtracting that value form 2<sup>N</sup> ( where N is the number of bits of that particular number as stated earlier) that number is the negative equivalent of that negative number in 2's complement method. Now we will go through the method of finding 2's complement of a number with an example.</p>
+<h4>Method and Example</h4>
+<p>In the easiest way to find out the 2's complement of a binary number we have to find out the 1's complement of that number first then add 1 with that. Now let us look at an example to understand the method more easily.<br />
+Suppose we have to represent ( - 5)<sub>10</sub> in binary number.</p>
+<p>Step 1<br />
+We have to consider binary equivalent of ( + 5)<Sub>10</sub> which is (0 0 0 01 0 0 1)<sub>2</sub></p>
+<p>Step 2<br />
+Now we have to find out 1's complement of 1 0 0 1 which is = 1 1 1 1 0 1 1 0</p>
+<p>Step 3<br />
+And finally we have to add 1 with the result</p>
+<p><img src="../equations/2sc-1.gif" alt=" "/></p>
+<p>This is the negative binary representation of (-5). If we convert the result in decimal number system we will get 1 1 1 1 0 1 1 1= 251<sub>10</sub> which can be said as (2<sup>4</sup> - 1) which we already discussed is the actual definition of 2's complement.</p></p>
+<p>Subtraction using 2’s complement</p>
+<p>One of the most popular applications of 2's complement is the subtraction of binary numbers using 2's complement method. This method is preferred because here subtraction can be done by doing additions. With an example we will be able to grasp the method at once. </p>
+<p>We want to do 7 - 12</p>
+<p>Step 1<br />
+Taking 2's complement of minuend (12) which is = 1 1 1 1 0 1 0 0</p>
+<p>Step 2 </p>
+<p>Adding the result with binary equivalent of 7</p>
+<p><img src="../equations/2sc-2.gif" alt=" "/><br />
+So the subtraction method using 2's complement method is hereby explained. </p>
+
+</div>
+		
+</div>
+		<!-- END CONTENT -->
+
+
+<!--
+END EDITING HERE
+-->					
+
+<div id="nextpg" style="font-weight: bold; font-family: sans-serif; position:relative; top:-9px;"></div>				
+<div id="prevpg" style="font-weight: bold; font-family: sans-serif;"></div>
+</div>
+    <br />
+<br />
+    <div style="position:relative; padding:20px; font-family: cursive;" align="center" class="container text-center foot">
+        <p style="color:#1F4DDF; font-size:14px;">Design with <img src="../love.png" /> by <a style="color:#000; font-weight:bold; text-decoration:none;" href="http://sarutech.com"> SARU TECH </a> <br/> www.sarutech.com</p>
+        <p style="color:#1F4DDF; margin-top:10px; font-size:14px;">Content Credited to <a style="color:#1F4DDF; font-weight:bold; text-decoration:none;" href="http://electrical4u.com">electrical4u.com</a> <br/> Online Electrical Engineering Study Site</p><br/><br/>
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br /> 
+</div><div id="footernav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../electrical-engineering-objective-questions-mcq/index.html">MCQ</a></li>
+    <li><a href="../questions/index.html">Theory</a></li>
+    <li><a href="../videos/index.html">Videos</a></li>
+</div>
+
+<!-- BEGIN FOOTER JS INCLUDES -->
+<script type='text/javascript' src='../js/general-footer.js'></script>
+<script type='text/javascript' src='../js/autogrow/jquery.autogrow-textarea.js'></script>
+<script type='text/javascript' src='../js/placeholder-fix.js'></script>
+<script type='text/javascript' src='../js/jquery.scrollTo-min.js'></script>
+<!-- END FOOTER JS INCLUDES -->
+
+</body>
+</html>

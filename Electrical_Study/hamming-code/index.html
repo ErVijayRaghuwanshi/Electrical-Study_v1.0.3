@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>Hamming Code | Electrical Study App by SARU TECH</title>
+
+<link rel="alternate" type="application/rss+xml" title="Electrical Study App by SARU TECH &raquo; Hamming Code Comments Feed" href="http://electricalstudy.sarutech.com/hamming-code/index.html" />
+
+<link rel='prev' title='Exclusive OR Gate | Ex-OR gate' href='../exclusive-or-gate/' />
+<link rel='next' title='9s-complement-and-10s-complement' href='../9s-complement-and-10s-complement/' />
+<meta name="generator" content="WordPress 3.5.2" />
+
+<!-- All in One SEO Pack 2.0.2 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/111022768648991545451/" />
+<meta name="description" content="Clean interpretation of all the characteristics and capabilities of Hamming Code can be learned from this piece of article." />
+
+<link rel="canonical" href="hamming-code/index.html" />
+<!-- /all in one seo pack -->
+
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/general-header.js'></script>
+<script type='text/javascript' src='../js/elements.js'></script>
+<script type='text/javascript' src='../js/nav.js'></script>
+<link rel='stylesheet' id='style-css' href='../css/style.css' type='text/css' media='all' />
+<link rel="icon" type="image/png" href="../icon.png" />
+<link rel='stylesheet' id='elements-css' href='../css/elements.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elements-css' href='../css/style2.css' type='text/css' media='all' />
+
+
+<!-- END FONTS + STYLESHEETS + JS INCLUDES -->
+
+</head>
+<body class="page page-id-5983 page-template-default custom-background custom-font-enabled single-author">
+
+	<!-- BEGIN SITE LOGO -->
+<div id="header-bar">
+	
+<div class="site-logo-wrapper">
+
+		<!-- BEGIN LOGO -->
+		<div class="site-logo">
+			<a href="../index.html">
+				ELECTRICAL STUDY APP
+			</a>
+		</div>
+		<!-- END LOGO -->
+
+	</div>
+</div>
+<!-- END SITE LOGO -->
+
+<!-- BEGIN MENU BUTTON -->
+<div class="menu-wrapper">
+	<div class="menu-button"></div>
+</div>
+<!-- END MENU BUTTON -->
+
+<!-- BEGIN MENU INCLUDE -->
+<div id="menu"><!-- BEGIN MENU -->
+
+<!-- END MENU --></div>
+<!-- END MENU INCLUDE -->
+
+<!-- BEGIN MENU CLOSE AREA -->
+<div id="menu-open-overlay"></div>
+<!-- END MENU CLOSE AREA -->
+
+<!-- BEGIN IF MENU OPEN, SHOW BLUE BACKGROUND -->
+<div id="menu-open-background">
+	<div class="menu-open-background"></div>
+</div>
+<!-- END IF MENU OPEN, SHOW BLUE BACKGROUND -->
+
+<div id="sitewrap">
+<div id="content">
+<div class="wrapper-outer">
+<div class="content-wrapper">
+
+
+		<article id="post-5983" class="post-5983 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
+		<header class="entry-header">
+												<h1 class="entry-title" id="topic" itemprop="headline">Hamming Code</h1>
+		</header>
+
+		<div class="entry-content" itemprop="articleBody">
+			
+We have seen, in the case of the error detection and correction codes described above, how an increase in the number of redundant bits added to message bits can enhance the capability of the code to detect and correct errors. If we have a sufficient number of redundant bits, and if these bits can be arranged such that different error bits produce different error results, then it should be possible not only to detect the error bit but also to identify its location. Actually, the addition of bits which are redundant alters the ‘distance’ Code parameter, which we know as the Hamming distance. Now we need to know what is hamming distance, it is nothing but the difference in number of bits between two code words which we are checking. We can explain it with an example,like the addition of single-bit parity results in a code with a Hamming distance of at least 2. And the smallest Hamming distance in the case of a threefold repetition code would be 3. Hamming noticed that an increase in distance enhanced the code’s ability to detect and correct errors which is highly desirable. Therefore Hamming's code was an attempt to increase the Hamming distance and at the same time to have as high information at a throughput rate as possible.<br />
+The algorithm for writing the generalized <strong>Hamming code</strong> is as follows:</p>
+<p>1. The generalized form of code is P1P2D1P3D2D3D4P4D5D6D7D8D9D10D11P5, where P and D respectively represent parity and data bits.</p>
+<p>2. We can see from the generalized form of the code that all bit positions that are powers of 2 (positions 1, 2, 4, 8, 16) are used as parity bits.</p>
+<p>3. All other bit positions (positions 3, 5, 6, 7, 9, 10, 11) are used to encode data.</p>
+<p>4. A group of bits from the data bits in the code word is allotted to each parity bit, and the value of the parity bit which is 0 or 1 is used to give it certain parity to make the operation smooth.</p>
+<p>5. Groups are formed by first checking N − 1 bits and then alternately skipping and checking N bits\ following the parity bit. Here, N is the position of the parity bit; 1 for P1, 2 for P2 , 4 for P3 , 8 for P4 and so on. For example, for the generalized form of code given above, various groups of bits formed with different parity bits would beP1D1D2D4D5, P2D1D3D4D6D7, P3D2D3D4D8D9, P4D5D6D7D8D9 D10D11 and so on. To illustrate the formation of groups further, let us examine the group corresponding to parity bit P3. Now, the position of P3 is at number 4. In order to form the group, we check the first three bits (N − 1 = 3) and then follow it up by alternately skipping and checking four bits (N = 4).<br />
+We have discussed a lot about the <strong>Hamming code</strong>s and now we can conclude that these codes are capable of correcting single-bit errors on messages of any length. Although this code can detect two-bit errors, we are unable to get the error locations. The number of parity bits required to be transmitted along with the message, however, depends upon the message length, as shown above. The number of parity bits required to encode message bits is the smallest integer that satisfies the condition (2<sup>n</sup> – n)>m.</p>s
+</p>
+
+			
+
+</div>
+		
+</div>
+		<!-- END CONTENT -->
+
+
+<!--
+END EDITING HERE
+-->					
+
+<div id="nextpg" style="font-weight: bold; font-family: sans-serif; position:relative; top:-9px;"></div>				
+<div id="prevpg" style="font-weight: bold; font-family: sans-serif;"></div>
+</div>
+    <br />
+<br />
+    <div style="position:relative; padding:20px; font-family: cursive;" align="center" class="container text-center foot">
+        <p style="color:#1F4DDF; font-size:14px;">Design with <img src="../love.png" /> by <a style="color:#000; font-weight:bold; text-decoration:none;" href="http://sarutech.com"> SARU TECH </a> <br/> www.sarutech.com</p>
+        <p style="color:#1F4DDF; margin-top:10px; font-size:14px;">Content Credited to <a style="color:#1F4DDF; font-weight:bold; text-decoration:none;" href="http://electrical4u.com">electrical4u.com</a> <br/> Online Electrical Engineering Study Site</p><br/><br/>
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br /> 
+</div><div id="footernav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../electrical-engineering-objective-questions-mcq/index.html">MCQ</a></li>
+    <li><a href="../questions/index.html">Theory</a></li>
+    <li><a href="../videos/index.html">Videos</a></li>
+</div>
+
+<!-- BEGIN FOOTER JS INCLUDES -->
+<script type='text/javascript' src='../js/general-footer.js'></script>
+<script type='text/javascript' src='../js/autogrow/jquery.autogrow-textarea.js'></script>
+<script type='text/javascript' src='../js/placeholder-fix.js'></script>
+<script type='text/javascript' src='../js/jquery.scrollTo-min.js'></script>
+<!-- END FOOTER JS INCLUDES -->
+
+</body>
+</html>

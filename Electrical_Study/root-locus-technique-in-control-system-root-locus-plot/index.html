@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>Root Locus Technique in Control System | Root Locus Plot | Electrical Study App by SARU TECH</title>
+
+<link rel="alternate" type="application/rss+xml" title="Electrical Study App by SARU TECH &raquo; Root Locus Technique in Control System | Root Locus Plot Comments Feed" href="http://electricalstudy.sarutech.com/root-locus-technique-in-control-system-root-locus-plot/index.html" />
+
+<link rel='prev' title='Compensation in Control System  | Lag lead Compensation' href='../compensation-in-control-system-lag-lead-compensation/' />
+<link rel='next' title='bode-plot-gain-margin-phase-margin' href='../bode-plot-gain-margin-phase-margin/' />
+<meta name="generator" content="WordPress 3.5.2" />
+
+<!-- All in One SEO Pack 2.0.2 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/111022768648991545451/" />
+<meta name="description" content="Advantages of Root Locus Technique Root Locus Plot Procedure to Plot Root Locus The root locus technique in control system was first introduced in the" />
+
+<link rel="canonical" href="root-locus-technique-in-control-system-root-locus-plot/index.html" />
+<!-- /all in one seo pack -->
+
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/general-header.js'></script>
+<script type='text/javascript' src='../js/elements.js'></script>
+<script type='text/javascript' src='../js/nav.js'></script>
+<link rel='stylesheet' id='style-css' href='../css/style.css' type='text/css' media='all' />
+<link rel="icon" type="image/png" href="../icon.png" />
+<link rel='stylesheet' id='elements-css' href='../css/elements.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elements-css' href='../css/style2.css' type='text/css' media='all' />
+
+
+<!-- END FONTS + STYLESHEETS + JS INCLUDES -->
+
+</head>
+<body class="page page-id-15791 page-template-default custom-background custom-font-enabled single-author">
+
+	<!-- BEGIN SITE LOGO -->
+<div id="header-bar">
+	
+<div class="site-logo-wrapper">
+
+		<!-- BEGIN LOGO -->
+		<div class="site-logo">
+			<a href="../index.html">
+				ELECTRICAL STUDY APP
+			</a>
+		</div>
+		<!-- END LOGO -->
+
+	</div>
+</div>
+<!-- END SITE LOGO -->
+
+<!-- BEGIN MENU BUTTON -->
+<div class="menu-wrapper">
+	<div class="menu-button"></div>
+</div>
+<!-- END MENU BUTTON -->
+
+<!-- BEGIN MENU INCLUDE -->
+<div id="menu"><!-- BEGIN MENU -->
+
+<!-- END MENU --></div>
+<!-- END MENU INCLUDE -->
+
+<!-- BEGIN MENU CLOSE AREA -->
+<div id="menu-open-overlay"></div>
+<!-- END MENU CLOSE AREA -->
+
+<!-- BEGIN IF MENU OPEN, SHOW BLUE BACKGROUND -->
+<div id="menu-open-background">
+	<div class="menu-open-background"></div>
+</div>
+<!-- END IF MENU OPEN, SHOW BLUE BACKGROUND -->
+
+<div id="sitewrap">
+<div id="content">
+<div class="wrapper-outer">
+<div class="content-wrapper">
+
+
+		<article id="post-15791" class="post-15791 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
+		<header class="entry-header">
+												<h1 class="entry-title" id="topic" itemprop="headline">Root Locus Technique in Control System | Root Locus Plot</h1>
+		</header>
+
+		<div class="entry-content" itemprop="articleBody">
+			
+
+<div id="top" class="pageIndex">
+<a href="#advantages-of-root-locus-technique">Advantages of Root Locus Technique</a><br />
+<a href="#Root-Locus-Plot">Root Locus Plot</a><br />
+<a href="#Procedure-to-Plot-Root-Locus">Procedure to Plot Root Locus</a>
+</div>
+<p>The <strong>root locus technique in control system</strong> was first introduced in the year 1948 by Evans. Any physical system is represented by a transfer function in the form of<br />
+<img src="../equations/controlsystem/rlt-17-06-14-01.gif" alt=""><br />
+We can find poles and zeros from G(s). The location of poles and zeros are crucial keeping view stability, relative stability, transient response and error analysis. When the system put to service stray <a href="../what-is-inductor-and-inductance-theory-of-inductor/index.html" title="What is Inductor and Inductance?">inductance</a> and <a href="../what-is-capacitor-and-what-is-dielectric/index.html" title="What is Capacitor and Capacitance? ">capacitance</a>  get into the system, thus changes the location of poles and zeros. In <strong>root locus technique in control system</strong> we will evaluate the position of the roots, their locus of movement and associated information. These information will be used to comment upon the system performance.  </p>
+<p>Now before I introduce what is a root locus technique, it is very essential here to discuss a few of the advantages of this technique over other stability criteria. Some of the advantages of root locus technique are written below.</p>
+<h3 id="advantages-of-root-locus-technique">Advantages of Root Locus Technique</h3>
+<ol>
+<li>Root locus technique in control system is easy to implement as compared to other methods.</li>
+<li>With the help of root locus we can easily predict the performance of the whole system.</li>
+<li>Root locus provides the better way to indicate the parameters.</li>
+</ol>
+<p>Now there are various terms related to root locus technique that we will use frequently in this article.</p>
+<ol>
+<li><span class="Red">Characteristic Equation Related to Root Locus Technique :</span> 1 + G(s)H(s) = 0 is known as characteristic equation. Now on differentiating the characteristic equation and on equating dk/ds equals to zero, we can get break away points.</li>
+<li><span class="Red">Break away Points :</span> Suppose two root loci which start from pole and moves in opposite direction collide with each other such that after collision they start moving in different directions in the symmetrical way. Or the break away points at which multiple roots of the characteristic equation 1 + G(s)H(s)= 0 occur. The value of K is maximum at the points where the branches of root loci break away. Break away points may be real, imaginary or complex.</li>
+</li>
+<li><span class="Red">Break in Point :</span> Condition of break in to be there on the plot is written below : <q>Root locus must be present between two adjacent zeros on the real axis<q>.</li>
+<li><span class="Red">Centre of Gravity :</span> It is also known centroid and is defined as the point on the plot from where all the asymptotes start. Mathematically, it is calculated by the difference of summation of poles and zeros in the transfer function when divided by the difference of total number of poles and total number of zeros. Centre of gravity is always real &amp; it is denoted by &sigma;<sub>A</sub>.<br />
+<center><img src="../equations/controlsystem/rlt-17-06-14-07.gif" alt=""></center><br />
+Where N is number of poles &amp; M is number of zeros.
+</li>
+<li><span class="Red">Asymptotes of Root Loci :</span> Asymptote originates from the centre of gravity or centroid and goes to infinity at definite some angle. Asymptotes provide direction to the root locus when they depart break away points.</li>
+<li><span class="Red">Angle of Asymptotes :</span> Asymptotes makes some angle with the real axis and this angle can be calculated from the given formula,<br />
+<center><img src="../equations/controlsystem/rlt-17-06-14-02.gif" alt=""></center><br />
+Where p = 0, 1, 2 ....... (N-M-1)<br />
+N is the total number of poles<br />
+M is the total number of zeros.</li>
+<li><span class="Red">Angle of Arrival or Departure :</span> We calculate angle of departure when there exists complex poles in the system. Angle of departure can be calculated as 180-{(sum of angles to a complex pole from the other poles)-(sum of angle to a complex pole from the zeros)}. </li>
+<li><span class="Red">Intersection of Root Locus with the Imaginary Axis :</span> In order to find out the point of intersection root locus with imaginary axis, we have to use Routh Hurwitz criterion. First, we find the auxiliary equation then the corresponding value of K will give the value of the point of intersection.</li>
+<li><span class="Red">Gain Margin :</span> We define gain margin as a by which the design value of the gain factor can be multiplied before the system becomes unstable. Mathematically it is given by the formula<br />
+<center><img src="../equations/controlsystem/rlt-17-06-14-03.gif" alt=""></center>
+</li>
+<li><span class="Red">Phase Margin :</span> Phase margin can be calculated from the given formula:<br />
+<center><img src="../equations/controlsystem/rlt-17-06-14-04.gif" alt=""></center>
+</li>
+<li><span class="Red">Symmetry of Root Locus :</span> Root locus is symmetric about the x axis or the real axis.</li>
+</ol>
+<p>How to determine the value of K at any point on the root loci ? Now there are two ways of determining the value of K, each way is described below.</p>
+</p>
+<ol>
+<li><span class="Green">Magnitude Criteria :</span> At any points on the root locus we can apply magnitude criteria as,<br />
+<center><img src="../equations/controlsystem/rlt-17-06-14-05.gif" alt=""></center><br />
+Using this formula we can calculate the value of K at any desired point.</li>
+<li><span class="Green">Using Root Locus Plot :</span> The value of K at any s on the root locus is given by<br />
+<center><img src="../equations/controlsystem/rlt-17-06-14-06.gif" alt=""></center></li>
+</ol>
+<h2 id="Root-Locus-Plot">Root Locus Plot</h2>
+<p>This is also known as root locus technique in control system and is used for determining the stability of the given system. Now in order to determine the stability of the system using the root locus technique we find the range of values of K for which the complete performance of the system will be satisfactory and the operation is stable.<br />
+Now there are some results that one should remember in order to plot the root locus. These results are written below:</p>
+<ol>
+<li><span class="Green">Region where root locus exists :</span> After plotting all the poles and zeros on the plane, we can easily find out the region of existence of the root locus by using one simple rule which is written below,</p>
+<p>Only that segment will be considered in making root locus if the total number of poles and zeros at the right hand side of the segment is odd.</li>
+<li><span class="Green">How to calculate the number of separate root loci ? :</span> A number of separate root loci are equal to the total number of roots if number of roots are greater than the number of poles otherwise number of separate root loci is equal to the total number of poles if number of roots are greater than the number of zeros.</li>
+</ol>
+<h3 id="Procedure-to-Plot-Root-Locus">Procedure to Plot Root Locus</h3>
+<p>Keeping all these points in mind we are able to draw the <strong>root locus plot</strong> for any kind of system. Now let us discuss the procedure of making a root locus.</p>
+<ol>
+<li>Find out all the roots and poles from the open loop transfer function and then plot them on the complex plane.</li>
+<li> All the root loci starts from the poles where k = 0 and terminates at the zeros where K tends to infinity. The number of branches terminating at infinity equals to the difference between the number of poles &amp; number of zeros of G(s)H(s).</li>
+<li>Find the region of existence of the root loci from the method described above after finding the values of M and N.</li>
+<li>Calculate break away points and break in points if any.</li>
+<li>Plot the asymptotes and centroid point on the complex plane for the root loci by calculating the slope of the asymptotes.</li>
+<li>Now calculate angle of departure and the intersection of root loci with imaginary axis.</li>
+<li>Now determine the value of K by using any one method that I have described above.</li>
+<p>By following above procedure you can easily draw the <strong>root locus plot</strong> for any open loop transfer function.</p>
+<li>Calculate the gain margin.</li>
+<li>Calculate the phase margin. </li>
+<li>You can easily comment on the stability of the system by using Routh array.</li>
+</ol>
+
+			
+
+</div>
+		
+</div>
+		<!-- END CONTENT -->
+
+
+<!--
+END EDITING HERE
+-->					
+
+<div id="nextpg" style="font-weight: bold; font-family: sans-serif; position:relative; top:-9px;"></div>				
+<div id="prevpg" style="font-weight: bold; font-family: sans-serif;"></div>
+</div>
+    <br />
+<br />
+    <div style="position:relative; padding:20px; font-family: cursive;" align="center" class="container text-center foot">
+        <p style="color:#1F4DDF; font-size:14px;">Design with <img src="../love.png" /> by <a style="color:#000; font-weight:bold; text-decoration:none;" href="http://sarutech.com"> SARU TECH </a> <br/> www.sarutech.com</p>
+        <p style="color:#1F4DDF; margin-top:10px; font-size:14px;">Content Credited to <a style="color:#1F4DDF; font-weight:bold; text-decoration:none;" href="http://electrical4u.com">electrical4u.com</a> <br/> Online Electrical Engineering Study Site</p><br/><br/>
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br /> 
+</div><div id="footernav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../electrical-engineering-objective-questions-mcq/index.html">MCQ</a></li>
+    <li><a href="../questions/index.html">Theory</a></li>
+    <li><a href="../videos/index.html">Videos</a></li>
+</div>
+
+<!-- BEGIN FOOTER JS INCLUDES -->
+<script type='text/javascript' src='../js/general-footer.js'></script>
+<script type='text/javascript' src='../js/autogrow/jquery.autogrow-textarea.js'></script>
+<script type='text/javascript' src='../js/placeholder-fix.js'></script>
+<script type='text/javascript' src='../js/jquery.scrollTo-min.js'></script>
+<!-- END FOOTER JS INCLUDES -->
+
+</body>
+</html>

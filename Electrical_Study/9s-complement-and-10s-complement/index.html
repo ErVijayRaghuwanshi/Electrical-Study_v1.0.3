@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>9&#8242;s complement and 10&#8242;s complement| Subtraction | Electrical Study App by SARU TECH</title>
+
+<link rel="alternate" type="application/rss+xml" title="Electrical Study App by SARU TECH &raquo; 9&#8242;s complement and 10&#8242;s complement| Subtraction Comments Feed" href="http://electricalstudy.sarutech.com/9s-complement-and-10s-complement/index.html" />
+
+<link rel='prev' title='Gray Code | Binary to Gray Code and that to Binary Conversion' href='../gray-code-binary-to-gray-code-and-that-to-binary-conversion/' />
+<link rel='next' title='De Morgan&#8217;s theorem  and Demorgans Laws' href='../de-morgans-theorem-and-demorgans-laws/' />
+<meta name="generator" content="WordPress 3.5.2" />
+
+<!-- All in One SEO Pack 2.0.2 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/111022768648991545451/" />
+<meta name="description" content="Want know about 9's complement and 10's complement, go through this page here we tried to give a clear idea of 9's complement and 10's complement with examples" />
+
+<link rel="canonical" href="9s-complement-and-10s-complement/index.html" />
+<!-- /all in one seo pack -->
+
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/general-header.js'></script>
+<script type='text/javascript' src='../js/elements.js'></script>
+<script type='text/javascript' src='../js/nav.js'></script>
+<link rel='stylesheet' id='style-css' href='../css/style.css' type='text/css' media='all' />
+<link rel="icon" type="image/png" href="../icon.png" />
+<link rel='stylesheet' id='elements-css' href='../css/elements.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elements-css' href='../css/style2.css' type='text/css' media='all' />
+
+
+<!-- END FONTS + STYLESHEETS + JS INCLUDES -->
+
+</head>
+<body class="page page-id-2486 page-template-default custom-background custom-font-enabled single-author">
+<!-- BEGIN SITE LOGO -->
+<div id="header-bar">
+	
+<div class="site-logo-wrapper">
+
+		<!-- BEGIN LOGO -->
+		<div class="site-logo">
+			<a href="../index.html">
+				ELECTRICAL STUDY APP
+			</a>
+		</div>
+		<!-- END LOGO -->
+
+	</div>
+</div>
+<!-- END SITE LOGO -->
+
+<!-- BEGIN MENU BUTTON -->
+<div class="menu-wrapper">
+	<div class="menu-button"></div>
+</div>
+<!-- END MENU BUTTON -->
+
+<!-- BEGIN MENU INCLUDE -->
+<div id="menu"><!-- BEGIN MENU -->
+<!-- END MENU --></div>
+<!-- END MENU INCLUDE -->
+
+<!-- BEGIN MENU CLOSE AREA -->
+<div id="menu-open-overlay"></div>
+<!-- END MENU CLOSE AREA -->
+
+<!-- BEGIN IF MENU OPEN, SHOW BLUE BACKGROUND -->
+<div id="menu-open-background">
+	<div class="menu-open-background"></div>
+</div>
+<!-- END IF MENU OPEN, SHOW BLUE BACKGROUND -->
+
+<div id="sitewrap">
+<div id="content">
+<div class="wrapper-outer">
+<div class="content-wrapper">
+<article id="post-2486" class="post-2486 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
+		<header class="entry-header">
+												<h1 class="entry-title" id="topic" itemprop="headline">9&#8242;s complement and 10&#8242;s complement| Subtraction</h1>
+		</header>
+
+		<div class="entry-content" itemprop="articleBody">
+			Before knowing about <strong>9's complement</strong> and <strong>10's complement</strong> we should know why they are used and why their concept came into existence. The complements are used to make the arithmetic operations in digital system easier. In this article we will discuss about the following topics<br />
+(1)	<strong>9s complement</strong><br />
+(2)	<strong>10s complement</strong><br />
+(3)	<strong>9s complement subtraction</strong><br />
+(4)	<strong>10s complement subtraction</strong><br />
+Now first of all let us know what 9's complement is and how it is done. To obtain the 9,s complement of any number we have to subtract the number with (10<sup>n</sup> - 1) where n = number of digits in the number, or in a simpler manner we have to divide each digit of the given decimal number with 9. The table given below will explain the 9's complement more easily</p>
+<table class="Border">
+<tr>
+<th>Decimal digit</th>
+<th>9s complement</th>
+<tr>
+<td>0</td>
+<td>9</td>
+</tr>
+<tr>
+<td>1</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2</td>
+<td>7</td>
+</tr>
+<tr>
+<td>3</td>
+<td>6</td>
+</tr>
+<tr>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>6</td>
+<td>3</td>
+</tr>
+<tr>
+<td>7</td>
+<td>2</td>
+</tr>
+<tr>
+<td>8</td>
+<td>1</td>
+</tr>
+<tr>
+<td>9</td>
+<td>0</td>
+</tr>
+</table>
+<p>Now coming to <strong>10's complement</strong>, it is relatively easy to find out the 10's complement after finding out the 9,s complement of that number.  We have to add 1 with the 9,s complement of any number to obtain the desired 10's complement of that number. Or if we want to find out the 10's complement directly, we can do it by following the following formula, (10<sup>n</sup> - number), where n = number of digits in the number. An example is given below to illustrate the concept of obtaining 10’s complement</p>
+<p>Let us take a decimal number 456, 9's complement of this number will be<br />
+<img src="../equations/910c-1.gif" alt=""/><br />
+10's complement of this no<br />
+<img src="../equations/910c-2.gif" alt=""/></p>
+<p>9's complement subtraction<br />
+We will understand this method of subtraction via an example<br />
+A = 215<br />
+B = 155<br />
+We want to find out A-B by 9's complement subtraction method<br />
+First we have to find out 9’s complement of B<br />
+<img src="../equations/910c-3.gif" alt=""/><br />
+Now we have to add 9’s complement of B to A<br />
+<img src="../equations/910c-4.png" alt=""/><br />
+The left most bit of the result is called carry and is added back to the part of the result without it<br />
+<img src="../equations/910c-5.png" alt=""/><br />
+Another different type of example is given<br />
+A = 4567<br />
+B = 1234<br />
+We need to find out A - B<br />
+9's complement of B<br />
+8765<br />
+Adding 9's complement of B with A<br />
+<img src="../equations/910c-6.png" alt=""/><br />
+Adding the carry with the result we get<br />
+3333<br />
+Now the answer is - 3333<br />
+NB if there is no carry the answer will be – (9’s complement of the answer)<br />
+Subtraction by 10's complement<br />
+Again we will show the procedure by an example<br />
+Taking the same data<br />
+A = 215<br />
+B = 155<br />
+10's complement of B = 845<br />
+Adding 10’s complement of B to A<br />
+<img src="../equations/910c-7.png" alt=""/><br />
+In this case the carry is omitted<br />
+The answer is 60<br />
+Taking the other example<br />
+A = 4567<br />
+B = 1234<br />
+10's complement of B = 8766<br />
+Adding 10's complement of B with A<br />
+<img src="../equations/910c-8.png" alt=""/><br />
+To get the answer the carry is ignored<br />
+So, the answer is - 3333<br />
+NB. If there is a carry then the answer is – (10's complement of the sum obtained)</p></p>
+</div>
+		
+</div>
+		<!-- END CONTENT -->
+
+
+<!--
+END EDITING HERE
+-->					
+
+<div id="nextpg" style="font-weight: bold; font-family: sans-serif; position:relative; top:-9px;"></div>				
+<div id="prevpg" style="font-weight: bold; font-family: sans-serif;"></div>
+</div>
+    <br />
+<br />
+    <div style="position:relative; padding:20px; font-family: cursive;" align="center" class="container text-center foot">
+        <p style="color:#1F4DDF; font-size:14px;">Design with <img src="../love.png" /> by <a style="color:#000; font-weight:bold; text-decoration:none;" href="http://sarutech.com"> SARU TECH </a> <br/> www.sarutech.com</p>
+        <p style="color:#1F4DDF; margin-top:10px; font-size:14px;">Content Credited to <a style="color:#1F4DDF; font-weight:bold; text-decoration:none;" href="http://electrical4u.com">electrical4u.com</a> <br/> Online Electrical Engineering Study Site</p><br/><br/>
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br /> 
+</div><div id="footernav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../electrical-engineering-objective-questions-mcq/index.html">MCQ</a></li>
+    <li><a href="../questions/index.html">Theory</a></li>
+    <li><a href="../videos/index.html">Videos</a></li>
+</div>
+
+<!-- BEGIN FOOTER JS INCLUDES -->
+<script type='text/javascript' src='../js/general-footer.js'></script>
+<script type='text/javascript' src='../js/autogrow/jquery.autogrow-textarea.js'></script>
+<script type='text/javascript' src='../js/placeholder-fix.js'></script>
+<script type='text/javascript' src='../js/jquery.scrollTo-min.js'></script>
+<!-- END FOOTER JS INCLUDES -->
+
+</body>
+</html>

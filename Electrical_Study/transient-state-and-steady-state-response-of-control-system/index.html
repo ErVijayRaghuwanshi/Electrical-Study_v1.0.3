@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+
+<title>Transient State and Steady State Response of Control System | Electrical Study App by SARU TECH</title>
+
+<link rel="alternate" type="application/rss+xml" title="Electrical Study App by SARU TECH &raquo; Transient State and Steady State Response of Control System Comments Feed" href="http://electricalstudy.sarutech.com/transient-state-and-steady-state-response-of-control-system/index.html" />
+
+<link rel='prev' title='Types of Controllers |Proportional Integral &amp; Derivative Controllers' href='../types-of-controllers-proportional-integral-derivative-controllers/' />
+<link rel='next' title='root-locus-technique-in-control-system-root-locus-plot' href='../root-locus-technique-in-control-system-root-locus-plot/' />
+<meta name="generator" content="WordPress 3.5.2" />
+
+<!-- All in One SEO Pack 2.0.2 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/111022768648991545451/" />
+<meta name="description" content="Transient Response of Control System Steady State Response of Control System First Order Control System Second Order Control System When we study the" />
+
+<link rel="canonical" href="transient-state-and-steady-state-response-of-control-system/index.html" />
+<!-- /all in one seo pack -->
+
+<script src="../js/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/general-header.js'></script>
+<script type='text/javascript' src='../js/elements.js'></script>
+<script type='text/javascript' src='../js/nav.js'></script>
+<link rel='stylesheet' id='style-css' href='../css/style.css' type='text/css' media='all' />
+<link rel="icon" type="image/png" href="../icon.png" />
+<link rel='stylesheet' id='elements-css' href='../css/elements.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elements-css' href='../css/style2.css' type='text/css' media='all' />
+
+
+<!-- END FONTS + STYLESHEETS + JS INCLUDES -->
+
+</head>
+<body class="page page-id-15491 page-template-default custom-background custom-font-enabled single-author">
+
+	<!-- BEGIN SITE LOGO -->
+<div id="header-bar">
+	
+<div class="site-logo-wrapper">
+
+		<!-- BEGIN LOGO -->
+		<div class="site-logo">
+			<a href="../index.html">
+				ELECTRICAL STUDY APP
+			</a>
+		</div>
+		<!-- END LOGO -->
+
+	</div>
+</div>
+<!-- END SITE LOGO -->
+
+<!-- BEGIN MENU BUTTON -->
+<div class="menu-wrapper">
+	<div class="menu-button"></div>
+</div>
+<!-- END MENU BUTTON -->
+
+<!-- BEGIN MENU INCLUDE -->
+<div id="menu"><!-- BEGIN MENU -->
+
+<!-- END MENU --></div>
+<!-- END MENU INCLUDE -->
+
+<!-- BEGIN MENU CLOSE AREA -->
+<div id="menu-open-overlay"></div>
+<!-- END MENU CLOSE AREA -->
+
+<!-- BEGIN IF MENU OPEN, SHOW BLUE BACKGROUND -->
+<div id="menu-open-background">
+	<div class="menu-open-background"></div>
+</div>
+<!-- END IF MENU OPEN, SHOW BLUE BACKGROUND -->
+
+<div id="sitewrap">
+<div id="content">
+<div class="wrapper-outer">
+<div class="content-wrapper">
+
+
+		<article id="post-15491" class="post-15491 page type-page status-publish hentry" itemscope itemtype="http://schema.org/Article">
+		<header class="entry-header">
+												<h1 class="entry-title" id="topic" itemprop="headline">Transient State and Steady State Response of Control System</h1>
+		</header>
+
+		<div class="entry-content" itemprop="articleBody">
+			
+
+<div id="top" class="pageIndex">
+<a href="#transient-response-of-control-system">Transient Response of Control System</a><br />
+<a href="#steady-state-response-of-control-system">Steady State Response of Control System</a><br />
+<a href="#transient-state-and-steady-state-response-of-first-order-control-system">First Order Control System</a><br />
+<a href="#transient-state-and-steady-state-response-of-second-order-control-system">Second Order Control System</a>
+</div>
+<p>When we study the analysis of the <strong>transient state and steady state response of control system</strong> it is very essential to know a few basic terms and these are described below. </p>
+<p><span class="Red">Standard Input Signals :</span> These are also known as test input signals. The input signal is very complex in nature,  it is complex because it may be a combination of various other signals. Thus it is very difficult to analyze characteristic performance of any system by applying these signals. So we use test signals or standard input signals which are very easy to deal with. We can easily analyze the characteristic performance of any system more easily as compared to non standard input signals. Now there are various types of standard input signals and they are written below:</p>
+<p><span class="Green">Unit Impulse Signal :</span> In the time domain it is represented by &part;(t). The <a href="../laplace-transformation/index.html" title="Laplace Transformation ">Laplace transformation</a> of unit impulse function is 1 and the corresponding waveform associated with the unit impulse function is shown below.<br />
+<div id="attachment_15521" class="wp-caption aligncenter" style="width: 390px"><img src="../images/tsss-09-06-14-01.gif" alt="unit impulse signal" width="380" height="223" class="size-full wp-image-15521" /><p class="wp-caption-text">Unit Impulse Signal</p></div><br />
+<span class="Green">Unit Step Signal :</span> In the time domain it is represented by u (t). The <a href="../laplace-transformation/index.html" title="Laplace Transformation ">Laplace transformation</a> of unit step function is 1/s and the corresponding waveform associated with the unit step function is shown below.<br />
+ <div id="attachment_15523" class="wp-caption aligncenter" style="width: 399px"><img src="../images/tsss-09-06-14-02.gif" alt="unit step signal" width="389" height="239" class="size-full wp-image-15523" /><p class="wp-caption-text">Unit Step Signal</p></div><br />
+<span class="Green">Unit Ramp signal :</span> In the time domain it is represented by r (t). The <a href="../laplace-transformation/index.html" title="Laplace Transformation ">Laplace transformation</a> of unit ramp function is 1/s<sup>2</sup> and the corresponding waveform associated with the unit ramp function is shown below.<br />
+ <div id="attachment_15524" class="wp-caption aligncenter" style="width: 356px"><img src="../images/tsss-09-06-14-03.gif" alt="unit ramp signal" width="346" height="254" class="size-full wp-image-15524" /><p class="wp-caption-text">Unit Ramp Signal</p></div><br />
+<span class="Green">Parabolic Type Signal :</span> In the time domain it is represented by t<sup>2</sup> / 2. The <a href="../laplace-transformation/index.html" title="Laplace Transformation ">Laplace transformation</a> of parabolic type of the function is 1 / s<sup>3</sup> and the corresponding waveform associated with the parabolic type of the function is shown below.<br />
+ <div id="attachment_15525" class="wp-caption aligncenter" style="width: 317px"><img src="../images/tsss-09-06-14-06.gif" alt="parabolic signal" width="307" height="247" class="size-full wp-image-15525" /><p class="wp-caption-text">Parabolic Signal</p></div><br />
+<span class="Green">Sinusoidal Type Signal :</span>  In the time domain it is represented by sin (&omega;t).The <a href="../laplace-transformation/index.html" title="Laplace Transformation ">Laplace transformation</a> of sinusoidal type of the function is &omega; / (s<sup>2</sup> + &omega;<sup>2</sup>) and the corresponding waveform associated with the sinusoidal type of the function is shown below.<br />
+ <div id="attachment_15527" class="wp-caption aligncenter" style="width: 410px"><img src="../images/tsss-09-06-14-04.gif" alt="sinusoidal signal" width="400" height="321" class="size-full wp-image-15527" /><p class="wp-caption-text">Sinusoidal Signal</p></div><br />
+<span class="Green">Cosine Type of Signal :</span>  In the time domain it is represented by cos (&omega;t). The <a href="../laplace-transformation/index.html" title="Laplace Transformation ">Laplace transformation</a> of the cosine type of the function is &omega; / (s<sup>2</sup> + &omega;<sup>2</sup>) and the corresponding waveform associated with the cosine type of the function is shown below,<br />
+ <div id="attachment_15528" class="wp-caption aligncenter" style="width: 347px"><img src="../images/tsss-09-06-14-05.gif" alt="cosine type signal" width="337" height="332" class="size-full wp-image-15528" /><p class="wp-caption-text">Cosine Type Signal</p></div></p>
+</p>
+<p>Now are in a position to describe the two types of responses which are a function of time.</p>
+<h3 id="transient-response-of-control-system">Transient Response of Control System</h3>
+<p>As the name suggests <strong>transient response of control system</strong> means changing so, this occurs mainly after two conditions and these two conditions are written as follows-</p>
+<li><span class="Green">Condition one :</span> Just after switching ‘on’ the system that means at the time of application of an input signal to the system.</li>
+<li><span class="Green">Condition second :</span> Just after any abnormal conditions. Abnormal conditions may include sudden change in the load, short circuiting etc.</li>
+<h3 id="steady-state-response-of-control-system">Steady State Response of Control System</h3>
+<p>Steady state occurs after the system becomes settled and at the steady system starts working normally. <strong>Steady state response of control system</strong> is a function of input signal and it is also called as forced response.</p>
+<p>Now the transient state response of <a href="../control-system-closed-loop-open-loop-control-system/#definition-of-control-system" title="Definition of Control System ">control system</a> gives a clear description of how the system functions during <strong>transient state and  steady state response of control system</strong> gives a clear description of how the system functions during steady state. Therefore the time analysis of both states is very essential. We will separately analyze both the types of responses. Let us first analyze the transient response. In order to analyze the transient response, we have some time specifications and they are written as follows:</p>
+<p><span class="Green">Delay Time :</span> This time is represented by t<sub>d</sub>. The time required by the response to reach fifty percent of the final value for the first time, this time is known as delay time. Delay time is clearly shown in the time response specification curve.</p>
+<p><span class="Green">Rise Time :</span> This time is represented by t<sub>r</sub>. We define rise time in two cases:</p>
+<ol>
+<li>In case of under damped systems where the value of &zeta; is less than one, in this case rise time is defined as the time required by the response to reach from zero value to hundred percent value of final value.</li>
+<li>In case of over damped systems where the value of &zeta; is greater than one, in this case rise time is defined as the time required by the response to reach from ten percent value to ninety percent value of final value.</li>
+</ol>
+<p><span class="Green">Peak Time :</span> This time is represented by t<sub>p</sub>. The time required by the response to reach the peak value for the first time, this time is known as peak time. Peak time is clearly shown in the time response specification curve.</p>
+<p><span class="Green">Settling Time :</span> This time is represented by t<sub>s</sub>. The time required by the response to reach and within the specified range of about (two percent to five percent) of its final value for the first time, this time is known as settling time. Settling time is clearly shown in the time response specification curve.</p>
+<p><span class="Green">Maximum Overshoot :</span> It is expressed (in general) in percentage of the steady state value and it is defined as the maximum positive deviation of the response from its desired value. Here desired value is steady state value.</p>
+<p><span class="Green">Steady State Error :</span> It can be defined as the difference between the actual output and the desired output as time tends to infinity.</p>
+<p>Now we are in position we to do a time response analysis of a first order system.</p>
+<h3 id="transient-state-and-steady-state-response-of-first-order-control-system">Transient State and Steady State Response of First Order Control System</h3>
+<p>Let us consider the block diagram of the first order system.<br />
+<div id="attachment_15582" class="wp-caption aligncenter" style="width: 590px"><img src="../images/tsss-09-06-14-07.gif" alt="block diagram of first order system" width="580" height="207" class="size-full wp-image-15582" /><p class="wp-caption-text">Block Diagram of First Order System</p></div><br />
+From this block diagram we can find overall transfer function which is linear in nature. The transfer function of the first order system is 1/((sT+1)). We are going to analyze the steady state and transient response of <a href="../control-system-closed-loop-open-loop-control-system/#definition-of-control-system" title="Definition of Control System ">control system</a> for the following standard signal.</p>
+<ol>
+<li>Unit impulse.</li>
+<li>Unit step.</li>
+<li>Unit ramp.</li>
+</ol>
+<p><span class="Green">Unit impulse response :</span> We have Laplace transform of the unit impulse is 1. Now let us give this standard input to a first order system, we have<br />
+<center><img src="../equations/controlsystem/sstr-12-06-14-01.gif" alt=""></center><br />
+Now taking the inverse Laplace transform of the above equation, we have<br />
+<center><img src="../equations/controlsystem/sstr-12-06-14-02.gif" alt=""></center><br />
+It is clear that the <strong>steady state response of control system</strong> depends only on the time constant ‘T’ and it is decaying in nature.</p>
+<p><span class="Green">Unit step response :</span>  We have Laplace transform of the unit impulse is 1/s. Now let us give this standard input to first order system, we have<br />
+<center><img src="../equations/controlsystem/sstr-12-06-14-03.gif" alt=""></center><br />
+With the help of partial fraction, taking the inverse Laplace transform of the above equation, we have<br />
+<center><img src="../equations/controlsystem/sstr-12-06-14-04.gif" alt=""></center><br />
+It is clear that the time response depends only on the time constant ‘T’. In this case the steady state error is zero by putting the limit t is tending to zero.</p>
+<p><span class="Green">Unit ramp response :</span>  We have Laplace transform of the unit impulse is 1/s<sup>2</sup>. Now let us give this standard input to first order system, we have<br />
+<center><img src="../equations/controlsystem/sstr-12-06-14-05.gif" alt=""></center><br />
+With the help of partial fraction, taking the inverse Laplace transform of the above equation we have<br />
+<center><img src="../equations/controlsystem/sstr-12-06-14-06.gif" alt=""></center><br />
+On plotting the exponential function of time we have ‘T’ by putting the limit t is tending to zero.</p>
+<h3 id="Transient-State-and-Steady-State-Response-of-Second-Order-Control-System">Transient State and Steady State Response of Second Order Control System</h3>
+<p> Let us consider the block diagram of the second order system.<br />
+ <div id="attachment_15532" class="wp-caption aligncenter" style="width: 598px"><img src="../images/tsss-09-06-14-08.gif" alt="block diagram of second order system" width="588" height="242" class="size-full wp-image-15532" /><p class="wp-caption-text">Block Diagram of Second Order System</p></div><br />
+From this block diagram we can find overall transfer function which is nonlinear in nature. The transfer function of the second order system is (&omega;<sup>2</sup>) / ( s ( s + 2&zeta;&omega; )). We are going to analyze the <strong>transient state response of control system</strong> for the following standard signal.</p>
+<p><span class="Green">Unit impulse response :</span> We have Laplace transform of the unit impulse is 1. Now let us give this standard input to second order system, we have<br />
+<center><img src="../equations/controlsystem/sstr-12-06-14-07.gif" alt=""></center><br />
+Where &omega; is natural frequency in rad/sec and &zeta; is damping ratio.</p>
+<p><span class="Green">Unit step response :</span>  We have Laplace transform of the unit impulse is 1/s. Now let us give this standard input to first order system, we have<br />
+<center><img src="../equations/controlsystem/sstr-12-06-14-07.gif" alt=""></center><br />
+With the help of partial fraction, taking the inverse Laplace transform of the above equation we have<br />
+<center><img src="../equations/controlsystem/sstr-12-06-14-08.gif" alt=""></center><br />
+Now we will see the effect of different values of &zeta; on the response. We have three types of systems on the basis of different values of &zeta;.</p>
+<ol>
+<li><span class="Green">Under damped system :</span> A system is said to be under damped system when the value of &zeta; is less than one. In this case roots are complex in nature and the real parts are always negative. System is asymptotically stable. Rise time is lesser than the other system with the presence of finite overshoot.</li>
+<li><span class="Green">Critically damped system :</span> A system is said to be critically damped system when the value of &zeta; is one. In this case roots are real in nature and the real parts are always repetitive in nature. System is asymptotically stable. Rise time is less in this system and there is no presence of finite overshoot.</li>
+<li><span class="Green">Over damped system :</span> A system is said to be over damped system when the value of &zeta; is greater than one. In this case roots are real and distinct in nature and the real parts are always negative. System is asymptotically stable. Rise time is greater than the other system and there is no presence of finite overshoot.</li>
+<li><span class="Green">Sustained Oscillations :</span> A system is said to be sustain damped system when the value of zeta is zero. No damping occurs in this case.</li>
+</ol>
+<p>Now let us derive the expressions for rise time, peak time, maximum overshoot, settling time and steady state error with a unit step input for second order system.</p>
+<p><span class="Green">Rise time :</span> In order to derive the expression for the rise time we have to equate the expression for c(t) = 1. From the above we have<br />
+<center><img src="../equations/controlsystem/sstr-12-06-14-09.gif" alt=""></center><br />
+On solving above equation we have expression for rise time equal to<br />
+<center><img src="../equations/controlsystem/sstr-12-06-14-10.gif" alt=""></center><br />
+<span class="Green">Peak Time :</span> On differentiating the expression of c(t) we can obtain the expression for peak time. dc(t)/ dt = 0 we have expression for peak time,<br />
+<center><img src="../equations/controlsystem/sstr-12-06-14-11.gif" alt=""></center><br />
+<span class="Green">Maximum overshoot :</span> Now it is clear from the figure that the maximum overshoot will occur at peak time tp hence on putting the valye of peak time we will get maximum overshoot as<br />
+<center><img src="../equations/controlsystem/sstr-12-06-14-12.gif" alt=""></center><br />
+<span class="Green">Settling Time :</span> Settling time is given by the expression<br />
+<center><img src="../equations/controlsystem/sstr-12-06-14-13.gif" alt=""></center><br />
+<span class="Green">Steady state error : </span>The steady state error is diffrerence between the actual output and the desired output hence at time tending to infinity the steady state error is zero.</p>
+			
+
+</div>
+		
+</div>
+		<!-- END CONTENT -->
+
+
+<!--
+END EDITING HERE
+-->					
+
+<div id="nextpg" style="font-weight: bold; font-family: sans-serif; position:relative; top:-9px;"></div>				
+<div id="prevpg" style="font-weight: bold; font-family: sans-serif;"></div>
+</div>
+    <br />
+<br />
+    <div style="position:relative; padding:20px; font-family: cursive;" align="center" class="container text-center foot">
+        <p style="color:#1F4DDF; font-size:14px;">Design with <img src="../love.png" /> by <a style="color:#000; font-weight:bold; text-decoration:none;" href="http://sarutech.com"> SARU TECH </a> <br/> www.sarutech.com</p>
+        <p style="color:#1F4DDF; margin-top:10px; font-size:14px;">Content Credited to <a style="color:#1F4DDF; font-weight:bold; text-decoration:none;" href="http://electrical4u.com">electrical4u.com</a> <br/> Online Electrical Engineering Study Site</p><br/><br/>
+    </div>
+</div>
+</div>
+<br />
+<br />
+<br /> 
+</div><div id="footernav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../electrical-engineering-objective-questions-mcq/index.html">MCQ</a></li>
+    <li><a href="../questions/index.html">Theory</a></li>
+    <li><a href="../videos/index.html">Videos</a></li>
+</div>
+
+<!-- BEGIN FOOTER JS INCLUDES -->
+<script type='text/javascript' src='../js/general-footer.js'></script>
+<script type='text/javascript' src='../js/autogrow/jquery.autogrow-textarea.js'></script>
+<script type='text/javascript' src='../js/placeholder-fix.js'></script>
+<script type='text/javascript' src='../js/jquery.scrollTo-min.js'></script>
+<!-- END FOOTER JS INCLUDES -->
+
+</body>
+</html>

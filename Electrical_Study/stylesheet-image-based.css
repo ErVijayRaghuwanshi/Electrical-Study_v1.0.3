@@ -1,0 +1,33 @@
+input[type=radio]:not(old){
+  width   : 32px;
+  margin : 0;
+  padding : 0;
+  opacity : 0;
+}
+input[type=radio]:not(old) + label{
+  display      : initial;
+  margin-left  : -32px;
+  padding-left : 40px;
+  background   : url('checks.png') no-repeat 0 0;
+  line-height  : 32px;
+}
+
+input[type=radio]:not(old):checked + label{
+  background-position : 0 -31px;
+}
+
+input[type=radio].correct:not(old):checked + label{
+  background-position : 0 -63px;
+}
+label{
+   padding-right : 32px;
+}
+
+#p001, #p002, #p003, #p004, #p005, #p006, #p007, #p008, #p009, #p010, #p011, #p012, #p013, #p014, #p015, #p016, #p017, #p018, #p019, #p020 {background-color:#ddd;border:solid 1px #000;display:none;padding:10px 10px 10px 10px;color:#000;font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;font-size:16px; font-style: italic; width:100%;margin-top:10px;margin-left:auto;margin-right:auto}
+
+
+#OptionMCQ ol li{list-style-type:upper-alpha;}
+
+#OptionMCQ ol li{list-style-type:upper-alpha;}
+
+}
