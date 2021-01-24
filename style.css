@@ -74,7 +74,7 @@
   
   .container a:hover:before {
 	top: 0;
-	transition: 1s;
+	transition: .5s;
   }
   
   .container .fab .fa-linkedin a:before{
